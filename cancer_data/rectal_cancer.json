@@ -1,0 +1,458 @@
+[
+  {
+    "source": "rectal cancer",
+    "relation": "overview",
+    "target": "Rectal cancer is cancer that develops in cells in the rectum. The rectum is located below the sigmoid colon and above the anus",
+    "original_text": "Rectal cancer is cancer that develops in cells in the rectum. The rectum is located below the sigmoid colon and above the anus"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "overview",
+    "target": "Rectal cancer is cancer that develops in cells in the rectum. The rectum is located below the sigmoid colon and above the anus",
+    "original_text": "Rectal cancer is cancer that develops in cells in the rectum. The rectum is located below the sigmoid colon and above the anus"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "weakness",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "weakness",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "fatigue",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "fatigue",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "appetite changes",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "appetite changes",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "weight loss",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "weight loss",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "frequent abdominal discomfort",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "frequent abdominal discomfort",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "gas",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "gas",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "cramps",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "cramps",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "pain",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "pain",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "changes in how often you have bowel movements",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "changes in how often you have bowel movements",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "feeling that your bowel isn\u2019t emptying completely",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "feeling that your bowel isn\u2019t emptying completely",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "pain when you have a bowel movement",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "pain when you have a bowel movement",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "diarrhea",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "diarrhea",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "constipation",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "constipation",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "blood in your stool",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "blood in your stool",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "mucus in your stool",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "mucus in your stool",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "narrow stool",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "narrow stool",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "symptom",
+    "target": "iron deficiency anemia",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "iron deficiency anemia",
+    "relation": "symptom",
+    "target": "rectal cancer",
+    "original_text": "Some symptoms of rectal cancer could be due to other conditions. These symptoms include:\n\nweakness and fatigue\nappetite changes\nweight loss\nfrequent abdominal discomfort, gas, cramps, pain\nOther signs and symptoms of rectal cancer include:\n\nchanges in how often you have bowel movements\nfeeling that your bowel isn\u2019t emptying completely\npain when you have a bowel movement\ndiarrhea or constipation\nblood or mucus in your stool\nnarrow stool\niron deficiency anemia"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "main_type",
+    "target": "Adenocarcinoma",
+    "original_text": "The vast majority of rectal cancer is adenocarcinoma. This is a cancer of the cells that line the inside surface of the rectum"
+  },
+  {
+    "source": "Adenocarcinoma",
+    "relation": "main_type",
+    "target": "rectal cancer",
+    "original_text": "The vast majority of rectal cancer is adenocarcinoma. This is a cancer of the cells that line the inside surface of the rectum"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "main_type",
+    "target": "Carcinoid Tumors",
+    "original_text": "Carcinoid tumors start in hormone-producing cells in the intestines"
+  },
+  {
+    "source": "Carcinoid Tumors",
+    "relation": "main_type",
+    "target": "rectal cancer",
+    "original_text": "Carcinoid tumors start in hormone-producing cells in the intestines"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "main_type",
+    "target": "Gastrointestinal Stromal Tumors",
+    "original_text": "Gastrointestinal stromal tumors can be a type of soft tissue sarcoma that can be found anywhere in the gastrointestinal tract but is rare in the rectum. These tumors can also be other types of sarcoma that start in the blood vessels or connective tissue of the colon. "
+  },
+  {
+    "source": "Gastrointestinal Stromal Tumors",
+    "relation": "main_type",
+    "target": "rectal cancer",
+    "original_text": "Gastrointestinal stromal tumors can be a type of soft tissue sarcoma that can be found anywhere in the gastrointestinal tract but is rare in the rectum. These tumors can also be other types of sarcoma that start in the blood vessels or connective tissue of the colon. "
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "main_type",
+    "target": "Lymphoma",
+    "original_text": "Lymphoma is a cancer of the immune system. It more commonly starts in the lymph nodes but can start in the rectum"
+  },
+  {
+    "source": "Lymphoma",
+    "relation": "main_type",
+    "target": "rectal cancer",
+    "original_text": "Lymphoma is a cancer of the immune system. It more commonly starts in the lymph nodes but can start in the rectum"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "main_type",
+    "target": "Hereditary Rectal Cancer",
+    "original_text": "About 5 to 10 percent of people get colorectal cancer because of specific mutations in the genes that are passed from parents to children, which are referred to as hereditary. MSK\u2019s experts may offer you genetic testing to see if you have hereditary mutations in your genes that can increase your cancer risk. Whether you should have this testing is based on an assessment of your personal risk. Learn more about genetic testing for colorectal cancer and the types of hereditary conditions that often lead to the disease"
+  },
+  {
+    "source": "Hereditary Rectal Cancer",
+    "relation": "main_type",
+    "target": "rectal cancer",
+    "original_text": "About 5 to 10 percent of people get colorectal cancer because of specific mutations in the genes that are passed from parents to children, which are referred to as hereditary. MSK\u2019s experts may offer you genetic testing to see if you have hereditary mutations in your genes that can increase your cancer risk. Whether you should have this testing is based on an assessment of your personal risk. Learn more about genetic testing for colorectal cancer and the types of hereditary conditions that often lead to the disease"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "risk_factor",
+    "target": "age",
+    "original_text": "Diagnosis usually occurs after age 50, although rates are increasing among younger people"
+  },
+  {
+    "source": "age",
+    "relation": "risk_factor",
+    "target": "rectal cancer",
+    "original_text": "Diagnosis usually occurs after age 50, although rates are increasing among younger people"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "risk_factor",
+    "target": "Race",
+    "original_text": "Black Americans are at higher risk than other groups of developing rectal cancer. One reason for this may be inequities in healthcare access"
+  },
+  {
+    "source": "Race",
+    "relation": "risk_factor",
+    "target": "rectal cancer",
+    "original_text": "Black Americans are at higher risk than other groups of developing rectal cancer. One reason for this may be inequities in healthcare access"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "risk_factor",
+    "target": "Family history",
+    "original_text": "Personal or family history of colorectal cancer can raise risk"
+  },
+  {
+    "source": "Family history",
+    "relation": "risk_factor",
+    "target": "rectal cancer",
+    "original_text": "Personal or family history of colorectal cancer can raise risk"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "risk_factor",
+    "target": "Radiation therapy",
+    "original_text": "Previous radiation treatment to the abdomen can increase risk"
+  },
+  {
+    "source": "Radiation therapy",
+    "relation": "risk_factor",
+    "target": "rectal cancer",
+    "original_text": "Previous radiation treatment to the abdomen can increase risk"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "cause",
+    "target": "Mistakes in DNA",
+    "original_text": "Mistakes in DNA can cause cells to grow out of control. Faulty cells pile up to form tumors. These cells can penetrate and destroy healthy tissue. What sets off this process isn\u2019t always clear"
+  },
+  {
+    "source": "Mistakes in DNA",
+    "relation": "cause",
+    "target": "rectal cancer",
+    "original_text": "Mistakes in DNA can cause cells to grow out of control. Faulty cells pile up to form tumors. These cells can penetrate and destroy healthy tissue. What sets off this process isn\u2019t always clear"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "cause",
+    "target": "inherited gene mutations",
+    "original_text": "There are some inherited gene mutations that can increase risk. One of these is hereditary nonpolyposis colorectal cancer, known as Lynch syndrome. This disorder raises the risk of colon and other cancers, especially before age 50"
+  },
+  {
+    "source": "inherited gene mutations",
+    "relation": "cause",
+    "target": "rectal cancer",
+    "original_text": "There are some inherited gene mutations that can increase risk. One of these is hereditary nonpolyposis colorectal cancer, known as Lynch syndrome. This disorder raises the risk of colon and other cancers, especially before age 50"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "cause",
+    "target": "familial adenomatous polyposis",
+    "original_text": "Another such syndrome is familial adenomatous polyposis. This is a rare disorder that can cause polyps in the lining of the colon and rectum. Without treatment, it can raise the risk of colon or rectal cancer, especially before age 40"
+  },
+  {
+    "source": "familial adenomatous polyposis",
+    "relation": "cause",
+    "target": "rectal cancer",
+    "original_text": "Another such syndrome is familial adenomatous polyposis. This is a rare disorder that can cause polyps in the lining of the colon and rectum. Without treatment, it can raise the risk of colon or rectal cancer, especially before age 40"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "method_diagnosis",
+    "target": "Laboratory tests",
+    "original_text": "such as blood tests and advance genomic testing"
+  },
+  {
+    "source": "Laboratory tests",
+    "relation": "method_diagnosis",
+    "target": "rectal cancer",
+    "original_text": "such as blood tests and advance genomic testing"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "method_diagnosis",
+    "target": "Biopsy",
+    "original_text": ""
+  },
+  {
+    "source": "Biopsy",
+    "relation": "method_diagnosis",
+    "target": "rectal cancer",
+    "original_text": ""
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "method_diagnosis",
+    "target": "Colonoscopy",
+    "original_text": ""
+  },
+  {
+    "source": "Colonoscopy",
+    "relation": "method_diagnosis",
+    "target": "rectal cancer",
+    "original_text": ""
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "method_diagnosis",
+    "target": "Imaging tests",
+    "original_text": "such as MRI, CT scan and ultrasound"
+  },
+  {
+    "source": "Imaging tests",
+    "relation": "method_diagnosis",
+    "target": "rectal cancer",
+    "original_text": "such as MRI, CT scan and ultrasound"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "treatment",
+    "target": "stage 0 : removal of suspicious tissue during colonoscopy\nremoval of tissue during a separate surgery\nremoval of tissue and part of the surrounding area",
+    "original_text": "None"
+  },
+  {
+    "source": "stage 0 : removal of suspicious tissue during colonoscopy\nremoval of tissue during a separate surgery\nremoval of tissue and part of the surrounding area",
+    "relation": "treatment",
+    "target": "rectal cancer",
+    "original_text": "None"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "treatment",
+    "target": "stage 1 : local excision or resection\nradiation therapy\nchemotherapy",
+    "original_text": "None"
+  },
+  {
+    "source": "stage 1 : local excision or resection\nradiation therapy\nchemotherapy",
+    "relation": "treatment",
+    "target": "rectal cancer",
+    "original_text": "None"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "treatment",
+    "target": "stage 2 : surgery\nradiation therapy\nchemotherapy",
+    "original_text": "None"
+  },
+  {
+    "source": "stage 2 : surgery\nradiation therapy\nchemotherapy",
+    "relation": "treatment",
+    "target": "rectal cancer",
+    "original_text": "None"
+  },
+  {
+    "source": "rectal cancer",
+    "relation": "treatment",
+    "target": "stage 4 : surgery, possibly in more than one area of the body\nradiation therapy\nchemotherapy\ntargeted therapies, such as monoclonal antibodies or angiogenesis inhibitors\ncryosurgery, a procedure that uses a cold liquid or a cryoprobe to destroy abnormal tissue\nradiofrequency ablation, a procedure in which radio waves are used to destroy abnormal cells\na stent to keep the rectum open if it\u2019s blocked by a tumor\npalliative therapy to improve overall quality of life",
+    "original_text": "None"
+  },
+  {
+    "source": "stage 4 : surgery, possibly in more than one area of the body\nradiation therapy\nchemotherapy\ntargeted therapies, such as monoclonal antibodies or angiogenesis inhibitors\ncryosurgery, a procedure that uses a cold liquid or a cryoprobe to destroy abnormal tissue\nradiofrequency ablation, a procedure in which radio waves are used to destroy abnormal cells\na stent to keep the rectum open if it\u2019s blocked by a tumor\npalliative therapy to improve overall quality of life",
+    "relation": "treatment",
+    "target": "rectal cancer",
+    "original_text": "None"
+  }
+]

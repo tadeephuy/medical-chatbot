@@ -1,0 +1,812 @@
+{
+  "overview": {
+    "sentences": [
+      "$open_sentence $subject $verb_overview $sentence_disease $type_question $punc_v1 $end_sentence",
+      "$open_sentence $verb_overview $sentence_disease $punc_v1 $end_sentence",
+      "$open_sentence $subject $passive_verb $disease $punc_v2 $subject $verb_overview $sentence_disease",
+      "$adv $sentence_disease $adj $subject $verb_overview về nó.",
+      "$possesive_adj $passive_verb $disease , tôi $verb_overview về nó."
+    ],
+
+    "open_sentence": [
+      "Chào bác sỹ, ",
+      "Chào bác sỹ",
+      "Thưa bác",
+      "Thưa bác sỹ,",
+      "Chào bác sĩ ,",
+      "Chào bác sĩ",
+      "Thưa bác",
+      "Thưa bác sĩ,",
+      "Hi bác sĩ,",
+      "Hi Doctor,",
+      "Hey Doctor,",
+      "Hey DoctorAid",
+      "Hello DoctorAid",
+      ""
+    ],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "verb_overview": [
+      "muốn biết",
+      "muốn tìm hiểu",
+      "muốn hiểu rõ hơn",
+      "cần thông tin",
+      "muốn có thông tin",
+      "muốn thông tin",
+      "muốn hiểu",
+      "muốn hỏi",
+      "thắc mắc",
+      "chưa hiểu rõ",
+      "tìm hiểu"
+    ],
+
+    "sentence_disease": [
+      "về bệnh $disease",
+      "về $disease",
+      "$disease",
+      "về căn bệnh $disease"
+    ],
+
+    "type_question": ["như thế nào", "thế nào", ""],
+
+    "punc_v1": ["?", "."],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Xin cảm ơn bác",
+      "xin cảm ơn",
+      "nhờ bác sỹ tư vấn",
+      "nhờ bác tư vấn",
+      "mong bác tư vấn",
+      ""
+    ],
+
+    "passive_verb": [
+      "được chuẩn đoán mắc",
+      "bị",
+      "nhiễm",
+      "bị chuẩn đoán mắc",
+      "được chuẩn đoán nhiễm",
+      "bị nhiễm"
+    ],
+
+    "punc_v2": [".", ","],
+
+    "adv": [
+      "ngày nay,",
+      "vài ngày qua",
+      "vài ngày qua, trên báo có đề cập",
+      "thông tin thời sự đề cập",
+      "trên báo thấy",
+      "trên báo đề cập",
+      "thời sự hằng ngày đề cập"
+    ],
+
+    "adj": [
+      "phổ biến",
+      "rất phổ biến",
+      "ngày càng nhiều",
+      "được nhắc đến nhiều",
+      "thi thoảng xuất hiện"
+    ],
+
+    "possesive_adj": [
+      "Con tôi",
+      "cháu tôi",
+      "Mẹ tôi",
+      "Ba tôi",
+      "Anh tôi",
+      "em tôi",
+      "Bà tôi",
+      "cháu nó"
+    ]
+  },
+  "symptoms": {
+    "sentences": [
+      "$open_sentence $subject $verb_symptoms $sentence_disease $type_question $punc_v1 $end_sentence",
+      "$open_sentence $adv_1 $subject $passive_verb $sentence_symptoms",
+      "$open_sentence $subject $passive_verb $sentence_symptoms $adv_2",
+      "$open_sentence $subject $passive_verb $sentence_symptoms $adv_2, $goal_question",
+      "$open_sentence $verb_symptoms $sentence_disease $end_sentence",
+      "$adv_1 $possesive_adj $passive_verb $sentence_symptoms, $goal_question",
+      "$sentence_symptoms"
+    ],
+
+    "goal_question": [
+      "nó là bệnh gì vậy ạ?",
+      "tôi muốn biết nó là bệnh gì?",
+      "bệnh gì",
+      "nên làm gì",
+      "phải làm gì"
+    ],
+
+    "open_sentence": [
+      "Chào bác sỹ, ",
+      "Chào bác sỹ",
+      "Thưa bác",
+      "Thưa bác sỹ,",
+      "Chào bác sĩ ,",
+      "Chào bác sĩ",
+      "Thưa bác",
+      "Thưa bác sĩ,",
+      "Hi bác sĩ,",
+      "Hi Doctor,",
+      "Hey Doctor,",
+      "Hey DoctorAid",
+      "Hello DoctorAid",
+      ""
+    ],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui"
+    ],
+
+    "verb_symptoms": [
+      "cần thông tin triệu chứng",
+      "cần thông tin về những triệu chứng",
+      "cần thông tin về những triệu chứng chính",
+      "cần thông tin về những triệu chứng chính của",
+      "cần thông tin về triệu chứng",
+      "cần thông tin về triệu chứng của",
+      "muốn biết biểu hiện",
+      "muốn biết dấu hiệu",
+      "muốn biết những triệu chứng",
+      "muốn biết những triệu chứng chính",
+      "muốn biết những triệu chứng chính của",
+      "muốn biết triệu chứng",
+      "muốn biết về biểu hiện",
+      "muốn biết về biểu hiện của",
+      "muốn biết về dấu hiệu",
+      "muốn biết về dấu hiệu của",
+      "muốn biết về triệu chứng",
+      "muốn biết về triệu chứng của",
+      "muốn có thông tin biểu hiện",
+      "muốn có thông tin dấu hiệu",
+      "muốn có thông tin triệu chứng",
+      "muốn có thông tin về biểu hiện",
+      "muốn có thông tin về biểu hiện của",
+      "muốn có thông tin về dấu hiệu",
+      "muốn có thông tin về dấu hiệu của",
+      "muốn có thông tin về triệu chứng",
+      "muốn có thông tin về triệu chứng của",
+      "muốn một vài thông tin triệu chứng",
+      "muốn một vài thông tin về triệu chứng",
+      "muốn một vài thông tin về triệu chứng của"
+    ],
+
+    "sentence_disease": [
+      "về bệnh $disease",
+      "về $disease",
+      "$disease",
+      "về căn bệnh $disease"
+    ],
+
+    "type_question": ["như thế nào", "thế nào", ""],
+
+    "punc_v1": ["?", "."],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Xin cảm ơn bác sĩ",
+      "Xin cảm ơn bác",
+      "xin cảm ơn",
+      "nhờ bác sỹ tư vấn",
+      "nhờ bác tư vấn",
+      "mong bác tư vấn",
+      ""
+    ],
+
+    "adv_1": [
+      "hôm nay",
+      "ở hôm nay",
+      "hôm qua",
+      "ở hôm qua",
+      "tuần trước",
+      "ở tuần trước",
+      "tháng trước",
+      "ở tháng trước",
+      "vài giờ trước",
+      "cách đây vài ngày",
+      "vài ngày qua",
+      ""
+    ],
+
+    "passive_verb": [
+      "bắt đầu biểu hiện",
+      "bắt đầu có biểu hiện",
+      "bắt đầu có dấu hiệu",
+      "bắt đầu có triệu chứng",
+      "bắt đầu dấu hiệu",
+      "bắt đầu triệu chứng",
+      "có cảm thấy",
+      "có dấu hiệu",
+      "cảm thấy",
+      "dấu hiệu",
+      "thấy có dấu hiệu",
+      "thấy dấu hiệu"
+    ],
+
+    "adv_2": ["trong vài ngày qua", "ở mấy ngày qua", "ở mấy tháng nay", ""],
+
+    "possesive_adj": [
+      "Anh tôi",
+      "Ba tôi",
+      "cháu nó",
+      "Con tôi",
+      "cháu tôi",
+      "em tôi",
+      "Mẹ tôi"
+    ]
+  },
+
+  "main_type": {
+    "sentences": [
+      "$open_sentence $subject $verb_main_type $punc_v1 $end_sentence",
+      "$verb_main_type $punc_v1",
+      "$adv $sentence_disease $adj, $subject $verb_main_type $punc_v1",
+      "$sentence_disease $verb_main_type_2",
+      "$verb_main_type_2"
+    ],
+
+    "open_sentence": [
+      "Chào bác sỹ, ",
+      "Chào bác sỹ",
+      "Thưa bác",
+      "Thưa bác sỹ,",
+      "Chào bác sĩ ,",
+      "Chào bác sĩ",
+      "Thưa bác",
+      "Thưa bác sĩ,",
+      "Hi bác sĩ,",
+      "Hi Doctor,",
+      "Hey Doctor,",
+      "Hey DoctorAid",
+      "Hello DoctorAid",
+      ""
+    ],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "verb_main_type": [
+      "cần thông tin về biến thể $sentence_disease",
+      "cần thông tin về những biến thể của $sentence_disease",
+      "cần thông tin về những biến thể $sentence_disease",
+      "$sentence_disease gồm những loại nào",
+      "chưa hiểu $sentence_disease gồm những loại nào",
+      "làm sao phân biệt các loại của $sentence_disease",
+      "làm sao phân biệt loại của $sentence_disease",
+      "làm sao phân biệt được các $sentence_disease",
+      "làm sao phân biệt được các loại của $sentence_disease",
+      "làm sao phân biệt được các loại $sentence_disease",
+      "muốn biết các loại chính của $sentence_disease",
+      "muốn biết các loại chính $sentence_disease",
+      "muốn biết các loại $sentence_disease",
+      "muốn biết có những loại $sentence_disease",
+      "muốn biết có những loại nào $sentence_disease",
+      "muốn biết có những loại nào trong $sentence_disease",
+      "muốn biết $sentence_disease gồm những",
+      "muốn biết $sentence_disease gồm những loại",
+      "muốn biết $sentence_disease gồm những loại nào",
+      "muốn hiểu $sentence_disease gồm những",
+      "muốn hiểu $sentence_disease gồm những loại",
+      "muốn hiểu $sentence_disease gồm những loại nào"
+    ],
+
+    "punc_v1": ["."],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Xin cảm ơn bác",
+      "xin cảm ơn",
+      "nhờ bác sỹ tư vấn",
+      "nhờ bác tư vấn",
+      "mong bác tư vấn",
+      ""
+    ],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"],
+
+    "adv": [
+      "ngày nay,",
+      "vài ngày qua",
+      "vài ngày qua, trên báo có đề cập",
+      "thông tin thời sự đề cập",
+      "trên báo thấy",
+      "trên báo đề cập",
+      "thời sự hằng ngày đề cập"
+    ],
+
+    "adj": [
+      "phổ biến",
+      "rất phổ biến",
+      "ngày càng nhiều",
+      "được nhắc đến nhiều",
+      "thi thoảng xuất hiện"
+    ],
+
+    "verb_main_type_2": ["có những biến thể nào", "có những loại nào"]
+  },
+  "risk_factor": {
+    "sentences": [
+      "$sentence_disease $sentence_risk_factor_1 $punc",
+      "$question_risk_factor $sentence_disease $end_sentence",
+      "$open_sentence $sentence_risk_factor_2 , tôi có nguy cơ mắc $sentence_disease không",
+      "nó $sentence_risk_factor_1"
+    ],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"],
+
+    "sentence_risk_factor_1": [
+      "có mang tính duy truyền",
+      "có mang tính duy truyền không",
+      "có mang tính truyền",
+      "có những rủi ro mắc bệnh",
+      "có những rủi ro nào dễ mắc bệnh",
+      "có những rủi ro nào mắc bệnh",
+      "khu vực châu âu dễ mắc đúng không",
+      "khu vực châu âu mắc đúng không",
+      "mang tính duy truyền không",
+      "tính duy truyền không",
+      "độ tuổi cao dễ mắc bệnh phải không",
+      "ở khu vực châu âu dễ mắc",
+      "ở khu vực châu âu dễ mắc đúng",
+      "ở khu vực châu âu dễ mắc đúng không",
+      "ở độ tuổi cao dễ mắc bệnh",
+      "ở độ tuổi cao dễ mắc bệnh phải",
+      "ở độ tuổi cao dễ mắc bệnh phải không"
+    ],
+
+    "sentence_risk_factor_2": [
+      "có một vài bệnh nền dễ dẫn đến $sentence_disease cao",
+      "gia đình tôi đa phần mắc $sentence_disease",
+      "gia đình đa phần mắc $sentence_disease",
+      "hiện đang ở khu vực nhiễm $sentence_disease cao",
+      "hiện ở khu vực nhiễm $sentence_disease cao",
+      "người cao tuổi thường nhiễm $sentence_disease cao",
+      "thấy người cao tuổi thường nhiễm $sentence_disease cao",
+      "tôi hiện đang khu vực nhiễm $sentence_disease",
+      "tôi hiện đang ở khu vực nhiễm $sentence_disease",
+      "tôi hiện đang ở khu vực nhiễm $sentence_disease cao",
+      "tôi thấy người cao tuổi nhiễm $sentence_disease",
+      "tôi thấy người cao tuổi thường nhiễm $sentence_disease",
+      "tôi thấy người cao tuổi thường nhiễm $sentence_disease cao",
+      "tôi đang có một vài bệnh nền dễ dẫn $sentence_disease",
+      "tôi đang có một vài bệnh nền dễ dẫn đến $sentence_disease",
+      "tôi đang có một vài bệnh nền dễ dẫn đến $sentence_disease cao",
+      "đang có một vài bệnh nền dễ dẫn đến $sentence_disease cao"
+    ],
+    "punc": ["?", ".", ""],
+
+    "question_risk_factor": [
+      "Khu vực nào dễ",
+      "Khu vực nào dễ gặp",
+      "Khu vực nào dễ gặp phải",
+      "Lứa nào dễ mắc phải",
+      "Lứa tuổi nào dễ mắc",
+      "Lứa tuổi nào dễ mắc phải",
+      "Lứa tuổi nào mắc",
+      "Những bệnh dễ dẫn đến",
+      "Những bệnh nào dễ dẫn đến",
+      "Những bệnh nền nào dễ",
+      "Những bệnh nền nào dễ dẫn",
+      "Những bệnh nền nào dễ dẫn đến",
+      "Những khu vực dễ mắc phải",
+      "Những khu vực mắc phải",
+      "Những khu vực nào dễ mắc",
+      "Những khu vực nào dễ mắc phải",
+      "Những khu vực nào mắc",
+      "Những tác động rủi ro",
+      "Những tác động rủi ro của",
+      "Những tác động rủi ro nào",
+      "Những tác động rủi ro nào của",
+      "Những vùng mắc",
+      "Những vùng nào dễ mắc",
+      "Những vùng nào mắc",
+      "Độ nào dễ gặp phải",
+      "Độ tuổi nào dễ",
+      "Độ tuổi nào dễ gặp",
+      "Độ tuổi nào dễ gặp phải"
+    ],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Mong quý viện tư vấn",
+      "Mong bệnh viện tư vấn",
+      "bác sỹ tư vấn",
+      ""
+    ],
+
+    "open_sentence": [
+      "Chào bác sỹ, ",
+      "Chào bác sỹ",
+      "Thưa bác",
+      "Thưa bác sỹ,",
+      "Chào bác sĩ ,",
+      "Chào bác sĩ",
+      "Thưa bác",
+      "Thưa bác sĩ,",
+      "Hi bác sĩ,",
+      "Hi Doctor,",
+      "Hey Doctor,",
+      "Hey DoctorAid",
+      "Hello DoctorAid",
+      ""
+    ]
+  },
+
+  "severe": {
+    "sentences": [
+      "$sentence_disease $question_severe $punc",
+      "$subject $verb_severe $sentence_disease $end_sentence",
+      "$verb_severe $sentence_disease $punc $end_sentence",
+      "$question_severe $punc"
+    ],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"],
+
+    "question_severe": [
+      "có nghiêm trọng không",
+      "có nguy hiểm không",
+      "nghiêm trọng không",
+      "nghiêm trọng như thế nào",
+      "nghiêm trọng ntn",
+      "nghiêm trọng thế nào",
+      "nguy hiểm không",
+      "nguy hiểm như thế nào",
+      "nguy hiểm thế nào",
+      "nó có nghiêm trọng",
+      "nó có nghiêm trọng không",
+      "nó có nguy hiểm",
+      "nó có nguy hiểm không",
+      "nó nghiêm trọng",
+      "nó nghiêm trọng như thế nào",
+      "nó nghiêm trọng ntn",
+      "nó nguy hiểm",
+      "nó nguy hiểm như thế nào",
+      "nó ảnh hưởng như thế nào",
+      "ảnh hưởng như thế nào",
+      "ảnh hưởng thế nào"
+    ],
+
+    "punc": ["?", ".", ""],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "verb_severe": [
+      "chưa biết mức độ nghiêm trọng của",
+      "chưa biết mức độ nguy hiểm",
+      "chưa thấy mức độ nghiêm trọng",
+      "muốn biết mức độ nghiêm trọng",
+      "muốn biết mức độ nghiêm trọng của",
+      "muốn biết mức độ nguy hiểm",
+      "muốn tìm hiểu mức độ",
+      "muốn tìm hiểu mức độ của",
+      "tìm hiểu mức độ",
+      "tìm hiểu mức độ của"
+    ],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Mong quý viện tư vấn",
+      "Mong bệnh viện tư vấn",
+      "bác sỹ tư vấn",
+      ""
+    ]
+    },
+
+    "prevention": {
+        "sentences": [
+            "$verb_prevention $sentence_disease",
+            "$subject $verb_prevention $sentence_disease $end_sentence",
+            "sentence_disease $adj, $verb_prevention"
+        ],
+
+    "verb_prevention": [
+      "chưa biết cách ngăn chặn",
+      "chưa biết cách phòng ngừa",
+      "chưa biết cách phòng tránh",
+      "chưa biết những phương pháp phòng ngừa",
+      "chưa biết những phương pháp phòng tránh",
+      "chưa biết những phương pháp để tránh",
+      "cách ngăn chặn",
+      "cách phòng ngừa",
+      "cách phòng tránh",
+      "cần biết những phương pháp",
+      "cần biết những phương pháp phòng ngừa",
+      "cần biết những phương pháp để",
+      "cần biết những phương pháp để tránh",
+      "cần biết phương pháp phòng ngừa",
+      "cần phương pháp phòng ngừa",
+      "muốn biết cách ngăn chặn",
+      "muốn biết cách phòng ngừa",
+      "muốn biết cách phòng tránh",
+      "muốn biết ngăn chặn",
+      "muốn biết những phương pháp phòng tránh",
+      "muốn biết phòng ngừa",
+      "muốn biết phòng tránh",
+      "muốn biết phương pháp phòng tránh",
+      "muốn ngăn chặn",
+      "muốn phòng ngừa",
+      "muốn phòng tránh",
+      "muốn phương pháp phòng tránh",
+      "muốn tìm hiểu cách phòng",
+      "muốn tìm hiểu cách phòng tránh",
+      "muốn tìm hiểu phòng",
+      "muốn tìm hiểu phòng tránh",
+      "những phương pháp phòng ngừa",
+      "những phương pháp phòng tránh",
+      "những phương pháp để tránh",
+      "tìm hiểu cách phòng",
+      "tìm hiểu cách phòng tránh",
+      "tìm hiểu phòng",
+      "tìm hiểu phòng tránh"
+    ],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Mong quý viện tư vấn",
+      "Mong bệnh viện tư vấn",
+      "bác sỹ tư vấn",
+      ""
+    ],
+
+    "adj": [
+      "ngày càng",
+      "ngày càng nhiều",
+      "nhắc nhiều",
+      "nhắc đến nhiều",
+      "phổ biến",
+      "rất phổ biến",
+      "thi thoảng xuất hiện",
+      "được nhắc",
+      "được nhắc đến",
+      "được nhắc đến nhiều"
+    ]
+  },
+
+  "diagnosis": {
+    "sentences": [
+      "$subject $verb_diagnosis_1 $sentence_disease $end_sentence",
+      "$open_sentence, $adv_of_place $verb_diagnosis_2 $sentence_disease $end_sentence",
+      "$verb_diagnosis_2 $punc"
+    ],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "verb_diagnosis_1": [
+      "chưa biết cách chuẩn đoán nhiễm",
+      "chưa biết cách thực hiện để chuẩn đoán nhiễm",
+      "chưa biết những cách để chuẩn đoán",
+      "chưa biết phương pháp nào để biết được nhiễm",
+      "cách chuẩn đoán nhiễm",
+      "cách thực hiện để chuẩn đoán nhiễm",
+      "muốn biết chuẩn đoán nhiễm",
+      "muốn biết cách chuẩn đoán nhiễm",
+      "muốn biết cách thực hiện chuẩn đoán nhiễm",
+      "muốn biết cách thực hiện để chuẩn đoán nhiễm",
+      "muốn biết những chuẩn đoán",
+      "muốn biết những cách chuẩn đoán",
+      "muốn biết những cách để chuẩn đoán",
+      "muốn biết phương pháp nào để biết nhiễm",
+      "muốn biết phương pháp nào để biết được nhiễm",
+      "muốn biết thực hiện chuẩn đoán nhiễm",
+      "muốn chuẩn đoán nhiễm"
+    ],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Mong quý viện tư vấn",
+      "Mong bệnh viện tư vấn",
+      "bác sỹ tư vấn",
+      ""
+    ],
+
+    "open_sentence": ["Chào bác sỹ", "Thưa bác", ""],
+
+    "adv_of_place": [
+      "tại bệnh viện",
+      "tại viện mình",
+      "tại trung tâm mình",
+      "tại cơ sở bệnh viện mình"
+    ],
+
+    "verb_diagnosis_2": [
+      "cách nào chuẩn đoán",
+      "cách nào chuẩn đoán nhiễm",
+      "cách nào để biết",
+      "có chuẩn đoán nhiễm",
+      "có cách chuẩn đoán nhiễm",
+      "có cách nào chuẩn đoán nhiễm",
+      "có những chuẩn đoán",
+      "có những cách chuẩn đoán",
+      "có những cách nào chuẩn đoán",
+      "có những phương pháp chuẩn đoán",
+      "có những phương pháp chuẩn đoán nào",
+      "có phương pháp chuẩn đoán",
+      "có phương pháp chuẩn đoán nhiễm",
+      "có phương pháp nào chuẩn đoán nhiễm",
+      "dùng cách nào để biết",
+      "dùng phương pháp chuẩn đoán",
+      "dùng phương pháp nào chuẩn đoán",
+      "những cách nào chuẩn đoán",
+      "những phương pháp chuẩn đoán nào",
+      "phương pháp chuẩn đoán",
+      "phương pháp chuẩn đoán nhiễm",
+      "phương pháp chuẩn đoán nào",
+      "phương pháp nào chuẩn đoán",
+      "phương pháp nào chuẩn đoán nhiễm"
+    ],
+
+    "punc": ["?", ".", ""]
+  },
+
+  "treatment": {
+    "sentences": [
+      "$subject $verb_treatment_1 $sentence_disease $end_sentence",
+      "$open_sentence, $adv_of_place $verb_treatment_2 $sentence_disease $punc $end_sentence",
+      "$verb_treatment_3 $sentence_disease $type_question $punc",
+      "$subject $verb_treatment_3 $sentence_disease $type_question $punc $end_sentence",
+      "$verb_treatment_3 $type_question $punc"
+    ],
+
+    "subject": [
+      "tôi",
+      "chị",
+      "anh",
+      "chú",
+      "bác",
+      "con",
+      "em",
+      "mình",
+      "cô",
+      "o",
+      "tui",
+      "mị"
+    ],
+
+    "verb_treatment_1": [
+      "muốn biết cách điều trị",
+      "muốn biết có những cách điều trị",
+      "muốn biết có những cách điều trị cho",
+      "muốn biết có những điều trị",
+      "muốn biết dùng cách nào điều trị",
+      "muốn biết dùng cách nào để điều trị",
+      "muốn biết dùng cách điều trị",
+      "muốn biết phương pháp điều trị",
+      "muốn biết điều trị",
+      "muốn phương pháp điều trị",
+      "muốn điều trị",
+      "tìm hiểu cách điều trị",
+      "tìm hiểu điều trị",
+      "đang tìm hiểu cách điều trị",
+      "đang tìm hiểu điều trị"
+    ],
+
+    "open_sentence": ["Chào bác sỹ", "Thưa bác", ""],
+
+    "adv_of_place": [
+      "tại bệnh viện",
+      "tại viện mình",
+      "tại trung tâm mình",
+      "tại cơ sở bệnh viện mình"
+    ],
+
+    "verb_treatment_2": [
+      "cách nào điều trị",
+      "có cách nào điều trị",
+      "có cách điều trị",
+      "có những cách nào điều trị",
+      "có những cách điều trị",
+      "có những phương pháp nào điều trị",
+      "có những phương pháp điều trị",
+      "có những điều trị",
+      "có phương pháp nào điều trị",
+      "có phương pháp điều trị",
+      "có điều trị",
+      "dùng phương pháp nào điều trị",
+      "dùng phương pháp điều trị",
+      "những cách nào điều trị",
+      "những phương pháp nào điều trị",
+      "phương pháp nào điều trị",
+      "phương pháp điều trị"
+    ],
+
+    "end_sentence": [
+      "Xin cảm ơn bác sỹ",
+      "Mong quý viện tư vấn",
+      "Mong bệnh viện tư vấn",
+      "bác sỹ tư vấn",
+      ""
+    ],
+
+    "verb_treatment_3": ["điều trị", "cách điều trị", "phải điều trị"],
+
+    "type_question": ["thế nào", "như thê nào"],
+
+    "punc": ["?", ".", ""],
+
+    "sentence_disease": ["bệnh $disease", "$disease", "căn bệnh $disease"]
+  }
+}

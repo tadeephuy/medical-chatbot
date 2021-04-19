@@ -43,4 +43,7 @@ There are 2 steps:
 ```
 
 ## Future work
-Entity Linking to enrich Vietnamese KB 
+-   Entity Linking to enrich Vietnamese KB 
+-   Argument inputs
+-   Refactor
+-   Load balancer for KB access

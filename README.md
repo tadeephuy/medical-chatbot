@@ -45,5 +45,6 @@ There are 2 steps:
 ## Future work
 -   Entity Linking to enrich Vietnamese KB 
 -   Argument inputs
+-   Ranking output
 -   Refactor
 -   Load balancer for KB access

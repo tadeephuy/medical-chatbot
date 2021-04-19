@@ -9,8 +9,9 @@ import torch.nn as nn
 import torch.nn.functional as Fs
 
 import os
+from utils import get_batches
 
-class WordLSTM(nn.Module):
+class WordLSTM(nn.Module,vocab_size):
     
     def __init__(self, n_hidden=256, n_layers=4, drop_prob=0.3, lr=0.001):
         super().__init__()

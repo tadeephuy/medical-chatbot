@@ -29,9 +29,21 @@ def create_seq(list_tokens, seq_len = 5):
 #             sequences.append(" ".join(seq))
             sequences.append(seq)
         
-        return sequences
-    else:
-        return list_tokens
+    return sequences
+#     else:
+#         print('list_tokens',list_tokens)
+#         return [list_tokens]
     
-def get_integer_seq(seq):
-    return [token2int[w] for w in seq.split()]
+def get_integer_seq(token2int,list_token):
+    return [token2int[w] for w in list_token]
+
+
+def get_batches(arr_x, arr_y, batch_size):
+         
+    # iterate through the arrays
+    prv = 0
+    for n in range(batch_size, arr_x.shape[0], batch_size):
+        x = arr_x[prv:n,:]
+        y = arr_y[prv:n,:]
+        prv = n
+        yield x, y

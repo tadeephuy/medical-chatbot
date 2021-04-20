@@ -25,6 +25,7 @@ def procNLU():
     
     input_data = request.get_json(force=True) 
     user_mess = input_data['mess']#mess này là string hả tài
+    # print(user_mess)
     user_id = input_data['_id']
 
     result_feedforward = {}
@@ -33,7 +34,7 @@ def procNLU():
         """
             load model predict intent + entities
         """
-        results = NLUproc.inference([input_data.split(" ")])
+        results = NLUproc.inference([user_mess.split(" ")])
         result_feedforward['intent'] = {}
         result_feedforward['intent']['class'] = results[0]["intent"]
         result_feedforward['intent']['confidence'] = results[0]["highest_prop"] 

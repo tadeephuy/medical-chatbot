@@ -93,8 +93,8 @@ class NLUprocess:
                 
                 for i in range(len(intent_preds)):
                     result.append({"intent": self.intent_label_lst[int(intent_preds[i])],
-                                    "highest_prop": self.softmax(torch.from_numpy(intent_preds_cof[i]))[int(intent_preds[i])],
-                                    "prop": self.softmax(torch.from_numpy(intent_preds_cof[i])),
+                                    "highest_prop": float(self.softmax(torch.from_numpy(intent_preds_cof[i]))[int(intent_preds[i])]),
+                                    "prop": self.softmax(torch.from_numpy(intent_preds_cof[i])).cpu().detach().numpy(),
                                     "entities": slot_preds_list[i]
                                     })
         return result

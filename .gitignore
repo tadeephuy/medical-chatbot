@@ -1,3 +1,5 @@
 .vscode
 .ipynb_checkpoints
 phobert/
+__pycache__/
+model/__pycache__/

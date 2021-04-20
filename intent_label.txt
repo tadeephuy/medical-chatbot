@@ -1,0 +1,9 @@
+UNK
+main_type
+risk_factor
+prevention
+overview
+treatment
+symptoms
+diag
+severve

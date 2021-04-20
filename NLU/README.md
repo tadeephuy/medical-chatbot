@@ -1,8 +1,15 @@
-##### Result on test set
+#### Installation
+
+```
+conda env create -f environment.yml
+```
+
+
+#### Result on test set
 
 ![alt text](./image/image.PNG)
 
-##### Download model at [here](https://drive.google.com/drive/folders/1-AH7yrtYpxspNHFh8JqIu7mYKBekMRKU?usp=sharing)
+#### Download pretrained model at [here](https://drive.google.com/drive/folders/1-AH7yrtYpxspNHFh8JqIu7mYKBekMRKU?usp=sharing) and put them on phobert folder
 
 ##### Usage inference 
 ```python inference.py --model "./phobert" --input_text "khi nào tôi được điều trị"```

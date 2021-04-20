@@ -1,6 +1,6 @@
 ##### Result on test set
 
-![alt text](./image/image.png)
+![alt text](./image/image.PNG)
 
 ##### Download model at [here](https://drive.google.com/drive/folders/1-AH7yrtYpxspNHFh8JqIu7mYKBekMRKU?usp=sharing)
 

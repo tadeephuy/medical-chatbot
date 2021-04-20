@@ -94,3 +94,19 @@ class NLUprocess:
                                     })
         return result
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--model", type=str, default="./phobert", help="Path of model")
+    parser.add_argument("--input_text", type=str, help="input")
+
+    args = parser.parse_args()
+
+    NLUmodel = NLUprocess(args.model)
+
+    lines = [args.input_text.split(" ")]
+
+    results = NLUmodel.inference(lines)
+
+    print(results)
+
+

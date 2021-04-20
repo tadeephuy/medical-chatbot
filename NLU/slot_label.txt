@@ -1,0 +1,7 @@
+PAD
+UNK
+O
+B-BỆNH
+I-BỆNH
+B-TRIỆU_CHỨNG
+I-TRIỆU_CHỨNG

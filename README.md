@@ -7,22 +7,25 @@
 
 **1. Query Entity**  
 The script to map given (intent,[entities]) is in `src/main.py`  
-The extracted KB is in `cancer_data/final_kb.json`
 
-Example: `python main.py`   
+The extracted *Vietnamese KB* is in `cancer_data/final_kb.json`  
+
+To extract enties:  
+`python main.py [--q Query](boolean) [--s SemanticFrame](boolean) [--path_out Path](optional) [--i Intent] [--e Entites]`
+
+
+Example: 
 ```     
-mapper = Mapper('../cancer_data/final_kb.json')
-ans = mapper.query('symptom',['thalassemia','ung thư gan',"buồn nôn"])
+python main.py --q True --i 'symptom' --e 'thalassemia' 'ung thư gan' 'buồn nôn'
 ```
 Output:
 ```
 thalassemia : mệt mỏi
-thalassemia : mệt mỏi
 thalassemia : không có triệu chứng
-ung thư gan : giảm cân mà không cần cố gắng
+thalassemia : chỉ những người nhẹ
 ung thư gan : giảm cân mà không cần cố gắng
 ung thư gan : ăn mất ngon
-buồn nôn : ung thư gan
+ung thư gan : đau bụng trên
 buồn nôn : ung thư gan
 ```
 **2. Build KB**
@@ -42,9 +45,10 @@ There are 2 steps:
     python utils.py
 ```
 
+The output files are in : `symptoms_ent/` folder
 ## Future work
 -   Entity Linking to enrich Vietnamese KB 
--   Argument inputs
--   Ranking output
--   Refactor
+-   Argument inputs [x]
+-   Ranking output 
+-   Refactor [x]
 -   Load balancer for KB access

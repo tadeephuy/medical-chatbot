@@ -53,8 +53,6 @@ def get_entity_list(path,out_file='entities.txt',src=['ung thư gan']):
         textfile.write(element + "\n")
 
 if __name__ == '__main__':
-    # refine_data('../cancer_data/database_vi.json','../cancer_data/final_kb.json')
-    get_entity_list('../cancer_data/final_kb.json',out_file='thalas_ent.txt',src=['thalassemia'])
-    get_entity_list('../cancer_data/final_kb.json',out_file='recancer_ent.txt',src=['ung thư trực tràng'])
-    get_entity_list('../cancer_data/final_kb.json',out_file='licancer_ent.txt',src=['ung thư gan'])
-    
+    get_entity_list('../cancer_data/final_kb.json',out_file='symptoms_ent/thalas_ent.txt',src=['thalassemia'])
+    get_entity_list('../cancer_data/final_kb.json',out_file='symptoms_ent/recancer_ent.txt',src=['ung thư trực tràng'])
+    get_entity_list('../cancer_data/final_kb.json',out_file='symptoms_ent/licancer_ent.txt',src=['ung thư gan'])

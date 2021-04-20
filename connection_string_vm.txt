@@ -1,1 +1,0 @@
-ssh -i taindp.vm_key.pem taindp_azure@20.94.192.238

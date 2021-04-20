@@ -1,3 +1,0 @@
-az ad app create --display-name SmartAssistant --password User@2020@# --available-to-other-tenants
-
-az deployment sub create --template-file /home/taindp/VINBRAIN_INTERNSHIP/deploymentTemplates/template-with-new-rg.json --location westus2 --parameters appId=434a33c9-d3f4-4ac6-aa78-642a730ce77d appSecret=User@2020@# botId=SmartAssistant_v1 botSku=F0 newAppServicePlanName=smartassistantASP newWebAppName=smartassistantv1 groupName=smartassistant_v1 groupLocation=westus2 newAppServicePlanLocation=westus

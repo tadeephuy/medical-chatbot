@@ -1,4 +1,4 @@
-## Define REST API
+## NLU API 
 
 ### Installation
     python>=3.6
@@ -9,7 +9,7 @@
 
 Trained `phobert` checkpoint can be download [here](https://drive.google.com/drive/folders/1-AH7yrtYpxspNHFh8JqIu7mYKBekMRKU?usp=sharing)
 
-Note : if transformer==3.0.2 bug --> use ==4.5.1  
+Note : if transformers==3.0.2 bug --> use transformers==4.5.1  
 
 
 ### Usage 
@@ -54,8 +54,8 @@ url = 'http://127.0.0.1:5000/proc-nlu'
     "status": 200
 }
 ```
+Method : POST  
 url = 'http://127.0.0.1:5000/proc-nlu-kb'
-Method : POST
 ```
 {
     "_id": 1,
@@ -69,15 +69,3 @@ Method : POST
     "status": 200
 }
 ```
-#### Testing
-
-Call request POSTMAN
-
-
-{\
-    "mess": text,\
-    "id" : id\
-}
-
-URL endpoint: localhost:????/proc-nlu\
-Attribute: POST

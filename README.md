@@ -7,8 +7,7 @@
     seqeval==0.0.12
     pytorch-crf==0.7.2
 
-Trained `phobert` checkpoint can be download here : https://drive.google.com/drive/folders/1-O68dwR3QzKtIsjNFX2lZ5FqhrQ0IN5g?usp=sharing  
-(Vu has higher accuracy model. Please update the model path)
+Trained `phobert` checkpoint can be download [here](https://drive.google.com/drive/folders/1-AH7yrtYpxspNHFh8JqIu7mYKBekMRKU?usp=sharing)
 
 Note : if transformer==3.0.2 bug --> use ==4.5.1  
 

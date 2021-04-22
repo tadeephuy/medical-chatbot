@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
 
-from inference import NLUprocess
-
+# from inference import NLUprocess
+from manger import Manager
 
 
 app = Flask(__name__)
-NLUproc = NLUprocess("./phobert")
-
+# NLUproc = NLUprocess("./phobert")
+Manager = Manager()
 @app.route('/proc-nlu', methods=['POST'])
 def procNLU():
     """
@@ -34,7 +34,8 @@ def procNLU():
         """
             load model predict intent + entities
         """
-        results = NLUproc.inference([user_mess.split(" ")])
+        # results = NLUproc.inference([user_mess.split(" ")])
+        results = Manager.get_answer(user_mess)
         result_feedforward['intent'] = {}
         result_feedforward['intent']['class'] = results[0]["intent"]
         result_feedforward['intent']['confidence'] = results[0]["highest_prop"] 
@@ -90,7 +91,9 @@ def procNLU_KB():
         """
             load model predict intent + entities
         """
-        results = NLUproc.inference([user_mess.split(" ")],use_kb =True)
+        # results = NLUproc.inference([user_mess.split(" ")],use_kb =True)
+        results = Manager.get_answer(user_mess,use_kb =True)
+
         # result_feedforward['intent'] = {}
         # result_feedforward['intent']['class'] = results[0]["intent"]
         # result_feedforward['intent']['confidence'] = results[0]["highest_prop"] 

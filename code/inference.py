@@ -52,7 +52,7 @@ class NLUprocess:
 
         self.softmax = nn.Softmax()
 
-        self.mapper = Mapper('./kb/database.json')    
+        # self.mapper = Mapper('./kb/database.json')    
 
     def inference(self, lines,use_kb=False):
         dataset = convert_input_file_to_tensor_dataset(lines,\
@@ -102,60 +102,9 @@ class NLUprocess:
                                     "prop": self.softmax(torch.from_numpy(intent_preds_cof[i])).cpu().detach().numpy(),
                                     "entities": slot_preds_list[i]
                                     })
-        if use_kb:
-            result = result[0]
-            final_result = self.query_from_kb(lines,result)
-            final_result['intent'] = result['intent']
-            return final_result        
+
         return result
 
-    def query_from_kb(self,mess,result):
-        '''
-            Process single mess. Multi messages would be updated later.
-        '''
-        entities = self.get_entities(mess[0],result['entities'])
-        
-        # TODO : Ranking system
-        if result['intent'] == 'symptoms':
-            result['intent'] = 'symptom'
-        
-        
-        ans = self.mapper.query(result['intent'], entities)
-        final_ans = {}
-        if ans:
-            final_ans = ans[0]
-        else:
-            final_ans['answer_entity'] = 'no match found'
-            final_ans['entity'] = entities
-            final_ans['intent'] = result['intent']
-            final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
-
-        return final_ans
-
-    def get_entities(self,mess,preds):
-        entities = []
-        tmp = []
-        for token,label in zip(mess,preds):
-            # k = label.split()
-            # print(k)
-            if 'B' in label or 'I' in label:
-                tmp.append(token)
-            elif label=='O' and tmp != []:
-                if len(tmp) > 1:
-                    tmp= ' '.join(tmp)
-                else:
-                    tmp = tmp[0]
-                entities.append(tmp)
-                tmp = [] 
-        if tmp != []:
-            if len(tmp) > 1:
-                tmp= ' '.join(tmp)
-            else:
-                tmp = tmp[0]
-            entities.append(tmp)
-            tmp = [] 
-        return entities
-       
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default="./phobert", help="Path of model")

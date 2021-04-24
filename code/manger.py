@@ -60,7 +60,7 @@ class Manager:
             return final_ans
 
     def refine_input_string(self,s):
-        s = s.strip()
+        s = s.lower().strip()
         s = re.sub('([.,!?()])', r' \1 ', s)
         s = re.sub('\s{2,}', ' ', s)
         s = s.strip()

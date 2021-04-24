@@ -5,19 +5,20 @@
 
 # Check question
 
-list_question_signal = [" hả ", "chứ", "có biết", "phải không", "đâu", "là sao", "nào", "khi nào", "nơi nào", "không ạ", "k ạ", "là sao", "nữa vậy", "chưa á", "ko ạ", "sao ạ", "chưa ạ", "sao vậy", "không vậy", "k vậy", "ko vậy", "chưa vậy", "thế", " nhỉ ", " ai", " ai ", "ở đâu", "ở mô", "đi đâu", "bao giờ",
-                        "bao lâu", "khi nào", "lúc nào", "hồi nào", "vì sao", "tại sao", "thì sao", "làm sao", "như nào", "thế nào", "cái chi", "gì", "bao nhiêu", "mấy", "?", " hả ", "được không", "được k", "được ko", "vậy ạ", "nào vậy", "nào thế", "nữa không", "đúng không", "đúng k", "đúng ko", "nữa k", "nữa ko", "nào ấy", "nào ạ"]
-list_question_signal_last = ["vậy", "chưa",
-                             "không", "sao", "à", "hả", "nhỉ", "thế"]
-list_object = ["bạn", "cậu", "ad", "anh", "chị", "admin", "em", "mày", "bot"]
-list_subject = ["mình", "tôi", "tớ", "tao", "tui", "anh", "em"]
+# list_question_signal = [" hả ", "chứ", "có biết", "phải không", "đâu", "là sao", "nào", "khi nào", "nơi nào", "không ạ", "k ạ", "là sao", "nữa vậy", "chưa á", "ko ạ", "sao ạ", "chưa ạ", "sao vậy", "không vậy", "k vậy", "ko vậy", "chưa vậy", "thế", " nhỉ ", " ai", " ai ", "ở đâu", "ở mô", "đi đâu", "bao giờ",
+#                         "bao lâu", "khi nào", "lúc nào", "hồi nào", "vì sao", "tại sao", "thì sao", "làm sao", "như nào", "thế nào", "cái chi", "gì", "bao nhiêu", "mấy", "?", " hả ", "được không", "được k", "được ko", "vậy ạ", "nào vậy", "nào thế", "nữa không", "đúng không", "đúng k", "đúng ko", "nữa k", "nữa ko", "nào ấy", "nào ạ"]
+# list_question_signal_last = ["vậy", "chưa",
+#                              "không", "sao", "à", "hả", "nhỉ", "thế"]
+# list_object = ["bạn", "cậu", "ad", "anh", "chị", "admin", "em", "mày", "bot"]
+# list_subject = ["mình", "tôi", "tớ", "tao", "tui", "anh", "em"]
 list_verb_want = ["hỏi", "biết", "xin","cần","nhờ","tư vấn","muốn","yêu cầu","thông tin về ",
-"biết về","hỏi về ","tìm hiểu về","là gì","gì"]
-list_verb_have = ["có", "được"]
+"biết về","hỏi về ","tìm hiểu về","là gì","gì","cách","truy vấn","lấy ra","tìm hiểu",
+"hiểu về"]
+# list_verb_have = ["có", "được"]
 
 # Random intent
 
-list_hello_notification = ["hello", "chào", "helo",
+list_hello_notification = ["hello", "chào", "helo","tôi cần tư vấn","tôi cần hỗ trợ",
                            "xin chào", 'chào bác sĩ', 'chào bạn', 'chào bot', 'alo']
 list_done_notification = ["bye", "tạm biệt", "bai",
                           "gặp lại", 'pp', 'goodbye', 'bye bye', 'bai bai']

@@ -90,7 +90,8 @@ class Manager:
             return final_ans
         else:
             ans = self.balancer.query(disease,result['intent'], entities)
-            if ans:
+            # print(ans)
+            if ans != -1 and ans != []:
                 final_ans = ans[0]
                 # final_ans = self.fill_empty_values(final_ans)
             else:

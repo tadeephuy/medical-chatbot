@@ -26,7 +26,7 @@ class Manager:
         '''
         # check question 
         user_mess = self.refine_input_string(user_mess)
-        if self.is_question(user_mess):
+        if self.question_classifier.is_question(user_mess):
             is_random_intent = self.question_classifier.is_random_intent(user_mess)
             if is_random_intent != "No Random":
                 final_ans = {}
@@ -66,9 +66,6 @@ class Manager:
         s = s.strip()
         return s
     
-    def is_question(self,mess):
-        return True
-
     def query_from_kb(self,mess,result):
         '''
             Process single mess. Multi messages would be updated later.
@@ -85,7 +82,7 @@ class Manager:
         
         disease = self.tracker.get_prev_disease(entities)
      
-        if disease == -1 :
+        if disease == -1 or disease == []:
             final_ans['answer_entity'] = 'no match found'
             final_ans['entity'] = entities
             final_ans['intent'] = result['intent']

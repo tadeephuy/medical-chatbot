@@ -9,3 +9,5 @@ tokenizers==0.10.2
 torch==1.6.0
 transformers==4.5.1
 tqdm
+pymongo
+flask-pymongo

@@ -13,7 +13,7 @@
 # list_subject = ["mình", "tôi", "tớ", "tao", "tui", "anh", "em"]
 list_verb_want = ["hỏi", "biết", "xin","cần","nhờ","tư vấn","muốn","yêu cầu","thông tin về ",
 "biết về","hỏi về ","tìm hiểu về","là gì","gì","cách","truy vấn","lấy ra","tìm hiểu",
-"hiểu về"]
+"hiểu về","làm sao","mún","làm thế nào","làm gì"]
 # list_verb_have = ["có", "được"]
 
 # Random intent

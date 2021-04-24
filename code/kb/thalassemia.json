@@ -1,4 +1,6 @@
 {"source": "thalassemia", "relation": "symptom", "target": "thalassemia", "original_text": "Bệnh nhân Thalassemia có thể vào viện với các dấu hiệu như:Người mệt mỏi, hoa mắt chóng mặt,Da nhợt nhạt, xanh xao; có thể vàng da, vàng mắt,Nước tiểu vàng sẫm,Khó thở khi gắng sức,Trẻ chậm lớn"}
+{"source": "thalassemia", "relation": "symptom", "target": "thalas", "original_text": "Bệnh nhân Thalassemia có thể vào viện với các dấu hiệu như:Người mệt mỏi, hoa mắt chóng mặt,Da nhợt nhạt, xanh xao; có thể vàng da, vàng mắt,Nước tiểu vàng sẫm,Khó thở khi gắng sức,Trẻ chậm lớn"}
+{"source": "thalassemia", "relation": "symptom", "target": "thallas", "original_text": "Bệnh nhân Thalassemia có thể vào viện với các dấu hiệu như:Người mệt mỏi, hoa mắt chóng mặt,Da nhợt nhạt, xanh xao; có thể vàng da, vàng mắt,Nước tiểu vàng sẫm,Khó thở khi gắng sức,Trẻ chậm lớn"}
 {"source": "thalassemia", "relation": "symptom", "target": "mệt mỏi", "original_text": "khiến bạn mệt mỏi"}
 {"source": "mệt mỏi", "relation": "symptom", "target": "thalassemia", "original_text": "khiến bạn mệt mỏi"}
 {"source": "thalassemia", "relation": "symptom", "target": "không có triệu chứng", "original_text": "một người có một đặc điểm hoặc hình thức nhỏ có thể không có triệu chứng hoặc chỉ là những người nhẹ"}
@@ -505,3 +507,4 @@
 {"source": "thalassemia", "relation": "overview", "target": "giảm khả năng sinh sản.", "original_text": "một số người cũng có thể trì hoãn tăng trưởng, xương yếu và dễ vỡ (loãng xương) và giảm khả năng sinh sản."}
 {"source": "thalassemia", "relation": "overview", "target": "thiếu máu.", "original_text": "trong một số loại này dẫn đến thiếu oxy, dẫn đến thiếu máu và mệt mỏi."}
 {"source": "thalassemia", "relation": "overview", "target": "mệt mỏi", "original_text": "trong một số loại này dẫn đến thiếu oxy, dẫn đến thiếu máu và mệt mỏi."}
+{"source": "thalassemia", "relation": "prevention", "target": "thalassemia", "original_text": "đây là bệnh do duy truyền nên hiện chưa có cách phòng bệnh cụ thể."}

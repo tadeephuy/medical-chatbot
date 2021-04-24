@@ -29,7 +29,9 @@ class Mapper:
             tmp_ans = []
             for sample in self.data:
                 if intent == sample['relation']:
+                    # What if entity is nearly correct 
                     if ent == sample['source']:
+                    # if self.check_linking(ent,sample['source']) == True:
                         # final_answer.append({
                         item = {
                             'entity': ent,
@@ -50,6 +52,31 @@ class Mapper:
             final_answer.extend(tmp_ans)
         # Ranking/sorting answer
 
+        if final_answer == []:
+            for ent in entities:
+                tmp_ans = []
+                for sample in self.data:
+                    if intent == sample['relation']:
+                        # What if entity is nearly correct 
+                        if self.check_linking(ent,sample['source']) == True:
+                            # final_answer.append({
+                            item = {
+                                'entity': ent,
+                                'answer_entity': sample['target'],
+                                'original_text': sample['original_text']
+                            }
+                            if item not in tmp_ans:
+                                tmp_ans.append(item)
+                        elif ent == sample['target']:
+                            item = {
+                                'entity': ent,
+                                'answer_entity': sample['source'],
+                                'original_text': sample['original_text']
+                            }
+                            if item not in tmp_ans:
+                                tmp_ans.append(item)
+                tmp_ans = tmp_ans[:3]
+                final_answer.extend(tmp_ans)
         return final_answer
 
     def get_semanitc_frame(self, intent, entities,path_out):
@@ -78,6 +105,16 @@ class Mapper:
 
         return agent_action
 
+    def check_linking(self,ent1,ent2):
+        cnt = 0
+        ent1 = ent1.split(' ')
+        ent2 = ent2.split(' ')
+        for token in ent1:
+            if token in ent2:
+                cnt += 1
+        if cnt >= (len(ent2) // 2):
+            return True
+        return False
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()

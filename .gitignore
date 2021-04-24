@@ -1,6 +1,10 @@
 .vscode
 .ipynb_checkpoints
-phobert/
+code/phobert/
 __pycache__/
 model/__pycache__/
+code/__pycache__/
+code/kb/__pycache__/
+code/kb/__pycache__/
+code/tracker/__pycache__/
 *.bin

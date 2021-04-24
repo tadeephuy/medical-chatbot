@@ -6,14 +6,13 @@
     seqeval==0.0.12
     pytorch-crf==0.7.2
 
-Trained `phobert` checkpoint can be download here : https://drive.google.com/drive/folders/1-O68dwR3QzKtIsjNFX2lZ5FqhrQ0IN5g?usp=sharing  
+Trained `phobert` checkpoint can be download here : https://drive.google.com/drive/u/1/folders/1Tp5-tYNLWes1EJb-YTixpQlLJKp-B4dZ
 
 Then copy into `code/phobert` directory
 
 (Vu has higher accuracy model. Please update the model path)
 
 Note : if transformers==3.0.2 bug --> use transformers==4.5.1  
-
 
 ### Usage 
 
@@ -58,8 +57,10 @@ url = 'http://127.0.0.1:5000/proc-nlu'
     "status": 200
 }
 ```
+
 Method : POST  
 url = 'http://127.0.0.1:5000/proc-nlu-kb'
+
 ```
 {
     "_id": 1,

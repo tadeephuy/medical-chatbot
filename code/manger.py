@@ -25,7 +25,7 @@ class Manager:
             return "not intent"
         '''
         # check question 
-        
+        user_mess = self.refine_input_string(user_mess)
         if self.is_question(user_mess):
             is_random_intent = self.question_classifier.is_random_intent(user_mess)
             if is_random_intent != "No Random":
@@ -63,7 +63,8 @@ class Manager:
         s = s.strip()
         s = re.sub('([.,!?()])', r' \1 ', s)
         s = re.sub('\s{2,}', ' ', s)
-        return ' '.s
+        s = s.strip()
+        return s
     
     def is_question(self,mess):
         return True
@@ -79,6 +80,8 @@ class Manager:
         # TODO : Ranking system
         if result['intent'] == 'symptoms':
             result['intent'] = 'symptom'
+        if result['intent'] == 'diag':
+            result['intent'] = 'method_diagnosis'
         
         disease = self.tracker.get_prev_disease(entities)
      

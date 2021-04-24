@@ -11,7 +11,7 @@ list_question_signal_last = ["vậy", "chưa",
     "không", "sao", "à", "hả", "nhỉ", "thế"]
 list_object = ["bạn", "cậu", "ad", "anh", "chị", "admin", "em", "mày", "bot"]
 list_subject = ["mình", "tôi", "tớ", "tao", "tui", "anh", "em"]
-list_verb_want = ["hỏi", "biết", "xin"]
+list_verb_want = ["hỏi", "biết", "xin", "cần"]
 list_verb_have = ["có", "được"]
 
 # Random intent
@@ -34,20 +34,25 @@ list_disagree_notification = ['không phải', 'no', 'sai rồi', 'sai']
 
 
 class QuestionChecker:
-    def __init__(self):
-        self.mess = 'None'
+	def __init__(self):
+		self.mess = 'None'
 
-    def is_random_intent(self, message):
-        if message in list_hello_notification:
-            return 'Hello human :)'
-        if message in list_done_notification:
-            return "Chúc bạn một ngày tốt lành"
-        if message in list_thanks_notification:
-            return "Chúc bạn một ngày tốt lành"
-        if message in list_anything_notification:
-            return "Tôi giúp được gì cho bạn ? "
-        return "No Random"
-        
+	def is_random_intent(self, message):
+		if message in list_hello_notification:
+			return 'Hello human :)'
+		if message in list_done_notification:
+			return "Chúc bạn một ngày tốt lành"
+		if message in list_thanks_notification:
+			return "Chúc bạn một ngày tốt lành"
+		if message in list_anything_notification:
+			return "Tôi giúp được gì cho bạn ? "
+		return "No Random"
+
+	def is_question(self, message):
+		for syl in list_verb_want:
+			if message.lower().find(syl) != -1:
+				return True
+		return False
 	# def catch_biz_rand_intent(self, biz, rand):
 	# 	"""
 	# 	classify between business intent & random intent\

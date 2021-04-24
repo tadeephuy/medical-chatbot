@@ -4,12 +4,15 @@ from kb.balancer import Balancer
 from tracker.tracker import Tracker
 from inference import NLUprocess
 from check_question import QuestionChecker
+
+from define_pattern_response import DICT_PATTERN_RESPONSE
 class Manager:
     def __init__(self):
         self.tracker = Tracker()
         self.balancer = Balancer() 
         self.NLUproc = NLUprocess("./phobert")
         self.question_classifier = QuestionChecker()
+        self.pattern_response = DICT_PATTERN_RESPONSE
 
     def get_answer(self,user_mess,use_kb = False):        
         # 0 : is biz , 1 : is random : 2 : not intent
@@ -26,7 +29,9 @@ class Manager:
         '''
         # check question 
         user_mess = self.refine_input_string(user_mess)
-        if self.is_question(user_mess):
+        if self.question_classifier.is_question(user_mess):
+            # print('='*50)
+            # print('Here')
             is_random_intent = self.question_classifier.is_random_intent(user_mess)
             if is_random_intent != "No Random":
                 final_ans = {}
@@ -56,6 +61,11 @@ class Manager:
             final_ans['answer_entity'] = 'no match found'
             final_ans['entity'] = ''
             final_ans['intent'] = ''
+
+            # default_response = 'Mình không có thông tin *ENTITY* cho bệnh *DISEASE* này'.replace('*DISEASE*',entity_disease).replace('*ENTITY*',DICT_PATTERN_REPSONSE['treatment'])
+
+            # final_ans['original_text'] = 
+
             final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
             return final_ans
 
@@ -66,8 +76,8 @@ class Manager:
         s = s.strip()
         return s
     
-    def is_question(self,mess):
-        return True
+    # def is_question(self,mess):
+    #     return True
 
     def query_from_kb(self,mess,result):
         '''
@@ -84,8 +94,12 @@ class Manager:
             result['intent'] = 'method_diagnosis'
         
         disease = self.tracker.get_prev_disease(entities)
-     
+
+        # print('='*50)
+        # print('disease',disease)
+
         if disease == -1 :
+            # print('hereeee')
             final_ans['answer_entity'] = 'no match found'
             final_ans['entity'] = entities
             final_ans['intent'] = result['intent']
@@ -93,16 +107,21 @@ class Manager:
             return final_ans
         else:
             ans = self.balancer.query(disease,result['intent'], entities)
-            # print(ans)
+            # print("ans",ans)
             if ans != -1 and ans != []:
                 final_ans = ans[0]
                 # final_ans = self.fill_empty_values(final_ans)
             else:
+                # print('result',result)
+                # print('hereeee')
                 final_ans['answer_entity'] = 'no match found'
                 final_ans['entity'] = entities
                 final_ans['intent'] = result['intent']
-                final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
 
+                default_response = 'Mình không có thông tin *ENTITY* cho bệnh *DISEASE* này'.replace('*DISEASE*',disease).replace('*ENTITY*',self.pattern_response[result['intent']])
+
+                # final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
+                final_ans['original_text'] = default_response
         return final_ans
 
     def get_entities(self,mess,preds):

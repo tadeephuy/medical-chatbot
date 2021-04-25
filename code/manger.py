@@ -70,7 +70,7 @@ class Manager:
             return final_ans
 
     def refine_input_string(self,s):
-        s = s.strip()
+        s = s.lower().strip()
         s = re.sub('([.,!?()])', r' \1 ', s)
         s = re.sub('\s{2,}', ' ', s)
         s = s.strip()
@@ -97,8 +97,8 @@ class Manager:
 
         # print('='*50)
         # print('disease',disease)
-
-        if disease == -1 :
+        # Ensure the first time query must have disease --> So all query has disease
+        if disease == -1 or disease == []:
             # print('hereeee')
             final_ans['answer_entity'] = 'no match found'
             final_ans['entity'] = entities

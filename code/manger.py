@@ -13,7 +13,8 @@ class Manager:
         self.NLUproc = NLUprocess("./phobert")
         self.question_classifier = QuestionChecker()
         self.pattern_response = DICT_PATTERN_RESPONSE
-
+        self.stopwords = self.read_file('./stopwords.txt')
+        
     def get_answer(self,user_mess,use_kb = False):        
         # 0 : is biz , 1 : is random : 2 : not intent
         '''
@@ -104,6 +105,10 @@ class Manager:
         
         disease = self.tracker.get_prev_disease(entities)
 
+        # Entites is not empty and non sense
+        if entities == [] or entities[0] in self.stopwords:
+            entities = [disease]
+
         # print('='*50)
         # print('disease',disease)
         # Ensure the first time query must have disease --> So all query has disease
@@ -175,3 +180,8 @@ class Manager:
             final_ans['original_text'] = is_random_intent
         
         return final_ans
+    
+    def read_file(self,path):
+        file1 = open(path, 'r')
+        Lines = file1.readlines()
+        return Lines

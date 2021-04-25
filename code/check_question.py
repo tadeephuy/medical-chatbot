@@ -22,7 +22,7 @@ list_verb_want = ["hỏi", "biết", "xin","cần","nhờ","tư vấn","muốn",
 "biết về","hỏi về ","tìm hiểu về","là gì","gì","cách","truy vấn","lấy ra","tìm hiểu",
 "hiểu về","làm sao","mún","làm thế nào","làm gì"," hả ", "chứ", "có biết", "phải không", "đâu", "là sao", "nào", "khi nào", "nơi nào", "không ạ", "k ạ", "là sao", "nữa vậy", "chưa á", "ko ạ", "sao ạ", "chưa ạ", "sao vậy", "không vậy", "k vậy", "ko vậy", "chưa vậy", "thế", " nhỉ ", " ai", " ai ", "ở đâu", "ở mô", "đi đâu", "bao giờ",
                         "bao lâu", "khi nào", "lúc nào", "hồi nào", "vì sao", "tại sao", "thì sao", "làm sao", "như nào", "thế nào", "cái chi", "gì", "bao nhiêu", "mấy", "?", " hả ", "được không", "được k", "được ko", "vậy ạ", "nào vậy", "nào thế", "nữa không", "đúng không", "đúng k", "đúng ko", "nữa k", "nữa ko", "nào ấy", "nào ạ","vậy", "chưa",
-                             "không", "sao", "à", "hả", "nhỉ", "thế"]
+                             "không", "sao", "à", "hả", "nhỉ", "thế","ra sao"]
 # list_verb_have = ["có", "được"]
 
 # Random intent

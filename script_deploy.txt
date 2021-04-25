@@ -1,6 +1,6 @@
-az ad app create --display-name "medicalbotv2" --password "User@2020@#" --available-to-other-tenants
+az ad app create --display-name "medicalbotv3" --password "User@2020@#" --available-to-other-tenants
 
-az deployment sub create --template-file "/home/taindp/VINBRAIN_INTERNSHIP/app/MedicalBot/deploymentTemplates/template-with-new-rg.json" --location westus2 --parameters appId="d2649273-e11e-4abb-9e40-7cfc2ed6be0e" appSecret="User@2020@#" botId="medicalbot_v2" botSku=F0 newAppServicePlanName="medicalbotASPv2" newWebAppName="medicalbotv2" groupName="medicalbot_v2" groupLocation="westus2" newAppServicePlanLocation="westus2"
+az deployment sub create --template-file "/home/taindp/deploy/medicalbot/MedicalBot/deploymentTemplates/template-with-new-rg.json" --location westus2 --parameters appId="c457555f-d957-4645-b604-c4b494c089ee" appSecret="User@2020@#" botId="medicalbot_v3" botSku=F0 newAppServicePlanName="medicalbotASPv3" newWebAppName="medicalbotv3" groupName="medicalbot_v3" groupLocation="westus2" newAppServicePlanLocation="westus2"
 
 az webapp deployment source config-zip --resource-group "medicalbot_v2" --name "medicalbotv2" --src "/home/taindp/VINBRAIN_INTERNSHIP/app/MedicalBot.zip"
 

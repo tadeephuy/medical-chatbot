@@ -110,6 +110,8 @@ class Manager:
             # print("ans",ans)
             if ans != -1 and ans != []:
                 final_ans = ans[0]
+                if type(final_ans['original_text'])==list:
+                    final_ans['original_text'] = ' '.join(final_ans['original_text'])
                 # final_ans = self.fill_empty_values(final_ans)
             else:
                 # print('result',result)

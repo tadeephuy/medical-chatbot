@@ -258,3 +258,4 @@
 {"source": "ung thư trực tràng", "relation": "treatment", "target": "khối u stromal đường tiêu hóa", "original_text": "Chưa có cách điều trị cụ thể. Xin hãy đến bệnh viện gần nhất để có phương pháp điều trị cụ thể."}
 {"source": "ung thư trực tràng", "relation": "treatment", "target": "u lymphoma.", "original_text": "Chưa có cách điều trị cụ thể. Xin hãy đến bệnh viện gần nhất để có phương pháp điều trị cụ thể."}
 {"source": "ung thư trực tràng", "relation": "treatment", "target": "ung thư trực tràng di truyền", "original_text": "Chưa có cách điều trị cụ thể. Xin hãy đến bệnh viện gần nhất để có phương pháp điều trị cụ thể."}
+{"source": "ung thư trực tràng", "relation": "prevention", "target": "ung thư trực tràng", "original_text": "Phòng ngừa ung thư đại trực tràng qua chế độ dinh dưỡng:Ăn nhiều hoa quả, rau và ngũ cốc nguyên chất giàu chất xơ,Hạn chế thức ăn nhiều dầu mỡ, nhất là chất béo no,Bổ sung axit folic từ thực vật,..."}

@@ -34,12 +34,13 @@ class Manager:
             # print('Here')
             is_random_intent = self.question_classifier.is_random_intent(user_mess)
             if is_random_intent != "No Random":
+                # print('herrrrree')
                 final_ans = {}
                 final_ans['answer_entity'] = 'no match found'
                 final_ans['entity'] = ''
                 final_ans['intent'] = 'random intent'
                 final_ans['original_text'] = is_random_intent
-                return final_ans
+                # return final_ans
 
             user_mess = user_mess.split(" ")
 
@@ -48,26 +49,33 @@ class Manager:
             if use_kb:
                 result = result[0]
                 final_ans = self.query_from_kb(user_mess,result)
-                final_ans['intent'] = result['intent']
-                self.tracker.update(final_ans['intent'],final_ans['entity'])
+                if result['intent'] != 'UNK':
+                    final_ans['intent'] = result['intent']
+                    self.tracker.update(final_ans['intent'],final_ans['entity'])
+                # else:
+                    return final_ans
             else:
-                final_ans = result
+                return final_ans
+                # final_ans = result
             # final_ans = self.get_final_answer(is_random_intent,final_ans)
-            return final_ans
+            # return final_ans
         else:
             # print('not intent')
             # Not intent
-
-            final_ans = {}
-            final_ans['answer_entity'] = 'no match found'
-            final_ans['entity'] = ''
-            final_ans['intent'] = ''
-
-            # default_response = 'Mình không có thông tin *ENTITY* cho bệnh *DISEASE* này'.replace('*DISEASE*',entity_disease).replace('*ENTITY*',DICT_PATTERN_REPSONSE['treatment'])
-
-            # final_ans['original_text'] = 
-
-            final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
+            is_random_intent = self.question_classifier.is_random_intent(user_mess)
+            if is_random_intent != "No Random":
+                # print('herrrrree')
+                final_ans = {}
+                final_ans['answer_entity'] = 'no match found'
+                final_ans['entity'] = ''
+                final_ans['intent'] = 'random intent'
+                final_ans['original_text'] = is_random_intent
+            else:
+                final_ans = {}
+                final_ans['answer_entity'] = 'no match found'
+                final_ans['entity'] = ''
+                final_ans['intent'] = ''
+                final_ans['original_text'] = 'Xin lỗi!\n Mình không hiểu những gì bạn nói. Mời bạn cung cấp lại thông tin giúp mình !'
             return final_ans
 
     def refine_input_string(self,s):

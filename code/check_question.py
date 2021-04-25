@@ -28,7 +28,7 @@ list_verb_want = ["hỏi", "biết", "xin","cần","nhờ","tư vấn","muốn",
 # Random intent
 
 list_hello_notification = ["hello", "chào", "helo","tôi cần tư vấn","tôi cần hỗ trợ",
-                           "xin chào", 'chào bác sĩ', 'chào bạn', 'chào bot', 'alo']
+                           "xin chào", 'chào bác sĩ', 'chào bạn', 'chào bot', 'alo','hi']
 list_done_notification = ["bye", "tạm biệt", "bai",
                           "gặp lại", 'pp', 'goodbye', 'bye bye', 'bai bai']
 list_thanks_notification = ["cảm ơn", "tks", "thanks", 'thank', 'cảm ơn bác sĩ',
@@ -45,25 +45,34 @@ list_disagree_notification = ['không phải', 'no', 'sai rồi', 'sai']
 
 
 class QuestionChecker:
-    def __init__(self):
-        self.mess = 'None'
+	def __init__(self):
+		self.mess = 'None'
 
-    def is_random_intent(self, message):
-        if message in list_hello_notification:
-            return 'Hello human :)'
-        if message in list_done_notification:
-            return "Chúc bạn một ngày tốt lành"
-        if message in list_thanks_notification:
-            return "Chúc bạn một ngày tốt lành"
-        if message in list_anything_notification:
-            return "Tôi giúp được gì cho bạn ? "
-        return "No Random"
+	def is_random_intent(self, message):
+	# if message in list_hello_notification:
+		for notifi in list_hello_notification:
+			if message.lower().find(notifi) != -1:
+				return 'Chào bạn, chúc bạn một ngày tốt lành'
+	# if message in list_done_notification:
+		for notifi in list_done_notification:
+			if message.lower().find(notifi) != -1:
+				return "Tạm biệt bạn, rất vui đã hỗ trợ bạn"
 
-    def is_question(self, message):
-        for syl in list_verb_want:
-        	if message.lower().find(syl) != -1:
-		        return True
-        return False
+		for notifi in list_thanks_notification:
+			if message.lower().find(notifi) != -1:
+	# if message in list_thanks_notification:
+				return "Rất vui được hỗ trợ bạn !"
+	# if message in list_anything_notification:
+	# for notifi in list_thanks_notification:
+	# 	if message.lower().find(notifi) != -1:
+	#     return "Tôi giúp được gì cho bạn ? "
+		return "No Random"
+
+	def is_question(self, message):
+		for syl in list_verb_want:
+			if message.lower().find(syl) != -1:
+				return True
+		return False
 	# def catch_biz_rand_intent(self, biz, rand):
 	# 	"""
 	# 	classify between business intent & random intent\

@@ -19,74 +19,83 @@ mongo = PyMongo(app)
 # collection = database['log_medical_bot']
 
 @app.route('/proc-nlu', methods=['POST'])
-def procNLU():
-    """
-        API call process NLU
+# def procNLU():
+#     """
+#         API call process NLU
 
-        get message use lib request
+#         get message use lib request
 
-        unit testing:
-        {
-            "mess": "",
-            "_id": uuid()
-        }
-    """
+#         unit testing:
+#         {
+#             "mess": "",
+#             "_id": uuid()
+#         }
+#     """
 
-    ## get user's message
+#     ## get user's message
     
-    input_data = request.get_json(force=True) 
-    user_mess = input_data['mess']#mess này là string hả tài
-    # print(user_mess)
-    user_id = input_data['_id']
-    now = datetime.now()
-    date_time = now.strftime("%m_%d_%Y_%H_%M_%S")
-    result_feedforward = {}
+#     input_data = request.get_json(force=True) 
+#     user_mess = input_data['mess']#mess này là string hả tài
+#     # print(user_mess)
+#     user_id = input_data['_id']
+#     now = datetime.now()
+#     date_time = now.strftime("%m_%d_%Y_%H_%M_%S")
+#     result_feedforward = {}
 
-    try:
-        """
-            load model predict intent + entities
-        """
-        # results = NLUproc.inference([user_mess.split(" ")])
-        results = Manager.get_answer(user_mess)
-        # print('res',results)
-        result_feedforward['intent'] = {}
+#     try:
+#         """
+#             load model predict intent + entities
+#         """
+#         # results = NLUproc.inference([user_mess.split(" ")])
+#         results = Manager.get_answer(user_mess)
+#         # print('res',results)
+#         result_feedforward = {}
         
-        result_feedforward['intent']['class'] = results[0]["intent"]
-        result_feedforward['intent']['confidence'] = results[0]["highest_prop"] 
+#         ## fix bug
+#         # if type(results) is list:
+#         #     result_feedforward['class'] = results[0]["intent"]
+#         #     result_feedforward['confidence'] = results[0]["highest_prop"] 
 
-        result_feedforward['entities'] = [results[0]["entities"]] # mai a sửa lại theo ý em
+#         #     result_feedforward['entities'] = [results[0]["entities"]] # mai a sửa lại theo ý em
+#         # else:
+#             # result_feedforward['class'] = results["intent"]
+#         print('res',results)
+#         result_feedforward['intent'] = results["intent"]
+#         result_feedforward['confidence'] = results["highest_prop"] 
+#         # result_feedforward['confidence'] = 1.0
+#         result_feedforward['entity'] = "" # mai a sửa lại theo ý em
 
-        response = {}
-        response['user_id'] = user_id
-        response['mess'] = user_mess
-        response['time'] = date_time
-        response['task'] = 'nlu'
-        response['predict'] = result_feedforward
-        response['status'] = 200
+#         response = {}
+#         response['user_id'] = user_id
+#         response['mess'] = user_mess
+#         response['time'] = date_time
+#         response['task'] = 'nlu'
+#         response['predict'] = result_feedforward
+#         response['status'] = 200
 
-        ## insert db log
-        mongo.db.log_medical_bot.insert_one(response)
-        # collection.insert_one(response)
-        response['_id'] = str(random.randint(100000, 999999))
-        return jsonify(response)
+#         ## insert db log
+#         mongo.db.log_medical_bot.insert_one(response)
+#         # collection.insert_one(response)
+#         response['_id'] = str(random.randint(100000, 999999))
+#         return jsonify(response)
 
-    except Exception as e:
+#     except Exception as e:
         
-        print((str(e)))
+#         print((str(e)))
 
-        response = {}
-        response['user_id'] = user_id
-        response['mess'] = user_mess
-        response['time'] = date_time
-        response['task'] = 'nlu'
-        response['predict'] = []
-        response['status'] = 500
+#         response = {}
+#         response['user_id'] = user_id
+#         response['mess'] = user_mess
+#         response['time'] = date_time
+#         response['task'] = 'nlu'
+#         response['predict'] = []
+#         response['status'] = 500
         
-        ## insert db log
-        # collection.insert_one(response)
-        mongo.db.log_medical_bot.insert_one(response)
-        response['_id'] = str(random.randint(100000, 999999))
-        return jsonify(response)
+#         ## insert db log
+#         # collection.insert_one(response)
+#         mongo.db.log_medical_bot.insert_one(response)
+#         response['_id'] = str(random.randint(100000, 999999))
+#         return jsonify(response)
 
 
 

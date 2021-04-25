@@ -44,7 +44,7 @@ class Manager:
             user_mess = user_mess.split(" ")
 
             result = self.NLUproc.inference([user_mess])
-            
+            # print('res',result)
             if use_kb:
                 result = result[0]
                 final_ans = self.query_from_kb(user_mess,result)
@@ -55,6 +55,7 @@ class Manager:
             # final_ans = self.get_final_answer(is_random_intent,final_ans)
             return final_ans
         else:
+            # print('not intent')
             # Not intent
 
             final_ans = {}

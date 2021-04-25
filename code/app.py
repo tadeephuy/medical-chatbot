@@ -48,7 +48,9 @@ def procNLU():
         """
         # results = NLUproc.inference([user_mess.split(" ")])
         results = Manager.get_answer(user_mess)
+        # print('res',results)
         result_feedforward['intent'] = {}
+        
         result_feedforward['intent']['class'] = results[0]["intent"]
         result_feedforward['intent']['confidence'] = results[0]["highest_prop"] 
 
@@ -70,7 +72,7 @@ def procNLU():
 
     except Exception as e:
         
-        print('Fail: {}'.format(str(e)))
+        print((str(e)))
 
         response = {}
         response['user_id'] = user_id

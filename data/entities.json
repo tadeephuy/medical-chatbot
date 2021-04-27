@@ -1,0 +1,167 @@
+{
+    "DISEASE" : {
+    "thalassemia":
+        [
+            "thalassemia"
+        ],
+    "ung thư gan":
+        [
+            "ung thư gan"
+        ],
+    "ung thư trực tràng":
+        [
+            "ung thư trực tràng"
+        ]
+    },
+
+    "SYMPTOMS" : { 
+    "thalassemia": 
+        [
+            "mệt mỏi",
+            "hụt hơi",
+            "tái nhợt",
+            "yếu đuối",
+            "da vàng",
+            "tăng trưởng chậm",
+            "sưng bụng",
+            "nước tiểu đậm",
+            "biến dạng xương",
+            "mệt mỏi quá mức",
+            "da nhợt nhạt",
+            "tăng trưởng chậm",
+            "xương giòn",
+            "lá lách to",
+            "vấn đề tim mạch",
+            "vàng da",
+            "buồn ngủ",
+            "tức ngực",
+            "tay lạnh",
+            "khó thở",
+            "tim đập loạn nhịp",
+            "cho ăn kém",
+            "nhức đầu",
+            "chóng mặt",
+            "ngất xỉu",
+            "skeletal",
+            "loãng xương",
+            "giảm khả năng sinh sản",
+            "thiếu máu"
+        ],
+    "ung thư gan":
+        [
+            "giảm cân",
+            "đau bụng trên",
+            "nôn mửa thường xuyên",
+            "sưng bụng",
+            "vàng da",
+            "lòng trắng mắt"
+        ],
+    "ung thư trực tràng": 
+        [
+            "yếu đuối",
+            "mệt mỏi",
+            "thay đổi thèm ăn",
+            "giảm cân",
+            "khó chịu bụng",
+            "ruột không làm trống hoàn toàn",
+            "bệnh tiêu chảy",
+            "táo bón",
+            "máu trong phânn",
+            "phân hẹp",
+            "thiếu máuy",
+            "thiếu sắt"
+        ]
+    },
+
+
+    "DIAG": {
+    "thalassemia": 
+        [
+            "phân tích dna",
+            "thử nghiệm trước khi sinh",
+            "lấy mẫu máu",
+            "xét nghiệm điện di",
+            "xét nghiệm di truyền",
+            "xét nghiệm lấy mẫu",
+            "đếm reticulocyte",
+            "iron",
+            "lấy mẫu villus chorionic (cvs)",
+            "cvs"
+        ],
+    "ung thư gan":
+        [
+            "xét nghiệm máu",
+            "test máu",
+            "xét nghiệm",
+            "xét nghiệm nhanh",
+            "kiểm tra hình ảnh"
+        ],
+    "ung thư trực tràng":
+        [
+            "khám sàng lọc",
+            "xét nghiệm",
+            "kiểm tra hình ảnh"
+        ]
+    },
+
+    "OVERVIEW":{
+    "thalassemia":
+        [
+            "di truyền rối loạn máu",
+            "alpha thalassemia",
+            "beta thalassemia",
+            "hemoglobin",
+            "cooley",
+            "ít huyết sắc tố",
+            "thiếu máu",
+            "biến đổi gen",
+            "xóa gen",
+            "đột biến dna",
+            "dna đột biến",
+            "di truyền",
+            "gen lỗi",
+            "dư sắt",
+            "nhiễm trùng",
+            "biến dạng xương",
+            "thalassemia nhẹ",
+            "thalassemia trung bình",
+            "thalassemia nặng"
+        ],
+    "ung thư gan":
+        [
+           "ung thư biểu mô tế bào gan",
+           "biểu mô tế bào gan",
+           "ung thư khởi đầu",
+           "ung thư gan thứ phát",
+           "nhiễm trùng mãn tính với hbv",
+           "hbv",
+           "gan b",
+           "viêm gan b",
+           "hcv",
+           "viêm gan c",
+           "phẫu thuật",
+           "phá huỷ u gan",
+           "liệu pháp miễn dịch",
+           "nút mạch gan",
+           "ablation",
+           "hóa trị",
+           "xạ trị",
+           "đột biến",
+           "cholangiocarcinoma nội bộ",
+           "hepatiblastoma"
+        ],
+    "ung thư trực tràng":
+        [
+            "giai đoạn 1",
+            "giai đoạn 2",
+            "giai đoạn 3",
+            "giai đoạn 4",
+            "dna",
+            "di truyền đột biến gen",
+            "polysosis adenomatous gia đình",
+            "adenocarcinoma",
+            "khối u carcinoid",
+            "khối u stromal đường tiêu hóa"
+        ]
+    }
+}

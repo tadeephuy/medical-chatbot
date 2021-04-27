@@ -6,7 +6,7 @@ class Distance:
     def __init__(self):
         self.preprocess = PreProcess()
 
-    def compare_word(self,token_rule,sentence,threshold):
+    def compare_word(self,token_rule,sentence):
         """
         compare 2 char
 
@@ -20,8 +20,9 @@ class Distance:
 
         partial_ratio = float(partial_ratio)/100
         token_set_ratio = float(token_set_ratio)/100
-        
-        if partial_ratio >= threshold and token_set_ratio >= threshold:
-            return True
-        else:
-            return False
+        return {"partial":partial_ratio,"token_set":token_set_ratio}
+        # probability = partial_ratio
+        # if partial_ratio >= threshold:
+            # return True,probability
+        # else:
+            # return False,probability

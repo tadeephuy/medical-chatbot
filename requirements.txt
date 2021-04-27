@@ -2,3 +2,5 @@ regex
 re 
 python-Levenshtein
 fuzzywuzzy
+json
+os

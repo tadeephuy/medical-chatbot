@@ -3,7 +3,7 @@ from helper.preprocess import PreProcess
 
 
 class Distance:
-    def __init__(self,preprocess):
+    def __init__(self):
         self.preprocess = PreProcess()
 
     def compare_word(self,token_rule,sentence,threshold):

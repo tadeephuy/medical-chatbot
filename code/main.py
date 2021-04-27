@@ -2,9 +2,9 @@ from helper.preprocess import PreProcess
 from helper.edit_distance import Distance
 # from fuzzywuzzy import fuzz
 
-pp = PreProcess()
+# pp = PreProcess()
 
-dist = Distance(pp)
+dist = Distance()
 
 token_rule = 'điều trị'
 sentence = 'cho hỏi cách điều tri bệnh ung thư gan là gì vậy'

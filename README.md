@@ -7,3 +7,6 @@ April 27 - April 30
 + Checking list token for pattern-rule
 + Utilizing Levenshtein distance
 + Handle logic
+
+### Testing
++ code/intent_matching.py

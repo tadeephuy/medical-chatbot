@@ -1,237 +1,237 @@
-message,intent,token,true_intent,precision
-"không nên truyền máu nếu có quan hệ huyết thống như bố mẹ, con cái. Cho em hỏi thông tin này là đúng hay sai ạ, bác sĩ có thể giải thích rõ ràng hơn giúp em được không? Em xin cảm ơn. ","[('overview', 1.0), ('prevention', 1.0)]","['thông tin', 'né']",['overview'],0.5
-Vậy bác sĩ cho tôi hỏi nên ăn hoa quả trước hay sau bữa ăn sẽ tốt hơn?,"[('prevention', 1.0)]",['né'],['overview'],0.0
-Vậy Bác sỹ có thể cho tôi biết các dấu hiệu của bệnh và cách điều trị tại nhà trước khi đưa đến Bệnh viện được không ạ?,"[('symptoms', 1.0), ('treatment', 1.0)]","['dấu hiệu', 'điều trị']","['symptom', ' treatment']",0.0
-" Vào mùa này, trẻ thường dễ mắc những bệnh hô hấp gì? Biểu hiện của chúng như thế nào?","[('symptoms', 1.0), ('risk_factor', 1.0)]","['biểu hiện', 'dễ mắc']","['risk_factor', ' symptom']",0.5
-"Cho E xin tư vấn về vi rút HPV, và có thể điều trị khi bị nhiễm vi rút này không ạ","[('treatment', 1.0)]",['điều trị'],"['overview', ' treatment']",0.0
-Em bị đau dây thần kinh số 5 xin bác sỹ tư vấn giúp ạ,[],[],['treatment'],0.0
-E bị mất 1 đốt ngón tay cái do tai nạn. Mong bác sĩ tư vấn giúp e với ah,[],[],['symptom'],0.0
-Cháu muốn tìm hiểu về phương pháp chữa trị thay khớp gối.,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'trị']",['treatment'],0.5
-Thay khớp thì khả năng phục hổi như thế nào? Ngoài biện pháp thay khớp thì có phương pháp nào điều trị hiệu quả ko?,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'điều trị']",['treatment'],0.5
-"Em Bị té đi chụp MRI thì kết quả là đứt chằng chéo trước, rách sụn và tràn dịch khớp.Mong sớm nhận tư vấn từ bác sĩ.",[],[],['treatment'],0.0
-Bác sĩ cho em hỏi chi phí thuốc chống đào thải sau phẫu thật ghép gan là bao nhiêu và cách chăm sóc bệnh nhân sau ghép gan như thế nào ạ.,"[('prevention', 1.0)]",['chống'],['overview'],0.0
-"Xin hỏi bác sỹ lúc đó tôi có mổ được nữa không, để lâu có ảnh hưởng đến vấn đề sức khoẻ hay cơ bắp gì không?","[('severe', 1.0)]",['ảnh hưởng'],"['treatment', ' severe']",0.0
-"Xin hỏi bác sỹ lúc đó tôi có mổ được nữa không, để lâu có ảnh hưởng đến vấn đề sức khoẻ hay cơ bắp gì không?","[('severe', 1.0)]",['ảnh hưởng'],"['treatment', ' severe']",0.0
-"bác sĩ cho em hỏi là thời điểm thích hợp để phẫu thuật cho cháu và thời gian, chi phí cho ca phẫu thuật là bao nhiêu. Rất mong nhận được tư vấn của bác sĩ.",[],[],"['treatment', ' overview']",0.0
-Vậy thông tin này là đúng phải không ah.,"[('overview', 1.0)]",['thông tin'],['overview'],1.0
-"Bệnh viện ở trong TP Hồ Chí Minh có chỉ định phẫu thuật để hậu môn ngoài, không hóa trị, không xạ trị, đã xâm lấn gan nhẹ. Xin các bác sĩ tư vấn nếu trường hợp bệnh của ba tôi",[],[],"['treatment', ' overview']",0.0
- nếu muốn làm phẫu thuật chỉnh hình chân bị vòng kiềng thì lên làm thế nào,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-Nếu thực hiện như thế có kết quả không?,"[('prevention', 1.0)]",['né'],['overview'],0.0
-"Xin cho biết công dụng, cách chế biến, cách dùng của củ tam thất ? Với nam giới, tam thất có làm giảm khả năng tình dục và sinh sản không ?",[],[],['overview'],0.0
-Vậy thực chất dừa cạn có công dụng gì ?,[],[],['overview'],0.0
-Tôi nghe nói ở BV mình có phương pháp đặt Stent thực quản. Vui lòng tư vấn giúp tôi nếu người nhà tôi bị như vậy có xử lý được hay không.,[],[],"['overview', ' treatment']",0.0
-Tôi nghe nói ở BV mình có phương pháp đặt Stent thực quản. Vui lòng tư vấn giúp tôi nếu người nhà tôi bị như vậy có xử lý được hay không.,[],[],"['overview', ' treatment']",0.0
-"Xin hỏi bác sĩ: đau quặn thận là gì, nguyên nhân gây ra đau quặn thận?",[],[],['overview'],0.0
-Tôi muốn mổ nội soi để tránh bị trật liên tục. Xin bác sĩ tư vấn giúp tôi. Cảm ơn bác sĩ,"[('prevention', 1.0)]",['tránh'],['treatment'],0.0
-xin hỏi mua thuốc đó ở đâu ạ?,[],[],['overview'],0.0
-"Tôi biết quý viện triển khai rất nhiều phương pháp nhưng tôi muốn hỏi cụ thể phương pháp nào ít tái phát, hiệu quả không gây đau đớn.","[('treatment', 1.0)]",['trị'],['treatment'],1.0
-E nghe nói niềng răng có thể giải quyết đc vấn đề này nhưng năm nay em 30 tuổi liệu có niềng răng đc k? Và mất bao nhiêu tg?,[],[],['overview'],0.0
-Vậy cháu muốn hỏi bệnh viện mình có kiểm tra mục đó không? Thời gian làm việc như thế nào ạ.?,"[('severe', 1.0), ('diag', 1.0)]","['mức độ', 'kiểm tra']",['treatment'],0.0
-Em muốn mổ ở Bệnh viện TƯQĐ 108 thì cần những thủ tục gì và cần chuẩn bị bao nhiêu tiền để cho 1 ca mổ ạ,[],[],['overview'],0.0
- Mong bác cho cách điều trị (thuốc hay phác đồ đươc không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Nếu phải can thiệp bằng ngoại khoa thì nên sử dụng bằng phương pháp nào để hiệu quả và tính an toàn cao? Mong nhận được câu trả lời sớm nhất của bác sĩ,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-Nếu phải can thiệp bằng ngoại khoa thì nên sử dụng bằng phương pháp nào để hiệu quả và tính an toàn cao? Mong nhận được câu trả lời sớm nhất của bác sĩ,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-nhưng lại không có thuốc điều trị,"[('main_type', 0.9), ('treatment', 1.0)]","['những loại', 'điều trị']",['symptom'],0.0
-bác sĩ cho cháu hỏi chi phí phẫu thuật hở van tim hết bao nhiêu (nếu có bhyt) và thủ tục như thế nào,"[('treatment', 1.0)]",['hết'],['overview'],0.0
-Xin hỏi Toà soạn là có đúng như vậy không và có nên thực hành những động tác đó không ?,"[('prevention', 1.0)]",['né'],['UNK'],0.0
- Tôi hay bị đau đầu và buồn nôn. Bác sỹ có thể tư vấn cho tôi không ạ. ,[],[],['symptom'],0.0
-" bị sỏi niệu quản 1,5cm, sỏi niệu quản 1/3 trên. Xin được Bác sỹ tư vấn, nên dùng phương pháp nào để điều trị và kinh phí hết bao nhiêu?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-vậy đã cần phải mổ thay khớp háng chưa ạ hay vẫn duy trì cho đến khi đau nặng hơn ạ.rất mong tư vấn của bác sĩ sớm ạ,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'trị']",['treatment'],0.5
-Vậy tôi cần làm gì tiếp theo và u gan này có thể trở nên ác tính hay không?,[],[],['overview'],0.0
-Cho tôi biết thời gian và số tiền để điều trị bằng phương pháp can thiệp nội tĩnh mạch bằng sóng có tần số radio (sóng cao tần),"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Tôi nghe nói phương pháp cho ong đốt vào huyệt vị châm cứu có thể chữa được nhiều bệnh có đúng không và có nên áp dụng không ?,[],[],['overview'],0.0
-Tôi nghe nói phương pháp cho ong đốt vào huyệt vị châm cứu có thể chữa được nhiều bệnh có đúng không và có nên áp dụng không ?,[],[],['overview'],0.0
-" Xin hỏi biện pháp chữa trị, thời gian điều trị và giá tiền viện phí phải chi trả?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
- giờ em muốn tư vấn lắp tay hay ghép tay do người hiến tặng nếu được em rất mong muốn để được chở lại cuộc sống bình thường thường.,[],[],['treatment'],0.0
-nan,[],[],['UNK'],0.0
-không biết cách uống như thế nào cho tốt nhất?,[],[],['treatment'],0.0
-Mong bác sĩ tư vấn sớm về cách điều trị như thế nào ah? cảm ơn bác sĩ nhiều.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Xin bác sĩ cho biết nấm linh chi có thể sử dụng cho bệnh nhân đang điều trị ung thư vú được không ? Cách sử dụng ?,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-Xin hỏi bác sĩ có cách gì để có thể phân biệt nấm linh chi thật và giả?,[],[],['overview'],0.0
-" cho hỏi bệnh của tôi ở Bệnh viện 108 có mổ nối dây thần kinh được không ạ, chi phí mổ hết bao nhiêu, và đạt khoảng mấy %.",[],[],['treatment'],0.0
-Xin bác sĩ cho biết tác dụng của cây mật gấu?,[],[],['overview'],0.0
-Xin bác sĩ cho biết tác dụng của cây mật gấu?,[],[],['overview'],0.0
-tôi có hỏi liệu có cách nào để biết chính xác u gì trước khi mổ,[],[],['main_type'],0.0
-bác sĩ cho cháu hỏi chi phí phẫu thuật hở van tim hết bao nhiêu (nếu có bhyt) và thủ tục như thế nào. cháu xin cảm ơn.,"[('treatment', 1.0)]",['hết'],['treatment'],1.0
-nan,[],[],['UNK'],0.0
-E muốn hỏi bs là nếu bị đứt bán phần thì khả năng hồi phục của khớp gối là như thế nào và sau này e có thể chơi thể thao lại được không ạh? xin chân thành cảm ơn!,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-"Tôi nghe nói quả quất ngâm với mật ong rất tốt cho đường hô hấp, có thể chữa trị được các bệnh về hô hấp ? Tôi có con nhỏ 10 tháng tuổi, có thể dùng quất ngâm mật ong cho cháu uống được không và cần đề phòng tác dụng phụ gì ?","[('treatment', 1.0)]",['trị'],"['overview', ' prevention']",0.0
- Xin hỏi bệnh viện về việc phẫu thuật hở vòm cho cháu?,[],[],['treatment'],0.0
-để tẩy vết chàm con cháu bao nhiêu tuổi thì làm được ạ,[],[],"['overview', ' prevention']",0.0
- Xin hỏi bác sĩ có phải thêm vị thuốc nào ngoài 4 vị chính trong bài thuốc này không ạ?,[],[],['overview'],0.0
-xin nhờ các bác sỹ tư vấn giúp em có khắc phục được không và chi phí khoảng bao nhiêu.,[],[],['treatment'],0.0
-xin nhờ các bác sỹ tư vấn giúp em có khắc phục được không và chi phí khoảng bao nhiêu.,[],[],['treatment'],0.0
- Xin bác sĩ cho biết có cách nào trị dứt điểm bệnh này ko ạ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0
-Vậy xin hỏi bác sĩ cháu có thể phẫu thuật để phục hồi chức năng của cánh tay và khuỷu tay được không?,[],[],['treatment'],0.0
-Bác sĩ tư vấn cho cháu nên tán sỏi thận qua da hay bằng phương pháp nội soi và chi phí hết bao nhiêu. Cháu có được hưởng bảo hiểm y tế chi trả không ạ?,"[('prevention', 1.0)]",['né'],['overview'],0.0
-Vậy trường hợp của tôi có dùng được rượu tỏi không ? Nếu được thì cách chế và cách dùng cụ thể như thế nào ?,"[('prevention', 1.0)]",['né'],['prevention'],1.0
-Trường hợp như con trai cháu có hướng nào giải quyết tích cực hơn không? và quá trình chữa chân con cháu như thế nào ạ?,[],[],['treatment'],0.0
-xin hỏi bác sĩ bệnh có nguy hiểm không? Cần làm gì để điều trị dứt điểm.,"[('severe', 1.0), ('treatment', 1.0)]","['nguy hiểm', 'điều trị']","['treatment', ' severe']",0.5
-"Vậy, xin Bác sỹ tư vấn cho cháu tên địa phương của những cây thuốc này là gì ? Cách nhận biết và nếu sử dụng thì có hiệu quả thiết thực hay không ?",[],[],['overview'],0.0
-"Không biết có đúng như vậy không? Tác dụng cụ thể của nó ra sao và cách dùng như thế nào? Cháu xin gửi theo mẫu cây, kính mong Toà soạn tư vấn giùm.",[],[],['overview'],0.0
-Vì thế em muốn hỏi thêm thông tin về phương pháp xạ phẫu này,"[('overview', 1.0)]",['thông tin'],['overview'],1.0
-Vậy Bác sĩ cho cháu hỏi bệnh viện có chữa được không ạ?,"[('treatment', 1.0)]",['chữa'],['treatment'],1.0
-Vậy Bác sĩ cho cháu hỏi bệnh viện có chữa được không ạ?,"[('treatment', 1.0)]",['chữa'],['treatment'],1.0
- những nốt ruồi như thế nào thì có thể tiến hành tẩy được và tẩy bằng phương pháp nào an toàn và hiệu quả nhất ạ!,[],[],['treatment'],0.0
-tôi hỏi u não ác tính thì có những biểu hiện gì ạ? Đau đầu dữ dội là biểu hiện của u não giai đoạn mấy ạ.,"[('symptoms', 1.0)]",['biểu hiện'],['symptoms'],1.0
-ở độ tuổi của con liệu có thể khắc phục bằng vật lỳ trị liệu không ạ và tỷ lệ có thể hồi phục dc là bao nhiu phần trăm ạ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0
-Cháu muốn hỏi thời gian hồi phục sau phẫu thuật là bao lâu và thời gian sau khi lấy phương tiện hỗ trợ ra là bao lâu ạ! Chi phí điều trị nữa. ,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-nan,[],[],['UNK'],0.0
-Bác sĩ về tư vấn giúp Em về tình trạng chân và biện pháp trị liệu hay tiến hành phẫu thuật.,[],[],['treatment'],0.0
-có cách nào giúp cháu tăng chiều cao nên khoảng 1m60 được không ạ?,[],[],['treatment'],0.0
-vậy gây dính màng phổi mang lại tác dụng gì /chi phí thế nào ạ?,[],[],['overview'],0.0
-nan,[],[],['UNK'],0.0
-nan,[],[],['UNK'],0.0
-Trường hợp như con trai cháu có hướng nào giải quyết tích cực hơn không?,[],[],['treatment'],0.0
-cho cháu hỏi chi phí phẫu thuật và liệu có biến chứng gì ko? Sau phẫu thuật bao lâu có thể xuất viện và đi lại được?,[],[],['overview'],0.0
-"Cho tôi biết thời gian và số tiền để điều trị bằng phương pháp can thiệp nội tĩnh mạch bằng sóng có tần số radio (sóng cao tần), vì tôi ở xa nên cần biết để sắp xếp thời gian và chuẩn bị tiền bạc.","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
- Xin hỏi bác sĩ pp này là pp gi va ưu nhược điểm so với các pp khác. ,[],[],['treatment'],0.0
-đi xét nghiện thì cho kết quả HBeAg dương tính là như thế nào,[],[],['diag'],0.0
- cháu muốn đưa bé đi nâng mi được biết ở viện mình có nhiều phương pháp nâng mí hiệu quả,[],[],['treatment'],0.0
-vậy cháu muốn phẫu thuật chỉnh hình ở viện 108 thì có được không ạ? Và chi phí có tốn kém lắm không ạ?,[],[],['treatment'],0.0
-"hỏi viện 108 có tháo khớp vai, khớp gối... cho bệnh nhân bị viêm đa khớp nhiều năm không? chi phí là bao nhiêu?",[],[],['treatment'],0.0
-"Vậy giờ có phải bôi kem trị sẹo không bác sĩ, và nếu phải bôi thì bác sĩ tư vấn cho em tên thuốc với ạ.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['prevention'],0.5
-" Vậy giờ có phải bôi kem trị sẹo không bác sĩ, và nếu phải bôi thì bác sĩ tư vấn cho em tên thuốc với ạ.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['prevention'],0.5
-vậy nên cháu muốn hỏi bác sỹ bây giờ cháu muốn mổ lại có được không ạ?,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-"điều trị bằng cách đi giày để không bị lệch cột sống, em xin hỏi bé nhà em có thể thực hiện kéo dài chi được chưa,","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Cháu rất mong bác sĩ tư vấn cho cháu hướng điều trị để giúp con cháu tránh được những ảnh hưởng về sau,"[('prevention', 1.0), ('treatment', 1.0)]","['tránh', 'điều trị']",['treatment'],0.5
-"cháu muốn hỏi bác sĩ là cháu bị như vậy có phải trào ngược không? cháu nuốt nước bọt thì vướng cổ họng, đau lẩm ngẩm vọng từ dưới bụng lên, nhưng ăn uống thì không đau vướng.",[],[],['symptom'],0.0
-Bác sĩ cho cháu hỏi kết quả của cháu như vậy có nguy hiểm không ạ.,"[('severe', 1.0)]",['nguy hiểm'],['severe'],1.0
-Bác sỹ cho hỏi với tình trạng bệnh như vậy thì dùng phương pháp lấy sỏi ra nào là tốt nhất a?,[],[],['treatment'],0.0
-"B.S cho cháu hỏi nên chữa trị bệnh này như thế nào ạ và bệnh viện 108 có phẫu thuật bệnh này không, chi phí phẫu thuật là bao nhiêu tiền.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['treatment'],0.5
-Bác cho cháu hỏi làm sao để hết chỗ sưng đó ạ?,"[('treatment', 1.0)]",['hết'],['treatment'],1.0
-"tôi muốn đưa cụ lên viện 108 khám và điều trị, mong Bác sỹ cho ý kiến tư vấn","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-điều trị bệnh bạch biến không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-điều trị bệnh bạch biến không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Tỷ lệ tái phát sau mổ là bao nhiêu và các biến chứng có thể gặp sau mổ?,[],[],['risk_factor'],0.0
-bệnh của cháu nếu để lâu thì có ảnh hưởng gì không ạ và cách chữa trị thì như thế nào ạ.,"[('severe', 1.0), ('prevention', 1.0), ('treatment', 1.0)]","['ảnh hưởng', 'né', 'trị']","['risk_factor', ' treatment']",0.0
-"Xin hỏi BS, ở Viện mình hiện có những PP điều trị trĩ như thế nào?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-BV 108 có phương pháp nào giải quyết sỏi thận và niệu quản như trên mà không phải phẫu thuật mổ mở không? Tổng chi phí khoản bao nhiêu?,[],[],['treatment'],0.0
-Bác cho cháu hỏi làm sao để hết chỗ sưng đó ạ?,"[('treatment', 1.0)]",['hết'],['treatment'],1.0
-nan,[],[],['UNK'],0.0
-chau hỏi có người hiến tay cho cháu vậy cháu có ghép lại được tay không ah cháu bị mất tay 5 năm rồi,[],[],['treatment'],0.0
-xin hỏi bác sỹ như vậy đã ở mức nguy hiểm không và điều trị bằng thuốc gì,"[('severe', 1.0), ('treatment', 1.0)]","['nguy hiểm', 'điều trị']","['severe', ' treatment']",0.5
-"phương án khắc phục chân tôi là như thế nào ạ,",[],[],['treatment'],0.0
-Liệu có thể áp dụng phương pháp mổ nội soi xoang Fess kết hợp kèm chỉnh hình vách ngăn? Chi phí là bao nhiêu? ,[],[],['treatment'],0.0
-Liệu có thể áp dụng phương pháp mổ nội soi xoang Fess kết hợp kèm chỉnh hình vách ngăn? Chi phí là bao nhiêu? ,[],[],['treatment'],0.0
-Bác sỹ cho cháu hỏi cháu muốn thay khớp gối nhân tạo cho mẹ cháu thì chi phí như nào ạ.,"[('symptoms', 1.0)]",['thấy'],['overview'],0.0
-Cho cháu hỏi để thời gian như thế có còn cách chữa trị không ạ. ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0
-liệu em tôi có thể áp dung hình thức phẩu thuật nối dây thần kinh được không ?,[],[],['treatment'],0.0
-Vậy bác sĩ cho em hỏi chi phí phẫu thuật khoảng bao nhiêu? mất bao nhiêu lâu để có thể hồi phục vận động lại được?,[],[],['overview'],0.0
- Em muốn phẫu thuật làm lại từ đầu có được ko? và chi phí khoảng bao nhiêu? ,[],[],['treatment'],0.0
-Tôi rất băn khoăn không biết nên chọn phương pháp điều trị nào .,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Xin hỏi Bác sỹ Bệnh viện TƯQĐ 108 có nhưng phương pháp mổ nào? Thời gian bao nhiêu lâu? Chi phí thế nào?,[],[],['treatment'],0.0
-nan,[],[],['UNK'],0.0
-tôi 49 tuổi vậy tôi có thể tán sỏi được ko. một ca tán sỏi như vậy hết khoảng bao nhiêu tiền.,[],[],['treatment'],0.0
- E muốn bs tư vấn xem thế nào rồi ra đây điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
- E muốn bs tư vấn xem thế nào rồi ra đây điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Tôi xin hỏi bác sĩ là tôi có thể nối lại gân được không và chi phí điều trị à bao nhiêu. ,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Tôi có thể mổ bằng sóng cao tần đc k? Chi phí ntn? Có đc sử dụng bảo hiểm k?,[],[],['treatment'],0.0
-"Xin hỏi biện pháp chữa trị, thời gian điều trị và giá tiền viện phí phải chi trả","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-riêng ngón cái là bị rút lại xin hỏi bác sĩ sau này tay em có bình phục không.,[],[],['treatment'],0.0
-Vì vậy cháu muốn phẫu thuật dài kéo 2 tay bằng nhau có được không và chi phí như thế nào ạ?,[],[],"['treatment', ' overview']",0.0
-bác sĩ cho cháu hỏi là viêm amidan mạn tính để lâu sẽ gây ra hậu quả gì được không ạ? và nếu cắt amidan bằng phương pháp coblator thì có khỏi dứt điểm được không ạ?,[],[],"['treatment', ' overview']",0.0
-"tôi xin hỏi: tôi bị bệnh gì, và nên điều trị thế nào?","[('treatment', 1.0)]",['điều trị'],"['treatment', ' overview']",1.0
-Vậy cho cháu hỏi bệnh của cháu có chữa khỏi được không ạ??,"[('treatment', 1.0)]",['khỏi'],['treatment'],1.0
-Em muốn hỏi chi phí tẩy là khoảng bao nhiêu ạ.,[],[],['overview'],0.0
-Cho cháu hỏi chi phí chữa đứt dây chằng chéo sau là bao nhiêu nếu có bảo hiểm thẻ bs...thời gian bình phục sau khi mổ la bao nhieu ngày ah?,"[('treatment', 1.0)]",['chữa'],['overview'],0.0
-Cho cháu hỏi chi phí chữa đứt dây chằng chéo sau là bao nhiêu nếu có bảo hiểm thẻ bs...thời gian bình phục sau khi mổ la bao nhieu ngày ah?,"[('treatment', 1.0)]",['chữa'],['overview'],0.0
-"bác sĩ cho cháu hỏi cắt amidan thì phải làm các xét nghiệm gì, trước khi đi có cần kiêng gì không ạ, và tổng chi phí tất cả (cả xét nghiệm) cắt amidan bằng Coblator là bao nhiêu ạ.",[],[],['overview'],0.0
-Cho em hỏi là bệnh viện mình có thực hiện phẫu thuật này không ạ? Thưc sự là em đang rất cần thực hiện phẫu thuật này.,[],[],['overview'],0.0
-"Cháu bị sỏi niệu quản 18mm 1/3 trên cho cháu hỏi có phải mổ hở không ạ, tán bằng laser được không ạ?",[],[],['treatment'],0.0
-"Vậy tôi muốn hỏi ở bệnh viện mình có mổ nội soi khớp vai không, và chi phí cho ca phẫu thuật là bao nhiêu ạ?",[],[],"['treatment', ' overview']",0.0
-Cháu rất hi vọng Bệnh viện TƯQĐ 108 sẽ sớm thực hiện được phương pháp này vì rất nhiều người bị bệnh như cháu mong ước?,[],[],['overview'],0.0
-"có người nói, uống nhiều trà dây sẽ gây vô sinh. Xin hỏi ý kiến bác sỹ. Cảm ơn bác sỹ.",[],[],['overview'],0.0
-"cháu muốn hỏi viện mình có phương pháp cắt longgo, có khỏi triệt để được ko ạ, nhưng cháu nghe nói phương pháp nay sẽ bị hẹp môn vị, mất cơ vòng, có dúng ko ạ?","[('treatment', 1.0)]",['trị'],"['treatment', ' overview']",1.0
-Có cách nào điều trị đươc không và sẹo võng mạc có biểu hiện gì ở mắt không ak.,"[('symptoms', 1.0), ('treatment', 1.0)]","['biểu hiện', 'điều trị']",['treatment'],0.5
-"Cháu được biết ở bệnh viện mình có phương pháp điều trị cấy chỉ, vậy kính mong bác sỹ giải đáp và hướng dẫn cháu để cháu về viện chữa trị được không ạ?","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],"['treatment', ' overview']",0.0
-"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],"['treatment', ' overview']",0.0
-"Con gái cháu được 4 tháng tuổi bị dị tật bẩm sinh 6 ngón ở bàn tay phải, giờ cháu muốn cắt bỏ ngón thừa có được không?",[],[],['treatment'],0.0
-Xin cho biết bệnh huyết áp thấp là gì và có thuốc nào chữa khỏi?,"[('treatment', 1.0)]",['khỏi'],"['treatment', ' overview']",1.0
-Tôi hỏi bệnh của tôi có nên tiếp tục dùng thuốc đông y hay nên đi tán sỏi.,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-Xin hỏi bác sĩ khám và điều trị như thế nào?,"[('treatment', 1.0)]",['điều trị'],"['method_diagnosis', 'treatment']",1.0
-cháu rất hoang mang mong bác sỹ tư vấn giúp cháu,[],[],['treatment'],0.0
-Dạ cháu muốn hỏi bác sĩ là vì da cháu rất nhờn nên cháu có thể uống kèm với thuốc ACNOTIN được không ạ? Cháu cảm ơn bác sĩ và mong nhận được câu trả lời sớm nhất ạ,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-"xin bác sỹ cho tôi biết phải đến đâu và làm gì để chẩn đoán, điều trị bệnh cho tôi.","[('diag', 1.0), ('treatment', 1.0)]","['chẩn đoán', 'điều trị']","['method_diagnosis', 'treatment']",0.5
-"Thưa bác sỹ, tôi năm nay 55 tuổi, bị ung thư cổ tử cung năm 2001 đã phẫu thuật và tia xạ, trước kia hay khám định kỳ tại viện K, thời gian gần đây không đi khám thường xuyên được, bây giờ tôi muốn chụp PET/CT có được không, thủ tục thế nào, thời gian chụp bao lâu có phải nhịn ăn uống không... bác sỹ tư vân dùm nhé, xin cảm ơn",[],[],['treatment'],0.0
-Vây bây giờ em muốn mổ thay có bị muộn quá không?và thời gian hồi phục có quá lâu không?Chi phí khoảng bao nhiêu?em có thẻ bảo hiểm nếu khám chữa vượt tuyến có được thanh toán không?em xin cám ơn!,"[('symptoms', 1.0)]",['thấy'],"['treatment', 'overview']",0.0
-Bác sỹ cho cháu hỏi với tình trạng của cháu như vậy thì cháu có nên mổ thay khớp háng nhân tạo không?,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-Bác sỹ cho cháu hỏi với tình trạng của cháu như vậy thì cháu có nên mổ thay khớp háng nhân tạo không?,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-Vậy cho em hỏi bệnh của mẹ em bắt buộc phải mổ 2 lần ạ? không có phương pháp nào để mổ 1 lần thôi ạ?,[],[],['treatment'],0.0
-Mong bác sĩ giúp e đang tiến triển bệnh thế nào ak? Mong bs tư vấn giúp em!,"[('main_type', 0.88), ('treatment', 1.0)]","['biến thể', 'trị']","['treatment', 'overview', ' method_diagnosis']",0.5
-Trường hợp phải mổ thì có mất thơi gian nhiều không?,[],[],"['treatment', ' overview']",0.0
-"Cháu không biết là trường hợp nặng như của cháu, có thể chữa khỏi và hoàn toàn được ko ạ.","[('treatment', 1.0)]",['chữa khỏi'],['treatment'],1.0
-"Chào bác sỹ Tôi bị lung lay răng số 22 (theo cách tính Nha khoa Mỹ) không bị viên, sưng, cho tôi hỏi bây giờ phải làm sao?",[],[],"['treatment', ' overview']",0.0
-"em xin hỏi bác sỹ có cách điều trị nào khác không, em xin cảm ơn","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Cháu hỏi như trường hợp của cháu sau khi mổ lấy đinh tập vật lý tri liệu có hồi phục không ạ?,[],[],['treatment'],0.0
-Phẫu thuật bao lâu thì xuất viện được a. Mong anh chị trả lời luôn giúp em ạ.,[],[],['overview'],0.0
-"Mong bác sĩ tư vấn và cho cháu biết 108 có thể làm được không, tỉ lệ thành công là bao nhiêu và sau nối ngón tay có cử động bình thưởng được không. Cảm ơn Bác sĩ",[],[],"['treatment', ' overview']",0.0
-Cháu xin hỏi là bệnh này có chữa được không? Chi phí có tốn kém không? (em cháu bị cách đây 1 năm).,[],[],"['treatment', ' overview']",0.0
-Cháu xin hỏi là bệnh này có chữa được không? Chi phí có tốn kém không? (em cháu bị cách đây 1 năm). Cảm ơn bác sĩ!,[],[],"['treatment', ' overview']",0.0
-Nếu đã điều trị sau này sinh con thì con có bị lây nhiểm không ạ,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5
-XIn hỏi Bác sĩ bệnh viêm gan C có thể chữa khổi hoàn toàn không ạ?,"[('risk_factor', 0.86), ('treatment', 1.0)]","['tiềm ẩn', 'khỏi']","['treatment', 'overview']",0.5
-cho cháu hỏi bị dãn như vậy đã ở mức nặng chưa ạ? Xin bác sĩ tư vấn cho cháu ạ. Cháu cảm ơn,[],[],['overview'],0.0
-bây giờ đã đến thời điểm rút đinh thế thưa bác sĩ cháu phải đến đâu để rút đinh và làm sao để không có sẹo to ạ. mong bác sĩ chỉ bảo,[],[],['treatment'],0.0
-Chào bác sỹ ạ cháu hay bị đau khớp gối và đau thắt lưng vậy cháu cần khám như thế nào ạ,[],[],['method_diagnosis'],0.0
-Cho cháu hỏi Tây Y còn có pp chữa trị nào nữa không ạ. (như là nút tĩnh mạch...).,"[('treatment', 1.0)]",['trị'],['treatment'],1.0
-vậy bác sĩ cho em hỏi nguyên nhân là như thế nào với ạ,[],[],"['cause', ' overview']",0.0
-cho e hỏi điều chị phương pháp nào là tốt nhất ạ. em xin cảm ơn ạ,[],[],['treatment'],0.0
-bác sĩ cho cháu hỏi là cháu bị viêm tinh hoàn thì cháu lên khám ở đâu.bệnh viên mình có khám không ạ.nhờ bác sĩ tư vấn.cháu cám ơn,[],[],['overview'],0.0
-"Nay tôi muốn đến viên QY 108 để khám và điều trị..rất mong được tư vấn của bác sĩ, tôi xin cám ơn!","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-"Nay tôi muốn đến viên QY 108 để khám và điều trị..rất mong được tư vấn của bác sĩ, tôi xin cám ơn!","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-bac sĩ có thể cho cháu biết đây thuộc giai đoạn mấy của bệnh và tỉ lệ xạ trị kéo dài thời gian sông là bao nhiêu ạ? Và chi phí xạ trị bằng phương pháp tiên tiến nhất của bệnh viện mình giá mỗi làn là bao nhiêu ạ?,"[('diag', 1.0), ('treatment', 1.0)]","['đoán', 'trị']","['main_type', ' overview', ' treatment']",0.0
-bác sỹ cho cháu hỏi mổ nội soi tuyến giáp thì mổ tại cổ hay mổ tại nách như công nghệ tiên tiên hiện nay ạ. Và chi phí cho ca mổ cũng như điều trị như thế nào ạ.,"[('treatment', 1.0)]",['điều trị'],"['treatment', 'overview']",1.0
-"giờ tôi muốn hỏi xem dùng thuốc gì uống hay tiêm cho khỏi bệnh, thuốc mua ở đâu?","[('treatment', 1.0)]",['khỏi'],"['treatment', ' overview']",1.0
-Bác cho cháu hỏi: - Cần làm gì để an toàn phóng xạ với người bệnh? - Chế độ ăn kiêng i-ốt dành cho bệnh nhân ung thư tuyến giáp đã phẫu thuật trong và sau thời gian chuẩn bị điều trị I - 131?,[],[],"['prevention', ' overview']",0.0
-cháu muốn bác sĩ tư vấn cho cháu xin chế độ dinh dưỡng cho người sau xạ trị và bệnh của bố cháu tỉ lệ thành công là khoảng bao nhiêu ạ.,"[('treatment', 1.0)]",['trị'],['overview'],0.0
-"Cháu bị khó thở, ho, khạc, tức ngực, ngực thi thoảng nóng rát, ợ hơi.Cháu xin 1 tư vấn ?",[],[],['treatment'],0.0
-"em muốn biết giá thành, thời gian điều trị thế nào? Phải nằm giường ko đi lại đc trong bao lâu?","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-"cháu có thắc mắc là khám sức khỏe định kỳ thường xuyên chụp x-quang, cộng hưởng từ như thế nó có gây hại cho sức khỏe không ạ.",[],[],"['treatment', ' overview']",0.0
-xin hỏi bác sĩ phương pháp đốt lase có an toàn không?,[],[],['treatment'],0.0
-vậy tôi có thể ngâm thêm thuốc gì vào để át mùi của sâm mà không ảnh hưởng đến chất lượng của sâm. ,[],[],['overview'],0.0
-vậy tôi có thể ngâm thêm thuốc gì vào để át mùi của sâm mà không ảnh hưởng đến chất lượng của sâm. ,[],[],['overview'],0.0
-"Xin được hỏi bác sỹ tỷ lệ hết u xơ có cao không, nếu tôi muốn có con thì tỷ lệ thành công là bao nhiêu %. (tôi đã có 01 con).","[('treatment', 1.0)]",['hết'],"['treatment', ' overview']",1.0
-"Bác sĩ cho em hỏi, em chấn thương gối và đã chụp phim cộng hưởng từ với kết luận từ phim là đụng dập- đứt bán phần dây chằng chéo trước. có dịch và rách sừng sau sụn chêm thì KHẢ NĂNG PHẢI MỔ CÓ CAO KHÔNG Ạ ?","[('severe', 0.89)]",['ảnh hưởng'],['treatment'],0.0
-Ở đây tôi muốn hỏi- Liệu bấm huyệt như thế có đem lại hậu quả gì không?,[],[],['overview'],0.0
-bác sĩ cho cháu hỏi có phải cháu bị u không ạ và có cần đi kiểm tra hay làm xét nghiệm gì không ạ?,"[('diag', 1.0)]",['kiểm tra'],"['overview', ' method_diagnosis']",0.0
-Bác sĩ có thể cho e biết các loại thực phẩm mà người viêm gan B nên và không nên ăn,"[('main_type', 1.0)]",['loại'],['overview'],0.0
-"Em muốn hỏi hiện nay phương pháp xạ phẫu nào hiện đại và hiệu quả, ít gây tổn thương nhất.","[('severe', 1.0)]",['tổn thương'],"['treatment', ' overview']",0.0
-Tôi xin hỏi Bố tôi như vậy có dùng phương pháp mổ nội soi hay tán sỏi ngoài cơ thể của bệnh viện được không?,[],[],['overview'],0.0
-Xin hỏi Bệnh viện TƯQĐ 108 có làm các xét nghiệm đó không ạ? Có thực hiện các xét nghiệm trên vào thứ 7 không?,[],[],['overview'],0.0
-"Thưa Bác sĩ. Cháu nhà tôi (02 tuổi) bị hẹp Bao quy đầu - muốn đến Bệnh viện Trung ương quân đội 108 để điều trị nong tách, bảo tồn chit hẹp bao quy đầu ở trẻ em.","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-"Bác sỹ khám nói không bị cao huyết áp, tim không to, không bị hen phế quản. Bác sỹ tư vấn tôi nên làm gì.",[],[],['treatment'],0.0
-"Bác sỹ khám nói không bị cao huyết áp, tim không to, không bị hen phế quản. Bác sỹ tư vấn tôi nên làm gì.",[],[],['treatment'],0.0
-"Hiện nay lại thêm chứng bệnh chán ăn, không muốn nuốt kiểu thần kinh, đã khám nhiều nơi, điều trị Tanakan, emedic, remenyl, arcalion...không đỡ, xin bác sỹ tư vấn điều trị.","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-"Chào bác sỹ Cháu muốn hỏi xem bệnh viện có phẫu thuật trĩ và chữa nứt kẽ hậu môn không ạ. Nếu có thì phải điều trị trong bao lâu, bằng kỹ thuật nào, có để lại di chứng không và cháu phải làm những thủ tục gì, tại khoa nào khi đến viện ạ","[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-xin hỏi bác sĩ nếu mỏ thời giam điều trị là bao lâu và chi phí mổ là bao nhiêu.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['overview'],0.0
-Tôi xin hỏi bác sĩ nếu giờ tôi có thể mổ thì khả năng thành công là bao nhiêu và nếu không mổ thì có phương pháp nào để điều trị không ah.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5
-Bác sỹ cho Em xin chút lời khuyên để Em có hướng điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-Cháu nhờ bác sĩ xem giúp cháu đó là biểu hiện của bệnh gì và cháu muốn khám thì khám theo khoa nào.,"[('symptoms', 1.0)]",['biểu hiện'],"['treatment', 'overview']",0.0
-Vậy xin hỏi Bác sĩ có đúng không? Có cần phải đi khám và xét nghiệm không? Nếu có thì nên khám ở đâu? Xin Bác sĩ một lời khuyên. ,[],[],"['treatment', 'overview']",0.0
-vậy cháu hỏi là bệnh này có nghiêm trọng lắm không ạ?,"[('severe', 1.0)]",['nghiêm trọng'],['severe'],1.0
-Thưa bác sĩ tôi bị lõm mắt do tại nạn giao thông bây giờ tôi muốn điều trị cho mắt hết lõm có được không ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-"Thưa bác sỹ cháu bị bớt xanh bẩm sinh và qua tìm hiểu Bệnh viện 108 có chữa được loại bớt này vậy cho cháu hỏi ở Bệnh viện 108 chữa bằng lase gì ạ, lase Co2, lase Q- switched...., vì cháu có tìm hiểu mấy trung tâm thẩm mỹ, mỗi nơi nói 1 phương pháp khác nhau và là phương pháp tốt nhất hiện nay, chi phí như thế nào ạ,","[('main_type', 1.0)]",['loại'],"['treatment', 'overview']",0.0
-"Thưa bác sỹ cháu bị bớt xanh bẩm sinh và qua tìm hiểu Bệnh viện 108 có chữa được loại bớt này vậy cho cháu hỏi ở Bệnh viện 108 chữa bằng lase gì ạ, lase Co2, lase Q- switched...., vì cháu có tìm hiểu mấy trung tâm thẩm mỹ, mỗi nơi nói 1 phương pháp khác nhau và là phương pháp tốt nhất hiện nay, chi phí như thế nào ạ,","[('main_type', 1.0)]",['loại'],"['treatment', 'overview']",0.0
-em nên điều trị thế nào cho khỏi bệnh.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5
-"Cháu xin hỏi bác sỹ là chỗ bệnh viện có khám chuyên Gan kĩ ko ạ??? Khám về viêm gan B, ngoài các chỉ số định tính thì có khám về Định lượng vi rút đang hoạt động ko ạ, và phương pháp điều trị của bệnh viện thì như thế nào ạ ???","[('treatment', 1.0)]",['điều trị'],"['treatment', 'overview']",1.0
-Hiện nay gia đình muốn mổ rút đinh và phẫu thuật thẩm mỹ vết sẹo lồi cho cháu thì cần làm như thế nào?,[],[],['overview'],0.0
-Bác sĩ cho cháu lời khuyên làm thế nào chữa được căn bệnh này để có thể đẻ thêm bé nữa được ạ?,[],[],['treatment'],0.0
-Bệnh của tôi có chữa được không? Thời gian mỗi lần điều trị là bao nhiêu? Hết bao nhiêu chi phí?,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0
-Vậy cháu xin hỏi bác sĩ là Bênh viện 108 mình có phương pháp điều trị gì ngoài mổ thay khớp không ạ? Nếu tiêm thì ở bênh viện mình có xuất hóa đơn thu tiền không ạ?,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'điều trị']","['treatment', ' overview']",0.5
-Chào bác sĩ tôi xin hỏi bác sĩ: Tôi bị u xơ tử cung tháng 4 vừa qua tôi đã bóc nhân xơ nhưng bác sĩ bảo tôi vẫn còn nhiều nhân nhỏ nữa hiện nay tôi thấy trong huyết trắng của mình có dính một ít máu đó có phải là hiện tượng gì đáng lo không a. Và tôi cũng xin hỏi bác sĩ là nghe nói bệnh viện 108 khám cả thứ 7 phải không a.,[],[],"['treatment', ' overview']",0.0
-"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],['treatment'],0.0
-xin hỏi BS giờ tôi phải làm sao để vẫn tiếp tục điều trị viêm khớp mà không bị những cơn đau dạ dày hành hạ nữa,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-bác sĩ cho e hỏi có thể phẫu thuật ghép bàn tay hoặc lắp bàn tay giả cho bé không ạ và hướng điều trị như thế nào ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-bác sĩ cho e hỏi có thể phẫu thuật ghép bàn tay hoặc lắp bàn tay giả cho bé không ạ và hướng điều trị như thế nào ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-nhưng vì hạch ở cổ nên em không muốn mổ. em muốn uống thuốc được không ạ?,"[('prevention', 1.0)]",['né'],['treatment'],0.0
-vậy theo bác sỹ tôi phải làm gì để khác phục tình tràng này.,[],[],['treatment'],0.0
-xin hỏi ở Bv 108 có làm kháng sinh đồ Hp không? nếu có làm ks đồ Hp thì việc chữa trị bệnh dạ dày của tôi có khỏi được không?,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']","['treatment', ' overview']",0.5
-Xin bác sĩ tư vấn giúp gia đình chúng tôi. Bố tôi có khả năng bị bệnh gì?,[],[],"['treatment', ' overview']",0.0
-Vậy cháu xin hỏi bác sĩ là Bênh viện 108 mình có phương pháp điều trị gì ngoài mổ không ạ? Và bác sĩ có thể tư vấn cho cháu về điều trị bằng laze này có hiệu quả không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0
-vậy bác sĩ tư vấn cho Em xem với tình trạng bệnh của em như bây giờ thì giải pháp nào cho em là tốt nhất ạ. và chi phí điều trị bằng phương pháp nút mạch hết nhiều tiền không ạ,"[('treatment', 1.0)]",['điều trị'],"['treatment', ' overview']",1.0
-"Chào TS! Bệnh về tiền liệt tuyến kiểm tra có dễ phát hiện ra không ạ? Nếu bị viêm tiền liệt tuyến thì ở BV 108 khám, chữa ở khoa nào? Việc điều trị có lâu không và có phải nằm ở viện đề điều trị không ạ?","[('diag', 1.0), ('treatment', 1.0)]","['kiểm tra', 'điều trị']","['treatment', ' overview']",0.5
-"Nghe nhiều người nói cần chế độ kiêng khen rất chặt chẽ, Xin hỏi cần thực hiện chế độ ăn uống như thế nào để phòng tránh bệnh gút ạ?","[('prevention', 1.0)]",['phòng tránh'],['prevention'],1.0
-"Kính thưa Bác sỹ Tôi mới được các bác sỹ chẩn đoán đái tháo đường, xin hỏi chế độ ăn uống, sinh hoạt cần tuân thủ như thế nào?","[('diag', 1.0)]",['chẩn đoán'],['overview'],0.0
-"Tôi bị bệnh tăng huyết áp nhiều năm nay, xin hỏi Bác sỹ chế độ ăn uống sinh hoạt như thế nào?",[],[],['overview'],0.0
-"Tôi bị bệnh tăng huyết áp nhiều năm nay, xin hỏi Bác sỹ chế độ ăn uống sinh hoạt như thế nào?",[],[],['overview'],0.0
+message,intent,token,true_intent,precision,recall
+"không nên truyền máu nếu có quan hệ huyết thống như bố mẹ, con cái. Cho em hỏi thông tin này là đúng hay sai ạ, bác sĩ có thể giải thích rõ ràng hơn giúp em được không? Em xin cảm ơn. ","[('overview', 1.0), ('prevention', 1.0)]","['thông tin', 'né']",['overview'],0.5,1.0
+Vậy bác sĩ cho tôi hỏi nên ăn hoa quả trước hay sau bữa ăn sẽ tốt hơn?,"[('prevention', 1.0)]",['né'],['overview'],0.0,0.0
+Vậy Bác sỹ có thể cho tôi biết các dấu hiệu của bệnh và cách điều trị tại nhà trước khi đưa đến Bệnh viện được không ạ?,"[('symptoms', 1.0), ('treatment', 1.0)]","['dấu hiệu', 'điều trị']","['symptom', ' treatment']",0.0,0.0
+" Vào mùa này, trẻ thường dễ mắc những bệnh hô hấp gì? Biểu hiện của chúng như thế nào?","[('symptoms', 1.0), ('risk_factor', 1.0)]","['biểu hiện', 'dễ mắc']","['risk_factor', ' symptom']",0.5,0.5
+"Cho E xin tư vấn về vi rút HPV, và có thể điều trị khi bị nhiễm vi rút này không ạ","[('treatment', 1.0)]",['điều trị'],"['overview', ' treatment']",0.0,0.0
+Em bị đau dây thần kinh số 5 xin bác sỹ tư vấn giúp ạ,[],[],['treatment'],none,0.0
+E bị mất 1 đốt ngón tay cái do tai nạn. Mong bác sĩ tư vấn giúp e với ah,[],[],['symptom'],none,0.0
+Cháu muốn tìm hiểu về phương pháp chữa trị thay khớp gối.,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'trị']",['treatment'],0.5,1.0
+Thay khớp thì khả năng phục hổi như thế nào? Ngoài biện pháp thay khớp thì có phương pháp nào điều trị hiệu quả ko?,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'điều trị']",['treatment'],0.5,1.0
+"Em Bị té đi chụp MRI thì kết quả là đứt chằng chéo trước, rách sụn và tràn dịch khớp.Mong sớm nhận tư vấn từ bác sĩ.",[],[],['treatment'],none,0.0
+Bác sĩ cho em hỏi chi phí thuốc chống đào thải sau phẫu thật ghép gan là bao nhiêu và cách chăm sóc bệnh nhân sau ghép gan như thế nào ạ.,"[('prevention', 1.0)]",['chống'],['overview'],0.0,0.0
+"Xin hỏi bác sỹ lúc đó tôi có mổ được nữa không, để lâu có ảnh hưởng đến vấn đề sức khoẻ hay cơ bắp gì không?","[('severe', 1.0)]",['ảnh hưởng'],"['treatment', ' severe']",0.0,0.0
+"Xin hỏi bác sỹ lúc đó tôi có mổ được nữa không, để lâu có ảnh hưởng đến vấn đề sức khoẻ hay cơ bắp gì không?","[('severe', 1.0)]",['ảnh hưởng'],"['treatment', ' severe']",0.0,0.0
+"bác sĩ cho em hỏi là thời điểm thích hợp để phẫu thuật cho cháu và thời gian, chi phí cho ca phẫu thuật là bao nhiêu. Rất mong nhận được tư vấn của bác sĩ.",[],[],"['treatment', ' overview']",none,0.0
+Vậy thông tin này là đúng phải không ah.,"[('overview', 1.0)]",['thông tin'],['overview'],1.0,1.0
+"Bệnh viện ở trong TP Hồ Chí Minh có chỉ định phẫu thuật để hậu môn ngoài, không hóa trị, không xạ trị, đã xâm lấn gan nhẹ. Xin các bác sĩ tư vấn nếu trường hợp bệnh của ba tôi",[],[],"['treatment', ' overview']",none,0.0
+ nếu muốn làm phẫu thuật chỉnh hình chân bị vòng kiềng thì lên làm thế nào,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+Nếu thực hiện như thế có kết quả không?,"[('prevention', 1.0)]",['né'],['overview'],0.0,0.0
+"Xin cho biết công dụng, cách chế biến, cách dùng của củ tam thất ? Với nam giới, tam thất có làm giảm khả năng tình dục và sinh sản không ?",[],[],['overview'],none,0.0
+Vậy thực chất dừa cạn có công dụng gì ?,[],[],['overview'],none,0.0
+Tôi nghe nói ở BV mình có phương pháp đặt Stent thực quản. Vui lòng tư vấn giúp tôi nếu người nhà tôi bị như vậy có xử lý được hay không.,[],[],"['overview', ' treatment']",none,0.0
+Tôi nghe nói ở BV mình có phương pháp đặt Stent thực quản. Vui lòng tư vấn giúp tôi nếu người nhà tôi bị như vậy có xử lý được hay không.,[],[],"['overview', ' treatment']",none,0.0
+"Xin hỏi bác sĩ: đau quặn thận là gì, nguyên nhân gây ra đau quặn thận?",[],[],['overview'],none,0.0
+Tôi muốn mổ nội soi để tránh bị trật liên tục. Xin bác sĩ tư vấn giúp tôi. Cảm ơn bác sĩ,"[('prevention', 1.0)]",['tránh'],['treatment'],0.0,0.0
+xin hỏi mua thuốc đó ở đâu ạ?,[],[],['overview'],none,0.0
+"Tôi biết quý viện triển khai rất nhiều phương pháp nhưng tôi muốn hỏi cụ thể phương pháp nào ít tái phát, hiệu quả không gây đau đớn.","[('treatment', 1.0)]",['trị'],['treatment'],1.0,1.0
+E nghe nói niềng răng có thể giải quyết đc vấn đề này nhưng năm nay em 30 tuổi liệu có niềng răng đc k? Và mất bao nhiêu tg?,[],[],['overview'],none,0.0
+Vậy cháu muốn hỏi bệnh viện mình có kiểm tra mục đó không? Thời gian làm việc như thế nào ạ.?,"[('severe', 1.0), ('diag', 1.0)]","['mức độ', 'kiểm tra']",['treatment'],0.0,0.0
+Em muốn mổ ở Bệnh viện TƯQĐ 108 thì cần những thủ tục gì và cần chuẩn bị bao nhiêu tiền để cho 1 ca mổ ạ,[],[],['overview'],none,0.0
+ Mong bác cho cách điều trị (thuốc hay phác đồ đươc không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Nếu phải can thiệp bằng ngoại khoa thì nên sử dụng bằng phương pháp nào để hiệu quả và tính an toàn cao? Mong nhận được câu trả lời sớm nhất của bác sĩ,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+Nếu phải can thiệp bằng ngoại khoa thì nên sử dụng bằng phương pháp nào để hiệu quả và tính an toàn cao? Mong nhận được câu trả lời sớm nhất của bác sĩ,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+nhưng lại không có thuốc điều trị,"[('main_type', 0.9), ('treatment', 1.0)]","['những loại', 'điều trị']",['symptom'],0.0,0.0
+bác sĩ cho cháu hỏi chi phí phẫu thuật hở van tim hết bao nhiêu (nếu có bhyt) và thủ tục như thế nào,"[('treatment', 1.0)]",['hết'],['overview'],0.0,0.0
+Xin hỏi Toà soạn là có đúng như vậy không và có nên thực hành những động tác đó không ?,"[('prevention', 1.0)]",['né'],['UNK'],0.0,0.0
+ Tôi hay bị đau đầu và buồn nôn. Bác sỹ có thể tư vấn cho tôi không ạ. ,[],[],['symptom'],none,0.0
+" bị sỏi niệu quản 1,5cm, sỏi niệu quản 1/3 trên. Xin được Bác sỹ tư vấn, nên dùng phương pháp nào để điều trị và kinh phí hết bao nhiêu?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+vậy đã cần phải mổ thay khớp háng chưa ạ hay vẫn duy trì cho đến khi đau nặng hơn ạ.rất mong tư vấn của bác sĩ sớm ạ,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'trị']",['treatment'],0.5,1.0
+Vậy tôi cần làm gì tiếp theo và u gan này có thể trở nên ác tính hay không?,[],[],['overview'],none,0.0
+Cho tôi biết thời gian và số tiền để điều trị bằng phương pháp can thiệp nội tĩnh mạch bằng sóng có tần số radio (sóng cao tần),"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Tôi nghe nói phương pháp cho ong đốt vào huyệt vị châm cứu có thể chữa được nhiều bệnh có đúng không và có nên áp dụng không ?,[],[],['overview'],none,0.0
+Tôi nghe nói phương pháp cho ong đốt vào huyệt vị châm cứu có thể chữa được nhiều bệnh có đúng không và có nên áp dụng không ?,[],[],['overview'],none,0.0
+" Xin hỏi biện pháp chữa trị, thời gian điều trị và giá tiền viện phí phải chi trả?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+ giờ em muốn tư vấn lắp tay hay ghép tay do người hiến tặng nếu được em rất mong muốn để được chở lại cuộc sống bình thường thường.,[],[],['treatment'],none,0.0
+nan,[],[],['UNK'],none,0.0
+không biết cách uống như thế nào cho tốt nhất?,[],[],['treatment'],none,0.0
+Mong bác sĩ tư vấn sớm về cách điều trị như thế nào ah? cảm ơn bác sĩ nhiều.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Xin bác sĩ cho biết nấm linh chi có thể sử dụng cho bệnh nhân đang điều trị ung thư vú được không ? Cách sử dụng ?,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+Xin hỏi bác sĩ có cách gì để có thể phân biệt nấm linh chi thật và giả?,[],[],['overview'],none,0.0
+" cho hỏi bệnh của tôi ở Bệnh viện 108 có mổ nối dây thần kinh được không ạ, chi phí mổ hết bao nhiêu, và đạt khoảng mấy %.",[],[],['treatment'],none,0.0
+Xin bác sĩ cho biết tác dụng của cây mật gấu?,[],[],['overview'],none,0.0
+Xin bác sĩ cho biết tác dụng của cây mật gấu?,[],[],['overview'],none,0.0
+tôi có hỏi liệu có cách nào để biết chính xác u gì trước khi mổ,[],[],['main_type'],none,0.0
+bác sĩ cho cháu hỏi chi phí phẫu thuật hở van tim hết bao nhiêu (nếu có bhyt) và thủ tục như thế nào. cháu xin cảm ơn.,"[('treatment', 1.0)]",['hết'],['treatment'],1.0,1.0
+nan,[],[],['UNK'],none,0.0
+E muốn hỏi bs là nếu bị đứt bán phần thì khả năng hồi phục của khớp gối là như thế nào và sau này e có thể chơi thể thao lại được không ạh? xin chân thành cảm ơn!,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+"Tôi nghe nói quả quất ngâm với mật ong rất tốt cho đường hô hấp, có thể chữa trị được các bệnh về hô hấp ? Tôi có con nhỏ 10 tháng tuổi, có thể dùng quất ngâm mật ong cho cháu uống được không và cần đề phòng tác dụng phụ gì ?","[('treatment', 1.0)]",['trị'],"['overview', ' prevention']",0.0,0.0
+ Xin hỏi bệnh viện về việc phẫu thuật hở vòm cho cháu?,[],[],['treatment'],none,0.0
+để tẩy vết chàm con cháu bao nhiêu tuổi thì làm được ạ,[],[],"['overview', ' prevention']",none,0.0
+ Xin hỏi bác sĩ có phải thêm vị thuốc nào ngoài 4 vị chính trong bài thuốc này không ạ?,[],[],['overview'],none,0.0
+xin nhờ các bác sỹ tư vấn giúp em có khắc phục được không và chi phí khoảng bao nhiêu.,[],[],['treatment'],none,0.0
+xin nhờ các bác sỹ tư vấn giúp em có khắc phục được không và chi phí khoảng bao nhiêu.,[],[],['treatment'],none,0.0
+ Xin bác sĩ cho biết có cách nào trị dứt điểm bệnh này ko ạ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0,1.0
+Vậy xin hỏi bác sĩ cháu có thể phẫu thuật để phục hồi chức năng của cánh tay và khuỷu tay được không?,[],[],['treatment'],none,0.0
+Bác sĩ tư vấn cho cháu nên tán sỏi thận qua da hay bằng phương pháp nội soi và chi phí hết bao nhiêu. Cháu có được hưởng bảo hiểm y tế chi trả không ạ?,"[('prevention', 1.0)]",['né'],['overview'],0.0,0.0
+Vậy trường hợp của tôi có dùng được rượu tỏi không ? Nếu được thì cách chế và cách dùng cụ thể như thế nào ?,"[('prevention', 1.0)]",['né'],['prevention'],1.0,1.0
+Trường hợp như con trai cháu có hướng nào giải quyết tích cực hơn không? và quá trình chữa chân con cháu như thế nào ạ?,[],[],['treatment'],none,0.0
+xin hỏi bác sĩ bệnh có nguy hiểm không? Cần làm gì để điều trị dứt điểm.,"[('severe', 1.0), ('treatment', 1.0)]","['nguy hiểm', 'điều trị']","['treatment', ' severe']",0.5,0.5
+"Vậy, xin Bác sỹ tư vấn cho cháu tên địa phương của những cây thuốc này là gì ? Cách nhận biết và nếu sử dụng thì có hiệu quả thiết thực hay không ?",[],[],['overview'],none,0.0
+"Không biết có đúng như vậy không? Tác dụng cụ thể của nó ra sao và cách dùng như thế nào? Cháu xin gửi theo mẫu cây, kính mong Toà soạn tư vấn giùm.",[],[],['overview'],none,0.0
+Vì thế em muốn hỏi thêm thông tin về phương pháp xạ phẫu này,"[('overview', 1.0)]",['thông tin'],['overview'],1.0,1.0
+Vậy Bác sĩ cho cháu hỏi bệnh viện có chữa được không ạ?,"[('treatment', 1.0)]",['chữa'],['treatment'],1.0,1.0
+Vậy Bác sĩ cho cháu hỏi bệnh viện có chữa được không ạ?,"[('treatment', 1.0)]",['chữa'],['treatment'],1.0,1.0
+ những nốt ruồi như thế nào thì có thể tiến hành tẩy được và tẩy bằng phương pháp nào an toàn và hiệu quả nhất ạ!,[],[],['treatment'],none,0.0
+tôi hỏi u não ác tính thì có những biểu hiện gì ạ? Đau đầu dữ dội là biểu hiện của u não giai đoạn mấy ạ.,"[('symptoms', 1.0)]",['biểu hiện'],['symptoms'],1.0,1.0
+ở độ tuổi của con liệu có thể khắc phục bằng vật lỳ trị liệu không ạ và tỷ lệ có thể hồi phục dc là bao nhiu phần trăm ạ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0,1.0
+Cháu muốn hỏi thời gian hồi phục sau phẫu thuật là bao lâu và thời gian sau khi lấy phương tiện hỗ trợ ra là bao lâu ạ! Chi phí điều trị nữa. ,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+nan,[],[],['UNK'],none,0.0
+Bác sĩ về tư vấn giúp Em về tình trạng chân và biện pháp trị liệu hay tiến hành phẫu thuật.,[],[],['treatment'],none,0.0
+có cách nào giúp cháu tăng chiều cao nên khoảng 1m60 được không ạ?,[],[],['treatment'],none,0.0
+vậy gây dính màng phổi mang lại tác dụng gì /chi phí thế nào ạ?,[],[],['overview'],none,0.0
+nan,[],[],['UNK'],none,0.0
+nan,[],[],['UNK'],none,0.0
+Trường hợp như con trai cháu có hướng nào giải quyết tích cực hơn không?,[],[],['treatment'],none,0.0
+cho cháu hỏi chi phí phẫu thuật và liệu có biến chứng gì ko? Sau phẫu thuật bao lâu có thể xuất viện và đi lại được?,[],[],['overview'],none,0.0
+"Cho tôi biết thời gian và số tiền để điều trị bằng phương pháp can thiệp nội tĩnh mạch bằng sóng có tần số radio (sóng cao tần), vì tôi ở xa nên cần biết để sắp xếp thời gian và chuẩn bị tiền bạc.","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+ Xin hỏi bác sĩ pp này là pp gi va ưu nhược điểm so với các pp khác. ,[],[],['treatment'],none,0.0
+đi xét nghiện thì cho kết quả HBeAg dương tính là như thế nào,[],[],['diag'],none,0.0
+ cháu muốn đưa bé đi nâng mi được biết ở viện mình có nhiều phương pháp nâng mí hiệu quả,[],[],['treatment'],none,0.0
+vậy cháu muốn phẫu thuật chỉnh hình ở viện 108 thì có được không ạ? Và chi phí có tốn kém lắm không ạ?,[],[],['treatment'],none,0.0
+"hỏi viện 108 có tháo khớp vai, khớp gối... cho bệnh nhân bị viêm đa khớp nhiều năm không? chi phí là bao nhiêu?",[],[],['treatment'],none,0.0
+"Vậy giờ có phải bôi kem trị sẹo không bác sĩ, và nếu phải bôi thì bác sĩ tư vấn cho em tên thuốc với ạ.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['prevention'],0.5,1.0
+" Vậy giờ có phải bôi kem trị sẹo không bác sĩ, và nếu phải bôi thì bác sĩ tư vấn cho em tên thuốc với ạ.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['prevention'],0.5,1.0
+vậy nên cháu muốn hỏi bác sỹ bây giờ cháu muốn mổ lại có được không ạ?,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+"điều trị bằng cách đi giày để không bị lệch cột sống, em xin hỏi bé nhà em có thể thực hiện kéo dài chi được chưa,","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Cháu rất mong bác sĩ tư vấn cho cháu hướng điều trị để giúp con cháu tránh được những ảnh hưởng về sau,"[('prevention', 1.0), ('treatment', 1.0)]","['tránh', 'điều trị']",['treatment'],0.5,1.0
+"cháu muốn hỏi bác sĩ là cháu bị như vậy có phải trào ngược không? cháu nuốt nước bọt thì vướng cổ họng, đau lẩm ngẩm vọng từ dưới bụng lên, nhưng ăn uống thì không đau vướng.",[],[],['symptom'],none,0.0
+Bác sĩ cho cháu hỏi kết quả của cháu như vậy có nguy hiểm không ạ.,"[('severe', 1.0)]",['nguy hiểm'],['severe'],1.0,1.0
+Bác sỹ cho hỏi với tình trạng bệnh như vậy thì dùng phương pháp lấy sỏi ra nào là tốt nhất a?,[],[],['treatment'],none,0.0
+"B.S cho cháu hỏi nên chữa trị bệnh này như thế nào ạ và bệnh viện 108 có phẫu thuật bệnh này không, chi phí phẫu thuật là bao nhiêu tiền.","[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']",['treatment'],0.5,1.0
+Bác cho cháu hỏi làm sao để hết chỗ sưng đó ạ?,"[('treatment', 1.0)]",['hết'],['treatment'],1.0,1.0
+"tôi muốn đưa cụ lên viện 108 khám và điều trị, mong Bác sỹ cho ý kiến tư vấn","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+điều trị bệnh bạch biến không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+điều trị bệnh bạch biến không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Tỷ lệ tái phát sau mổ là bao nhiêu và các biến chứng có thể gặp sau mổ?,[],[],['risk_factor'],none,0.0
+bệnh của cháu nếu để lâu thì có ảnh hưởng gì không ạ và cách chữa trị thì như thế nào ạ.,"[('severe', 1.0), ('prevention', 1.0), ('treatment', 1.0)]","['ảnh hưởng', 'né', 'trị']","['risk_factor', ' treatment']",0.0,0.0
+"Xin hỏi BS, ở Viện mình hiện có những PP điều trị trĩ như thế nào?","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+BV 108 có phương pháp nào giải quyết sỏi thận và niệu quản như trên mà không phải phẫu thuật mổ mở không? Tổng chi phí khoản bao nhiêu?,[],[],['treatment'],none,0.0
+Bác cho cháu hỏi làm sao để hết chỗ sưng đó ạ?,"[('treatment', 1.0)]",['hết'],['treatment'],1.0,1.0
+nan,[],[],['UNK'],none,0.0
+chau hỏi có người hiến tay cho cháu vậy cháu có ghép lại được tay không ah cháu bị mất tay 5 năm rồi,[],[],['treatment'],none,0.0
+xin hỏi bác sỹ như vậy đã ở mức nguy hiểm không và điều trị bằng thuốc gì,"[('severe', 1.0), ('treatment', 1.0)]","['nguy hiểm', 'điều trị']","['severe', ' treatment']",0.5,0.5
+"phương án khắc phục chân tôi là như thế nào ạ,",[],[],['treatment'],none,0.0
+Liệu có thể áp dụng phương pháp mổ nội soi xoang Fess kết hợp kèm chỉnh hình vách ngăn? Chi phí là bao nhiêu? ,[],[],['treatment'],none,0.0
+Liệu có thể áp dụng phương pháp mổ nội soi xoang Fess kết hợp kèm chỉnh hình vách ngăn? Chi phí là bao nhiêu? ,[],[],['treatment'],none,0.0
+Bác sỹ cho cháu hỏi cháu muốn thay khớp gối nhân tạo cho mẹ cháu thì chi phí như nào ạ.,"[('symptoms', 1.0)]",['thấy'],['overview'],0.0,0.0
+Cho cháu hỏi để thời gian như thế có còn cách chữa trị không ạ. ,"[('treatment', 1.0)]",['trị'],['treatment'],1.0,1.0
+liệu em tôi có thể áp dung hình thức phẩu thuật nối dây thần kinh được không ?,[],[],['treatment'],none,0.0
+Vậy bác sĩ cho em hỏi chi phí phẫu thuật khoảng bao nhiêu? mất bao nhiêu lâu để có thể hồi phục vận động lại được?,[],[],['overview'],none,0.0
+ Em muốn phẫu thuật làm lại từ đầu có được ko? và chi phí khoảng bao nhiêu? ,[],[],['treatment'],none,0.0
+Tôi rất băn khoăn không biết nên chọn phương pháp điều trị nào .,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Xin hỏi Bác sỹ Bệnh viện TƯQĐ 108 có nhưng phương pháp mổ nào? Thời gian bao nhiêu lâu? Chi phí thế nào?,[],[],['treatment'],none,0.0
+nan,[],[],['UNK'],none,0.0
+tôi 49 tuổi vậy tôi có thể tán sỏi được ko. một ca tán sỏi như vậy hết khoảng bao nhiêu tiền.,[],[],['treatment'],none,0.0
+ E muốn bs tư vấn xem thế nào rồi ra đây điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+ E muốn bs tư vấn xem thế nào rồi ra đây điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Tôi xin hỏi bác sĩ là tôi có thể nối lại gân được không và chi phí điều trị à bao nhiêu. ,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Tôi có thể mổ bằng sóng cao tần đc k? Chi phí ntn? Có đc sử dụng bảo hiểm k?,[],[],['treatment'],none,0.0
+"Xin hỏi biện pháp chữa trị, thời gian điều trị và giá tiền viện phí phải chi trả","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+riêng ngón cái là bị rút lại xin hỏi bác sĩ sau này tay em có bình phục không.,[],[],['treatment'],none,0.0
+Vì vậy cháu muốn phẫu thuật dài kéo 2 tay bằng nhau có được không và chi phí như thế nào ạ?,[],[],"['treatment', ' overview']",none,0.0
+bác sĩ cho cháu hỏi là viêm amidan mạn tính để lâu sẽ gây ra hậu quả gì được không ạ? và nếu cắt amidan bằng phương pháp coblator thì có khỏi dứt điểm được không ạ?,[],[],"['treatment', ' overview']",none,0.0
+"tôi xin hỏi: tôi bị bệnh gì, và nên điều trị thế nào?","[('treatment', 1.0)]",['điều trị'],"['treatment', ' overview']",1.0,0.5
+Vậy cho cháu hỏi bệnh của cháu có chữa khỏi được không ạ??,"[('treatment', 1.0)]",['khỏi'],['treatment'],1.0,1.0
+Em muốn hỏi chi phí tẩy là khoảng bao nhiêu ạ.,[],[],['overview'],none,0.0
+Cho cháu hỏi chi phí chữa đứt dây chằng chéo sau là bao nhiêu nếu có bảo hiểm thẻ bs...thời gian bình phục sau khi mổ la bao nhieu ngày ah?,"[('treatment', 1.0)]",['chữa'],['overview'],0.0,0.0
+Cho cháu hỏi chi phí chữa đứt dây chằng chéo sau là bao nhiêu nếu có bảo hiểm thẻ bs...thời gian bình phục sau khi mổ la bao nhieu ngày ah?,"[('treatment', 1.0)]",['chữa'],['overview'],0.0,0.0
+"bác sĩ cho cháu hỏi cắt amidan thì phải làm các xét nghiệm gì, trước khi đi có cần kiêng gì không ạ, và tổng chi phí tất cả (cả xét nghiệm) cắt amidan bằng Coblator là bao nhiêu ạ.",[],[],['overview'],none,0.0
+Cho em hỏi là bệnh viện mình có thực hiện phẫu thuật này không ạ? Thưc sự là em đang rất cần thực hiện phẫu thuật này.,[],[],['overview'],none,0.0
+"Cháu bị sỏi niệu quản 18mm 1/3 trên cho cháu hỏi có phải mổ hở không ạ, tán bằng laser được không ạ?",[],[],['treatment'],none,0.0
+"Vậy tôi muốn hỏi ở bệnh viện mình có mổ nội soi khớp vai không, và chi phí cho ca phẫu thuật là bao nhiêu ạ?",[],[],"['treatment', ' overview']",none,0.0
+Cháu rất hi vọng Bệnh viện TƯQĐ 108 sẽ sớm thực hiện được phương pháp này vì rất nhiều người bị bệnh như cháu mong ước?,[],[],['overview'],none,0.0
+"có người nói, uống nhiều trà dây sẽ gây vô sinh. Xin hỏi ý kiến bác sỹ. Cảm ơn bác sỹ.",[],[],['overview'],none,0.0
+"cháu muốn hỏi viện mình có phương pháp cắt longgo, có khỏi triệt để được ko ạ, nhưng cháu nghe nói phương pháp nay sẽ bị hẹp môn vị, mất cơ vòng, có dúng ko ạ?","[('treatment', 1.0)]",['trị'],"['treatment', ' overview']",1.0,0.5
+Có cách nào điều trị đươc không và sẹo võng mạc có biểu hiện gì ở mắt không ak.,"[('symptoms', 1.0), ('treatment', 1.0)]","['biểu hiện', 'điều trị']",['treatment'],0.5,1.0
+"Cháu được biết ở bệnh viện mình có phương pháp điều trị cấy chỉ, vậy kính mong bác sỹ giải đáp và hướng dẫn cháu để cháu về viện chữa trị được không ạ?","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],"['treatment', ' overview']",none,0.0
+"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],"['treatment', ' overview']",none,0.0
+"Con gái cháu được 4 tháng tuổi bị dị tật bẩm sinh 6 ngón ở bàn tay phải, giờ cháu muốn cắt bỏ ngón thừa có được không?",[],[],['treatment'],none,0.0
+Xin cho biết bệnh huyết áp thấp là gì và có thuốc nào chữa khỏi?,"[('treatment', 1.0)]",['khỏi'],"['treatment', ' overview']",1.0,0.5
+Tôi hỏi bệnh của tôi có nên tiếp tục dùng thuốc đông y hay nên đi tán sỏi.,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+Xin hỏi bác sĩ khám và điều trị như thế nào?,"[('treatment', 1.0)]",['điều trị'],"['method_diagnosis', 'treatment']",1.0,0.5
+cháu rất hoang mang mong bác sỹ tư vấn giúp cháu,[],[],['treatment'],none,0.0
+Dạ cháu muốn hỏi bác sĩ là vì da cháu rất nhờn nên cháu có thể uống kèm với thuốc ACNOTIN được không ạ? Cháu cảm ơn bác sĩ và mong nhận được câu trả lời sớm nhất ạ,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+"xin bác sỹ cho tôi biết phải đến đâu và làm gì để chẩn đoán, điều trị bệnh cho tôi.","[('diag', 1.0), ('treatment', 1.0)]","['chẩn đoán', 'điều trị']","['method_diagnosis', 'treatment']",0.5,0.5
+"Thưa bác sỹ, tôi năm nay 55 tuổi, bị ung thư cổ tử cung năm 2001 đã phẫu thuật và tia xạ, trước kia hay khám định kỳ tại viện K, thời gian gần đây không đi khám thường xuyên được, bây giờ tôi muốn chụp PET/CT có được không, thủ tục thế nào, thời gian chụp bao lâu có phải nhịn ăn uống không... bác sỹ tư vân dùm nhé, xin cảm ơn",[],[],['treatment'],none,0.0
+Vây bây giờ em muốn mổ thay có bị muộn quá không?và thời gian hồi phục có quá lâu không?Chi phí khoảng bao nhiêu?em có thẻ bảo hiểm nếu khám chữa vượt tuyến có được thanh toán không?em xin cám ơn!,"[('symptoms', 1.0)]",['thấy'],"['treatment', 'overview']",0.0,0.0
+Bác sỹ cho cháu hỏi với tình trạng của cháu như vậy thì cháu có nên mổ thay khớp háng nhân tạo không?,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+Bác sỹ cho cháu hỏi với tình trạng của cháu như vậy thì cháu có nên mổ thay khớp háng nhân tạo không?,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+Vậy cho em hỏi bệnh của mẹ em bắt buộc phải mổ 2 lần ạ? không có phương pháp nào để mổ 1 lần thôi ạ?,[],[],['treatment'],none,0.0
+Mong bác sĩ giúp e đang tiến triển bệnh thế nào ak? Mong bs tư vấn giúp em!,"[('main_type', 0.88), ('treatment', 1.0)]","['biến thể', 'trị']","['treatment', 'overview', ' method_diagnosis']",0.5,0.3333333333333333
+Trường hợp phải mổ thì có mất thơi gian nhiều không?,[],[],"['treatment', ' overview']",none,0.0
+"Cháu không biết là trường hợp nặng như của cháu, có thể chữa khỏi và hoàn toàn được ko ạ.","[('treatment', 1.0)]",['chữa khỏi'],['treatment'],1.0,1.0
+"Chào bác sỹ Tôi bị lung lay răng số 22 (theo cách tính Nha khoa Mỹ) không bị viên, sưng, cho tôi hỏi bây giờ phải làm sao?",[],[],"['treatment', ' overview']",none,0.0
+"em xin hỏi bác sỹ có cách điều trị nào khác không, em xin cảm ơn","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Cháu hỏi như trường hợp của cháu sau khi mổ lấy đinh tập vật lý tri liệu có hồi phục không ạ?,[],[],['treatment'],none,0.0
+Phẫu thuật bao lâu thì xuất viện được a. Mong anh chị trả lời luôn giúp em ạ.,[],[],['overview'],none,0.0
+"Mong bác sĩ tư vấn và cho cháu biết 108 có thể làm được không, tỉ lệ thành công là bao nhiêu và sau nối ngón tay có cử động bình thưởng được không. Cảm ơn Bác sĩ",[],[],"['treatment', ' overview']",none,0.0
+Cháu xin hỏi là bệnh này có chữa được không? Chi phí có tốn kém không? (em cháu bị cách đây 1 năm).,[],[],"['treatment', ' overview']",none,0.0
+Cháu xin hỏi là bệnh này có chữa được không? Chi phí có tốn kém không? (em cháu bị cách đây 1 năm). Cảm ơn bác sĩ!,[],[],"['treatment', ' overview']",none,0.0
+Nếu đã điều trị sau này sinh con thì con có bị lây nhiểm không ạ,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5,1.0
+XIn hỏi Bác sĩ bệnh viêm gan C có thể chữa khổi hoàn toàn không ạ?,"[('risk_factor', 0.86), ('treatment', 1.0)]","['tiềm ẩn', 'khỏi']","['treatment', 'overview']",0.5,0.5
+cho cháu hỏi bị dãn như vậy đã ở mức nặng chưa ạ? Xin bác sĩ tư vấn cho cháu ạ. Cháu cảm ơn,[],[],['overview'],none,0.0
+bây giờ đã đến thời điểm rút đinh thế thưa bác sĩ cháu phải đến đâu để rút đinh và làm sao để không có sẹo to ạ. mong bác sĩ chỉ bảo,[],[],['treatment'],none,0.0
+Chào bác sỹ ạ cháu hay bị đau khớp gối và đau thắt lưng vậy cháu cần khám như thế nào ạ,[],[],['method_diagnosis'],none,0.0
+Cho cháu hỏi Tây Y còn có pp chữa trị nào nữa không ạ. (như là nút tĩnh mạch...).,"[('treatment', 1.0)]",['trị'],['treatment'],1.0,1.0
+vậy bác sĩ cho em hỏi nguyên nhân là như thế nào với ạ,[],[],"['cause', ' overview']",none,0.0
+cho e hỏi điều chị phương pháp nào là tốt nhất ạ. em xin cảm ơn ạ,[],[],['treatment'],none,0.0
+bác sĩ cho cháu hỏi là cháu bị viêm tinh hoàn thì cháu lên khám ở đâu.bệnh viên mình có khám không ạ.nhờ bác sĩ tư vấn.cháu cám ơn,[],[],['overview'],none,0.0
+"Nay tôi muốn đến viên QY 108 để khám và điều trị..rất mong được tư vấn của bác sĩ, tôi xin cám ơn!","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+"Nay tôi muốn đến viên QY 108 để khám và điều trị..rất mong được tư vấn của bác sĩ, tôi xin cám ơn!","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+bac sĩ có thể cho cháu biết đây thuộc giai đoạn mấy của bệnh và tỉ lệ xạ trị kéo dài thời gian sông là bao nhiêu ạ? Và chi phí xạ trị bằng phương pháp tiên tiến nhất của bệnh viện mình giá mỗi làn là bao nhiêu ạ?,"[('diag', 1.0), ('treatment', 1.0)]","['đoán', 'trị']","['main_type', ' overview', ' treatment']",0.0,0.0
+bác sỹ cho cháu hỏi mổ nội soi tuyến giáp thì mổ tại cổ hay mổ tại nách như công nghệ tiên tiên hiện nay ạ. Và chi phí cho ca mổ cũng như điều trị như thế nào ạ.,"[('treatment', 1.0)]",['điều trị'],"['treatment', 'overview']",1.0,0.5
+"giờ tôi muốn hỏi xem dùng thuốc gì uống hay tiêm cho khỏi bệnh, thuốc mua ở đâu?","[('treatment', 1.0)]",['khỏi'],"['treatment', ' overview']",1.0,0.5
+Bác cho cháu hỏi: - Cần làm gì để an toàn phóng xạ với người bệnh? - Chế độ ăn kiêng i-ốt dành cho bệnh nhân ung thư tuyến giáp đã phẫu thuật trong và sau thời gian chuẩn bị điều trị I - 131?,[],[],"['prevention', ' overview']",none,0.0
+cháu muốn bác sĩ tư vấn cho cháu xin chế độ dinh dưỡng cho người sau xạ trị và bệnh của bố cháu tỉ lệ thành công là khoảng bao nhiêu ạ.,"[('treatment', 1.0)]",['trị'],['overview'],0.0,0.0
+"Cháu bị khó thở, ho, khạc, tức ngực, ngực thi thoảng nóng rát, ợ hơi.Cháu xin 1 tư vấn ?",[],[],['treatment'],none,0.0
+"em muốn biết giá thành, thời gian điều trị thế nào? Phải nằm giường ko đi lại đc trong bao lâu?","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+"cháu có thắc mắc là khám sức khỏe định kỳ thường xuyên chụp x-quang, cộng hưởng từ như thế nó có gây hại cho sức khỏe không ạ.",[],[],"['treatment', ' overview']",none,0.0
+xin hỏi bác sĩ phương pháp đốt lase có an toàn không?,[],[],['treatment'],none,0.0
+vậy tôi có thể ngâm thêm thuốc gì vào để át mùi của sâm mà không ảnh hưởng đến chất lượng của sâm. ,[],[],['overview'],none,0.0
+vậy tôi có thể ngâm thêm thuốc gì vào để át mùi của sâm mà không ảnh hưởng đến chất lượng của sâm. ,[],[],['overview'],none,0.0
+"Xin được hỏi bác sỹ tỷ lệ hết u xơ có cao không, nếu tôi muốn có con thì tỷ lệ thành công là bao nhiêu %. (tôi đã có 01 con).","[('treatment', 1.0)]",['hết'],"['treatment', ' overview']",1.0,0.5
+"Bác sĩ cho em hỏi, em chấn thương gối và đã chụp phim cộng hưởng từ với kết luận từ phim là đụng dập- đứt bán phần dây chằng chéo trước. có dịch và rách sừng sau sụn chêm thì KHẢ NĂNG PHẢI MỔ CÓ CAO KHÔNG Ạ ?","[('severe', 0.89)]",['ảnh hưởng'],['treatment'],0.0,0.0
+Ở đây tôi muốn hỏi- Liệu bấm huyệt như thế có đem lại hậu quả gì không?,[],[],['overview'],none,0.0
+bác sĩ cho cháu hỏi có phải cháu bị u không ạ và có cần đi kiểm tra hay làm xét nghiệm gì không ạ?,"[('diag', 1.0)]",['kiểm tra'],"['overview', ' method_diagnosis']",0.0,0.0
+Bác sĩ có thể cho e biết các loại thực phẩm mà người viêm gan B nên và không nên ăn,"[('main_type', 1.0)]",['loại'],['overview'],0.0,0.0
+"Em muốn hỏi hiện nay phương pháp xạ phẫu nào hiện đại và hiệu quả, ít gây tổn thương nhất.","[('severe', 1.0)]",['tổn thương'],"['treatment', ' overview']",0.0,0.0
+Tôi xin hỏi Bố tôi như vậy có dùng phương pháp mổ nội soi hay tán sỏi ngoài cơ thể của bệnh viện được không?,[],[],['overview'],none,0.0
+Xin hỏi Bệnh viện TƯQĐ 108 có làm các xét nghiệm đó không ạ? Có thực hiện các xét nghiệm trên vào thứ 7 không?,[],[],['overview'],none,0.0
+"Thưa Bác sĩ. Cháu nhà tôi (02 tuổi) bị hẹp Bao quy đầu - muốn đến Bệnh viện Trung ương quân đội 108 để điều trị nong tách, bảo tồn chit hẹp bao quy đầu ở trẻ em.","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+"Bác sỹ khám nói không bị cao huyết áp, tim không to, không bị hen phế quản. Bác sỹ tư vấn tôi nên làm gì.",[],[],['treatment'],none,0.0
+"Bác sỹ khám nói không bị cao huyết áp, tim không to, không bị hen phế quản. Bác sỹ tư vấn tôi nên làm gì.",[],[],['treatment'],none,0.0
+"Hiện nay lại thêm chứng bệnh chán ăn, không muốn nuốt kiểu thần kinh, đã khám nhiều nơi, điều trị Tanakan, emedic, remenyl, arcalion...không đỡ, xin bác sỹ tư vấn điều trị.","[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+"Chào bác sỹ Cháu muốn hỏi xem bệnh viện có phẫu thuật trĩ và chữa nứt kẽ hậu môn không ạ. Nếu có thì phải điều trị trong bao lâu, bằng kỹ thuật nào, có để lại di chứng không và cháu phải làm những thủ tục gì, tại khoa nào khi đến viện ạ","[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+xin hỏi bác sĩ nếu mỏ thời giam điều trị là bao lâu và chi phí mổ là bao nhiêu.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['overview'],0.0,0.0
+Tôi xin hỏi bác sĩ nếu giờ tôi có thể mổ thì khả năng thành công là bao nhiêu và nếu không mổ thì có phương pháp nào để điều trị không ah.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5,1.0
+Bác sỹ cho Em xin chút lời khuyên để Em có hướng điều trị.,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+Cháu nhờ bác sĩ xem giúp cháu đó là biểu hiện của bệnh gì và cháu muốn khám thì khám theo khoa nào.,"[('symptoms', 1.0)]",['biểu hiện'],"['treatment', 'overview']",0.0,0.0
+Vậy xin hỏi Bác sĩ có đúng không? Có cần phải đi khám và xét nghiệm không? Nếu có thì nên khám ở đâu? Xin Bác sĩ một lời khuyên. ,[],[],"['treatment', 'overview']",none,0.0
+vậy cháu hỏi là bệnh này có nghiêm trọng lắm không ạ?,"[('severe', 1.0)]",['nghiêm trọng'],['severe'],1.0,1.0
+Thưa bác sĩ tôi bị lõm mắt do tại nạn giao thông bây giờ tôi muốn điều trị cho mắt hết lõm có được không ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+"Thưa bác sỹ cháu bị bớt xanh bẩm sinh và qua tìm hiểu Bệnh viện 108 có chữa được loại bớt này vậy cho cháu hỏi ở Bệnh viện 108 chữa bằng lase gì ạ, lase Co2, lase Q- switched...., vì cháu có tìm hiểu mấy trung tâm thẩm mỹ, mỗi nơi nói 1 phương pháp khác nhau và là phương pháp tốt nhất hiện nay, chi phí như thế nào ạ,","[('main_type', 1.0)]",['loại'],"['treatment', 'overview']",0.0,0.0
+"Thưa bác sỹ cháu bị bớt xanh bẩm sinh và qua tìm hiểu Bệnh viện 108 có chữa được loại bớt này vậy cho cháu hỏi ở Bệnh viện 108 chữa bằng lase gì ạ, lase Co2, lase Q- switched...., vì cháu có tìm hiểu mấy trung tâm thẩm mỹ, mỗi nơi nói 1 phương pháp khác nhau và là phương pháp tốt nhất hiện nay, chi phí như thế nào ạ,","[('main_type', 1.0)]",['loại'],"['treatment', 'overview']",0.0,0.0
+em nên điều trị thế nào cho khỏi bệnh.,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'điều trị']",['treatment'],0.5,1.0
+"Cháu xin hỏi bác sỹ là chỗ bệnh viện có khám chuyên Gan kĩ ko ạ??? Khám về viêm gan B, ngoài các chỉ số định tính thì có khám về Định lượng vi rút đang hoạt động ko ạ, và phương pháp điều trị của bệnh viện thì như thế nào ạ ???","[('treatment', 1.0)]",['điều trị'],"['treatment', 'overview']",1.0,0.5
+Hiện nay gia đình muốn mổ rút đinh và phẫu thuật thẩm mỹ vết sẹo lồi cho cháu thì cần làm như thế nào?,[],[],['overview'],none,0.0
+Bác sĩ cho cháu lời khuyên làm thế nào chữa được căn bệnh này để có thể đẻ thêm bé nữa được ạ?,[],[],['treatment'],none,0.0
+Bệnh của tôi có chữa được không? Thời gian mỗi lần điều trị là bao nhiêu? Hết bao nhiêu chi phí?,"[('treatment', 1.0)]",['điều trị'],['overview'],0.0,0.0
+Vậy cháu xin hỏi bác sĩ là Bênh viện 108 mình có phương pháp điều trị gì ngoài mổ thay khớp không ạ? Nếu tiêm thì ở bênh viện mình có xuất hóa đơn thu tiền không ạ?,"[('symptoms', 1.0), ('treatment', 1.0)]","['thấy', 'điều trị']","['treatment', ' overview']",0.5,0.5
+Chào bác sĩ tôi xin hỏi bác sĩ: Tôi bị u xơ tử cung tháng 4 vừa qua tôi đã bóc nhân xơ nhưng bác sĩ bảo tôi vẫn còn nhiều nhân nhỏ nữa hiện nay tôi thấy trong huyết trắng của mình có dính một ít máu đó có phải là hiện tượng gì đáng lo không a. Và tôi cũng xin hỏi bác sĩ là nghe nói bệnh viện 108 khám cả thứ 7 phải không a.,[],[],"['treatment', ' overview']",none,0.0
+"vậy bác sĩ cho cháu hỏi, co phương án nào xử lý tối ưu ko ạ?",[],[],['treatment'],none,0.0
+xin hỏi BS giờ tôi phải làm sao để vẫn tiếp tục điều trị viêm khớp mà không bị những cơn đau dạ dày hành hạ nữa,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+bác sĩ cho e hỏi có thể phẫu thuật ghép bàn tay hoặc lắp bàn tay giả cho bé không ạ và hướng điều trị như thế nào ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+bác sĩ cho e hỏi có thể phẫu thuật ghép bàn tay hoặc lắp bàn tay giả cho bé không ạ và hướng điều trị như thế nào ạ?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+nhưng vì hạch ở cổ nên em không muốn mổ. em muốn uống thuốc được không ạ?,"[('prevention', 1.0)]",['né'],['treatment'],0.0,0.0
+vậy theo bác sỹ tôi phải làm gì để khác phục tình tràng này.,[],[],['treatment'],none,0.0
+xin hỏi ở Bv 108 có làm kháng sinh đồ Hp không? nếu có làm ks đồ Hp thì việc chữa trị bệnh dạ dày của tôi có khỏi được không?,"[('prevention', 1.0), ('treatment', 1.0)]","['né', 'trị']","['treatment', ' overview']",0.5,0.5
+Xin bác sĩ tư vấn giúp gia đình chúng tôi. Bố tôi có khả năng bị bệnh gì?,[],[],"['treatment', ' overview']",none,0.0
+Vậy cháu xin hỏi bác sĩ là Bênh viện 108 mình có phương pháp điều trị gì ngoài mổ không ạ? Và bác sĩ có thể tư vấn cho cháu về điều trị bằng laze này có hiệu quả không?,"[('treatment', 1.0)]",['điều trị'],['treatment'],1.0,1.0
+vậy bác sĩ tư vấn cho Em xem với tình trạng bệnh của em như bây giờ thì giải pháp nào cho em là tốt nhất ạ. và chi phí điều trị bằng phương pháp nút mạch hết nhiều tiền không ạ,"[('treatment', 1.0)]",['điều trị'],"['treatment', ' overview']",1.0,0.5
+"Chào TS! Bệnh về tiền liệt tuyến kiểm tra có dễ phát hiện ra không ạ? Nếu bị viêm tiền liệt tuyến thì ở BV 108 khám, chữa ở khoa nào? Việc điều trị có lâu không và có phải nằm ở viện đề điều trị không ạ?","[('diag', 1.0), ('treatment', 1.0)]","['kiểm tra', 'điều trị']","['treatment', ' overview']",0.5,0.5
+"Nghe nhiều người nói cần chế độ kiêng khen rất chặt chẽ, Xin hỏi cần thực hiện chế độ ăn uống như thế nào để phòng tránh bệnh gút ạ?","[('prevention', 1.0)]",['phòng tránh'],['prevention'],1.0,1.0
+"Kính thưa Bác sỹ Tôi mới được các bác sỹ chẩn đoán đái tháo đường, xin hỏi chế độ ăn uống, sinh hoạt cần tuân thủ như thế nào?","[('diag', 1.0)]",['chẩn đoán'],['overview'],0.0,0.0
+"Tôi bị bệnh tăng huyết áp nhiều năm nay, xin hỏi Bác sỹ chế độ ăn uống sinh hoạt như thế nào?",[],[],['overview'],none,0.0
+"Tôi bị bệnh tăng huyết áp nhiều năm nay, xin hỏi Bác sỹ chế độ ăn uống sinh hoạt như thế nào?",[],[],['overview'],none,0.0

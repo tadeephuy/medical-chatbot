@@ -1,4 +1,4 @@
-INTENT_THRESHOLD = 0.85
+INTENT_THRESHOLD = 0.75
 
 """
 define matching order

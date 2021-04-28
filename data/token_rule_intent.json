@@ -15,7 +15,7 @@
       "thấy",
       "nhìn"
     ],
-    "main_type:": [
+    "main_type": [
       "biến thể",
       "thể loại",
       "loại",
@@ -53,8 +53,7 @@
       "ngăn chặn",
       "chống",
       "pt",
-      "phương pháp phòng tránh",
-      "phương pháp ngăn ngừa"
+      "phương pháp"
     ],
     "diag": [
       "chẩn đoán",

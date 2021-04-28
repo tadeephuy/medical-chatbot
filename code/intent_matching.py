@@ -22,7 +22,13 @@ def matching(message):
     
 
     list_intent = []
+    list_token_match = []
     for item in list(dict_token_intent.keys()):
+        ## TODO: DEFINE MATCHING ORDER
+        ## init max probability
+
+        max_prob = 0
+
         ## field: overview, disease, symptom, serverity, prevention, ... 
         field = dict_token_intent[item]
         tokens_rule = field['key']
@@ -37,16 +43,23 @@ def matching(message):
 
             # dict_result_matching['confidence'] = dict_eval['partial']
             
-            if dict_eval['partial'] >= INTENT_THRESHOLD:
+            if dict_eval['partial'] >= INTENT_THRESHOLD and float(dict_eval['partial']) > max_prob:
                 # dict_result_matching['intent'] = item
                 # return dict_result_matching
-                tuple_match = (item,dict_eval['partial'])
-                if tuple_match not in list_intent:
+                
+                max_prob = float(dict_eval['partial'])
+                # print('match',max_prob,token,message)
+                tuple_match = (item,max_prob)
+                if item not in [item[0] for item in list_intent]:
                     list_intent.append(tuple_match)
+                    list_token_match.append(token_norm)
     dict_result_matching['intent'] = list_intent
+    # dict_result_matching['max_prob'] = max_prob
+    dict_result_matching['token'] = list_token_match
+    dict_result_matching['message'] = message
 
     return dict_result_matching
 
 if __name__ == '__main__':
-    message = 'cho hỏi bệnh ung thư gan có điều trị được không vậy ?'
+    message = 'cho hỏi bệnh ung thư gan có điều trị hay diu tri được không vậy ?'
     print(matching(message))

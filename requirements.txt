@@ -1,6 +1,3 @@
-regex
-re 
-python-Levenshtein
-fuzzywuzzy
-json
-os
+codecs
+bs4
+re

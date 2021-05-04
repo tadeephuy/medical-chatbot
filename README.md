@@ -1,12 +1,10 @@
-## PATTERN MATCHING
+## PDF PARSER
 
 ### Duration
-April 27 - April 30
+May 5 - May 22
 
 ### Task
-+ Checking list token for pattern-rule
-+ Utilizing Levenshtein distance
-+ Handle logic
++ Design architecture for Stroke Book
 
-### Testing
-+ code/intent_matching.py
+### Usage
++ Convert pdf to html: pdf2txt.py in folder helper

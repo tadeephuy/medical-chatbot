@@ -7,4 +7,13 @@ May 5 - May 22
 + Design architecture for Stroke Book
 
 ### Usage
-+ Convert pdf to html: pdf2txt.py in folder helper
++ Module convert pdf to html:  ./code/helper/pdf2txt.py
++ Structure of Book: ./resource/structure.json
++ Raw text: ./resource/text.h5
+
+### Description Structure
++ Part --> Chapter --> Section --> Subsection --> Paragraph
++ Idx specific index of phrase/word in Raw text (list)
+
+### Future Work
++ Clean text format paragraph

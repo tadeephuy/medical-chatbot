@@ -1,4 +1,4 @@
-
+import re
 
 def flatten_json(y):
     out = {}
@@ -17,3 +17,17 @@ def flatten_json(y):
 
     flatten(y)
     return out
+
+def clear_special(st):
+    ### save newline
+    st_nl = st.replace('-\n','NEWLINE')
+    word = ' '.join(re.findall('[a-záàảãạăắằẳẵặâấầẩẫậéèẻẽẹêếềểễệóòỏõọôốồổỗộơớờởỡợíìỉĩịúùủũụưứừửữựýỳỷỹỵđA-ZÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÉÈẺẼẸÊẾỀỂỄỆÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÍÌỈĨỊÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴĐ0-9\!\@\#\$\%\^\&\*\(\)\'\"\:\;\<\>\?\.\,\/]+', st_nl))
+    
+    return word.replace('NEWLINE','')
+
+def check_null(list_phrase):
+    list_check_phrase = []
+    for item in list_phrase:
+        if item:
+            list_check_phrase.append(item)
+    return list_check_phrase

@@ -1,6 +1,4 @@
 regex
-re 
 python-Levenshtein
 fuzzywuzzy
-json
-os
+google-trans-new==1.1.9

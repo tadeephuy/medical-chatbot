@@ -1,12 +1,12 @@
-## PATTERN MATCHING
+## INTENT RECOGNIZE
 
-### Duration
-April 27 - April 30
+### Deadline
+28 May 2021
 
 ### Task
-+ Checking list token for pattern-rule
-+ Utilizing Levenshtein distance
-+ Handle logic
++ Create tokens rule for pattern matching (translate from version 3 diseases, synthesize from repo HHH)
++ Module handle translate task in class Preprocess in code/helper/preprocess.py
++ Module pipeline intent recognize task code/hybrid_intent.py (waiting for model similarity)
 
 ### Testing
-+ code/intent_matching.py
++ Run module code/hybrid_intent.py

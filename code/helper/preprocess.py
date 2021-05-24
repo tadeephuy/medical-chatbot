@@ -1,7 +1,5 @@
 import regex as re
-
-
-
+from google_trans_new import google_translator 
 class PreProcess:
     def __init__(self):
         self.vowel = [['a', 'à', 'á', 'ả', 'ã', 'ạ', 'a'],
@@ -200,3 +198,8 @@ class PreProcess:
             text_lower = text_lower.replace(item,'d')
 
         return text_lower
+
+    def translate_vi2en(self,origin_text,dest_lang='en'):
+        translator = google_translator()  
+        translate_text = translator.translate(origin_text,lang_tgt=dest_lang)  
+        return translate_text

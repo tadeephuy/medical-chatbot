@@ -47,23 +47,23 @@ def matching(message,INTENT_THRESHOLD,type_dist):
                 dist_ratio = dict_eval['token_set']
             # dict_result_matching['confidence'] = dict_eval['partial']
             
-            if dist_ratio >= INTENT_THRESHOLD and float(dist_ratio) > max_prob:
+            if dist_ratio > INTENT_THRESHOLD and float(dist_ratio) > max_prob:
                 # dict_result_matching['intent'] = item
                 # return dict_result_matching
                 
                 max_prob = float(dist_ratio)
                 # print('match',max_prob,token,message)
-                tuple_match = (item,max_prob)
+                tuple_match = (item,max_prob,token_norm)
                 if item not in [item[0] for item in list_intent]:
                     list_intent.append(tuple_match)
                     list_token_match.append(token_norm)
     if list_intent:
-        dict_result_matching['intent'] = list_intent
+        dict_result_matching['response'] = list_intent
     else:
-        dict_result_matching['intent'] = [('unk',1.0)]
+        dict_result_matching['response'] = [('unk',1.0)]
     # dict_result_matching['max_prob'] = max_prob
     
-    dict_result_matching['token'] = list_token_match
+    # dict_result_matching['token'] = list_token_match
     dict_result_matching['message'] = message
 
     return dict_result_matching
@@ -71,3 +71,6 @@ def matching(message,INTENT_THRESHOLD,type_dist):
 if __name__ == '__main__':
     message = 'cho hỏi bệnh ung thư gan có điều trị hay diu tri được không vậy ?'
     # print(matching(message))
+    type_dist = 'partial'
+    threshold = 0.75
+    print(matching(message,threshold,type_dist))

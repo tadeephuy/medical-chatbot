@@ -1,12 +1,15 @@
-## INTENT RECOGNIZE
+## MEDICAL INTENT RECOGNIZE
 
 ### Deadline
 28 May 2021
 
 ### Task
-+ Create tokens rule for pattern matching (translate from version 3 diseases, synthesize from repo HHH)
-+ Module handle translate task in class Preprocess in code/helper/preprocess.py
-+ Module pipeline intent recognize task code/hybrid_intent.py (waiting for model similarity)
++ Reproduce QA system from HHH repository which using pattern matching for user's intent.
 
-### Testing
-+ Run module code/hybrid_intent.py
+### Step
++ Install DBMS Neo4j follow link: https://www.liquidweb.com/kb/how-to-install-neo4j-on-ubuntu-20-04/
++ Custom password and port to connecting DBMS
++ Build KG & Import into DBMS: run file build_medicalgraph.py
++ Testing query DBMS: run file answer_search.py
++ System testing with command line: run file chatbot_graph.py
++ Using chatbot with GUI: run file GUI.py

@@ -20,7 +20,8 @@ def pipeline_intent_reg(message):
     url_sim_model = 'https://03629fbe8e48.ngrok.io/mm'
     top_k = 3
     list_type_model = ['lstm','bert','distilbert']
-    type_model = random.choice(list_type_model)
+    # type_model = random.choice(list_type_model)
+    type_model = 'lstm'
 
     ## PATTERN MATCHING
     dict_pm_reg = matching(mess_trans,threshold,type_dist)
@@ -44,7 +45,7 @@ def pipeline_intent_reg(message):
             dict_sim_reg['process_type'] = 'similarity_matching'
             return dict_sim_reg
         else:
-            print('respsonse',resp_sim.status_code)
+            # print('respsonse',resp_sim.status_code)
             dict_sim_reg = {}
             dict_sim_reg['message'] = mess_trans
             dict_sim_reg['response'] = [tuple(['How to not get liver cancer?',random.randint(0,100)/100])]

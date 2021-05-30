@@ -54,6 +54,6 @@ def pipeline_intent_reg(message):
             return dict_sim_reg
 
 if __name__=='__main__':
-    messages = ['alo 1234','ai dễ bị ung thư gan vậy ?']
+    messages = ['alo 1234','ai dễ bị ung thư gan vậy ?', 'pertussis có những triệu chứng gì']
     for mess in messages:
         print(pipeline_intent_reg(mess))

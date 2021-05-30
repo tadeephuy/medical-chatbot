@@ -10,5 +10,4 @@ regex
 python-Levenshtein
 fuzzywuzzy
 google-trans-new==1.1.9
-ds-extraction==0.0.1
-pandas==1.2.4
+ds-extraction==0.0.2

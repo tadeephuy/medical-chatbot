@@ -23,7 +23,7 @@ class AnswerSearcher:
 
         for question_type in intents:
             final_answer = []
-            if question_type == 'disease_symptom' and not mention_diseases.empty:
+            if question_type == 'symptom' and not mention_diseases.empty:
                 desc = mention_diseases['symptom'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = 'The symptoms of {0} include: {1}'.format(subject, desc)
@@ -33,27 +33,27 @@ class AnswerSearcher:
                 subject = entities['symptoms'][0]
                 final_answer = 'Symptoms {0} may be infected with: {1}'.format(subject, '；'.join(list(set(desc))[:self.num_limit]))
 
-            elif question_type == 'disease_cause' and not mention_diseases.empty:
+            elif question_type == 'cause' and not mention_diseases.empty:
                 desc = mention_diseases['cause'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = 'The possible causes of {0} are: {1}'.format(subject, desc)
 
-            elif question_type == 'disease_prevent' and not mention_diseases.empty:
+            elif question_type == 'prevent' and not mention_diseases.empty:
                 desc = mention_diseases['prevent'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = '{0} precautions include: {1}'.format(subject, desc)
 
-            elif question_type == 'disease_cureway' and not mention_diseases.empty:
+            elif question_type == 'cure_way' and not mention_diseases.empty:
                 desc = mention_diseases['cure_way'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = '{0} can try the following treatments: {1}'.format(subject, desc)
 
-            elif question_type == 'disease_desc' and not mention_diseases.empty:
+            elif question_type == 'desc' and not mention_diseases.empty:
                 desc = mention_diseases['desc'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = '{0}, familiar with: {1}'.format(subject, desc)
 
-            elif question_type == 'disease_acompany' and not mention_diseases.empty:
+            elif question_type == 'acompany' and not mention_diseases.empty:
                 desc = mention_diseases['acompany'].iloc[0]
                 subject = mention_diseases['name'].iloc[0]
                 final_answer = '{0}, familiar with: {1}'.format(subject, desc)
@@ -75,7 +75,7 @@ class AnswerSearcher:
 if __name__ == '__main__':
     searcher = AnswerSearcher()
     # res_sql = [{'question_type': 'symptom_disease', 'sql': ["MATCH (m:Disease)-[r:has_symptom]->(n:Symptom) return m.name, r.name, n.name"]}]
-    intents = ['disease_symptom']
+    intents = ['symptom']
     entities = {
         'diseases': ['pneumonia'],
         'symptoms': []

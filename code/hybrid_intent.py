@@ -1,14 +1,18 @@
 import requests
+import random
 from intent_matching import matching
 from helper.preprocess import PreProcess
 from helper.edit_distance import Distance
-import random
+from ds_extraction.vb_ahocorasick import Dictionary
+from answer_search import AnswerSearcher
 ## output API model matching
 ## mess,matching_question,confidence,answer
 ## KB query 
 
 
 pp = PreProcess()
+my_dict = Dictionary()
+searcher = AnswerSearcher()
 
 def pipeline_intent_reg(message):
     mess_norm = pp.process(message)
@@ -25,10 +29,21 @@ def pipeline_intent_reg(message):
 
     ## PATTERN MATCHING
     dict_pm_reg = matching(mess_trans,threshold,type_dist)
+
+    diseases, symptoms = my_dict.get_ner(mess_trans, mode='aho', correct=True)
+
     # print('dict_pm_reg',dict_pm_reg)
-    if len(dict_pm_reg['response']) > 0:
+    if len(dict_pm_reg['response']) > 0 and (diseases or symptoms):
+        intents = [i[0] for i in dict_pm_reg['response']]
+        entities = {
+            'diseases': diseases,
+            'symptoms': symptoms
+        }
+        final_answers = searcher.search_by_dataframe(intents, entities)
+
         dict_pm_reg['message_origin'] = message
         dict_pm_reg['process_type'] = 'pattern_matching'
+        dict_pm_reg['answers'] = [pp.translate_vi2en(a, 'vi') for a in final_answers]
         return dict_pm_reg
     else:
         ## SIMILARITY SEARCH
@@ -54,6 +69,6 @@ def pipeline_intent_reg(message):
             return dict_sim_reg
 
 if __name__=='__main__':
-    messages = ['alo 1234','ai dễ bị ung thư gan vậy ?', 'pertussis có những triệu chứng gì']
+    messages = ['pertussis có những triệu chứng gì']
     for mess in messages:
         print(pipeline_intent_reg(mess))

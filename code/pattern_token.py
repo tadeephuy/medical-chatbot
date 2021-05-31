@@ -31,7 +31,7 @@ dict_token_intent = {}
 dict_token_intent['desc'] = ['information','define','what is']
 
 dict_token_intent["symptom"] = ['symptom','expression','signal','symptoms','symptom','see','look','symptom','characterization','phenomenon']
-dict_token_intent["cause"] = ['reason','cause']
+dict_token_intent["cause"] = ['reason','cause','why']
 dict_token_intent["acompany"] = ['complication','concurrent','occur','happen together','occur together','appear together','together','accompany','follow','coexist']
 dict_token_intent["prevent"] = ['prevent','avoid','neither','anti','prevention method','preventing methods','prevention','prevent','resist','guard','against','escape','avoid',
                    'how can I not', 

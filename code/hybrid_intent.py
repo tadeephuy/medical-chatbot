@@ -30,10 +30,11 @@ def pipeline_intent_reg(message):
     ## PATTERN MATCHING
     dict_pm_reg = matching(mess_trans,threshold,1,type_dist)
 
-    diseases, symptoms = my_dict.get_ner(mess_trans, mode='aho', correct=True)
+    diseases, symptoms = my_dict.get_ner(mess_trans, mode='aho', correct=False)
 
-    # print('disease,symptoms :',diseases,symptoms,mess_trans)
+    print('disease,symptoms :',diseases,symptoms,mess_trans)
     # print('dict_pm_reg',dict_pm_reg)
+
     if len(dict_pm_reg['response']) > 0 and (diseases or symptoms):
         intents = [i[0] for i in dict_pm_reg['response']]
         entities = {
@@ -56,7 +57,7 @@ def pipeline_intent_reg(message):
                                         'model': type_model
                                         }
                                     )
-        print('response',resp_sim.status_code)
+        # print('response',resp_sim.status_code)
         if resp_sim.status_code == 200:
             resp_json = resp_sim.json()
             dict_sim_reg = {}
@@ -81,9 +82,9 @@ if __name__=='__main__':
     sys_testing['general'] = [
         "cho hỏi cách phòng tránh bệnh viêm phổi thế nào ạ", ## success
         "điều trị bệnh thiếu máu bằng cách nào", ## success
-        "xơ gan là bệnh gì vậy ?", ## fail
+        "bác sĩ có thể định nghĩa giúp tôi bệnh xơ gan là gì được không ?", ## fail
         "triệu chứng của bệnh ung thư vú là gì ?", ## success
-        "làm sao tôi biết mình có bị suy hô hấp hay không ?" ## fail
+        "vì sao tôi bị suy hô hấp vậy ?" ## success
     ]
 
     sys_testing['stroke'] = [
@@ -102,5 +103,5 @@ if __name__=='__main__':
             print('>'*50)
             print("User's message: ",mess)
             semantic_frame = pipeline_intent_reg(mess)
-            # print('Semantic frame: ',str(semantic_frame))
-            print("Agent's response: ",semantic_frame['answers'])
+            print('Semantic frame: ',str(semantic_frame))
+            # print("Agent's response: ",semantic_frame['answers'])

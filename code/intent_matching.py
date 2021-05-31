@@ -89,6 +89,8 @@ def matching(message,INTENT_THRESHOLD,top_k,type_dist):
                     list_intent.append(tuple_match)
                     # list_token_match.append(token)
     # if list_intent:
+            # if token == 'define':
+                # print('list_intent',list_intent)
     # print('list_intent',list_intent)
     list_intent_sort = sorted(list_intent, key=lambda x: x[1], reverse=True)
     # print('list_intent_sort',list_intent_sort)

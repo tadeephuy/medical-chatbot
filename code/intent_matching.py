@@ -24,7 +24,7 @@ main_type
 """
 
 
-def matching(message,INTENT_THRESHOLD,type_dist):
+def matching(message,INTENT_THRESHOLD,top_k,type_dist):
     """
     message: normalized, translated
     return: dictionary
@@ -76,6 +76,8 @@ def matching(message,INTENT_THRESHOLD,type_dist):
                 dist_ratio = dict_eval['token_set']
             # dict_result_matching['confidence'] = dict_eval['partial']
             
+            # print('dist_ratio',token,dist_ratio)
+
             if dist_ratio > INTENT_THRESHOLD and float(dist_ratio) > max_prob:
                 # dict_result_matching['intent'] = item
                 # return dict_result_matching
@@ -87,7 +89,11 @@ def matching(message,INTENT_THRESHOLD,type_dist):
                     list_intent.append(tuple_match)
                     # list_token_match.append(token)
     # if list_intent:
-    dict_result_matching['response'] = list_intent
+    # print('list_intent',list_intent)
+    list_intent_sort = sorted(list_intent, key=lambda x: x[1], reverse=True)
+    # print('list_intent_sort',list_intent_sort)
+
+    dict_result_matching['response'] = list_intent_sort[:top_k]
     # else:
         # dict_result_matching['response'] = [('unk',1.0)]
     # dict_result_matching['max_prob'] = max_prob

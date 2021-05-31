@@ -28,7 +28,7 @@ self.cure_qwds = ['what to treat', 'indication', 'what is the use', 'benefit', '
 
 dict_token_intent = {}
 
-dict_token_intent['desc'] = ['information','define']
+dict_token_intent['desc'] = ['information','define','what is']
 
 dict_token_intent["symptom"] = ['symptom','expression','signal','symptoms','symptom','see','look','symptom','characterization','phenomenon']
 dict_token_intent["cause"] = ['reason','cause']

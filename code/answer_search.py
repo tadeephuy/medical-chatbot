@@ -9,7 +9,7 @@ class AnswerSearcher:
     def __init__(self):
         self.num_limit = 20
         # load data and normalize list values
-        self.knowledge_base = pd.read_csv(DATA_PATH)
+        self.knowledge_base = pd.read_csv(DATA_PATH,encoding='gbk')
         self.knowledge_base['symptom'] = self.knowledge_base['symptom'].apply(self.clean_list_values)
         self.knowledge_base['acompany'] = self.knowledge_base['acompany'].apply(self.clean_list_values)
         self.knowledge_base['cure_department'] = self.knowledge_base['cure_department'].apply(self.clean_list_values)

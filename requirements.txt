@@ -11,3 +11,4 @@ python-Levenshtein
 fuzzywuzzy
 google-trans-new==1.1.9
 ds-extraction==0.0.3
+flask

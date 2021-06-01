@@ -32,7 +32,7 @@ def pipeline_intent_reg(message):
 
     diseases, symptoms = my_dict.get_ner(mess_trans, mode='aho', correct=False)
 
-    print('disease,symptoms :',diseases,symptoms,mess_trans)
+    # print('disease,symptoms :',diseases,symptoms,mess_trans)
     # print('dict_pm_reg',dict_pm_reg)
 
     if len(dict_pm_reg['response']) > 0 and (diseases or symptoms):
@@ -42,11 +42,23 @@ def pipeline_intent_reg(message):
             'symptoms': symptoms
         }
         final_answers = searcher.search_by_dataframe(intents, entities)
+        # print('final_answers',final_answers)
+        if final_answers:
+        # print('final_answers_type',type(final_answers))
+            answers_trans = [pp.translate_vi2en(a, 'vi') for a in final_answers]
+        else:
+            answers_trans = ['Xin lỗi tôi không hiểu ý bạn, mời bạn hỏi lại !']
+        answers_pieces = []
+        for ans in answers_trans:
+            ans_split = ans.split('.')
+            for a in ans_split:
+                answers_pieces.append(a)
+
 
         dict_pm_reg['message_origin'] = message
         dict_pm_reg['process_type'] = 'pattern_matching'
         # dict_pm_reg['answers'] = ' '.join([pp.translate_vi2en(a, 'vi') for a in final_answers])
-        dict_pm_reg['answers'] = [pp.translate_vi2en(a, 'vi') for a in final_answers]
+        dict_pm_reg['answers'] = answers_pieces
         return dict_pm_reg
     else:
         ## SIMILARITY SEARCH
@@ -63,7 +75,15 @@ def pipeline_intent_reg(message):
             dict_sim_reg = {}
             dict_sim_reg['message_origin'] = message
             dict_sim_reg['message'] = resp_json['message']['question']
-            dict_sim_reg['answers'] = [resp_json['response'][-1][-1]]
+            answers_trans = [resp_json['response'][-1][-1]]
+            answers_pieces = []
+            for ans in answers_trans:
+                ans_split = ans.split('.')
+                for a in ans_split:
+                    answers_pieces.append(a)
+
+            dict_sim_reg['answers'] = answers_pieces
+
             dict_sim_reg['process_type'] = 'similarity_matching'
             return dict_sim_reg
         else:
@@ -71,7 +91,7 @@ def pipeline_intent_reg(message):
             dict_sim_reg = {}
             dict_sim_reg['message'] = mess_trans
             dict_sim_reg['response'] = [tuple(['How to not get liver cancer?',random.randint(0,100)/100])]
-            dict_sim_reg['answers'] = 'không biết'
+            dict_sim_reg['answers'] = ['Xin lỗi tôi không hiểu ý bạn, mời bạn hỏi lại !']
             dict_sim_reg['message_origin'] = message
             dict_sim_reg['process_type'] = 'mockup'
             return dict_sim_reg
@@ -82,7 +102,7 @@ if __name__=='__main__':
     sys_testing['general'] = [
         "cho hỏi cách phòng tránh bệnh viêm phổi thế nào ạ", ## success
         "điều trị bệnh thiếu máu bằng cách nào", ## success
-        "bác sĩ có thể định nghĩa giúp tôi bệnh xơ gan là gì được không ?", ## fail
+        "bác sĩ có thể định nghĩa giúp tôi bệnh đau nửa đầu là gì được không ?", ## fail
         "triệu chứng của bệnh ung thư vú là gì ?", ## success
         "vì sao tôi bị suy hô hấp vậy ?" ## success
     ]
@@ -97,8 +117,8 @@ if __name__=='__main__':
     # for mess in messages:
     for key in sys_testing.keys():
         cases = sys_testing[key]
-        print('-'*20)
-        print('Case testing: ',key)
+        # print('-'*20)
+        # print('Case testing: ',key)
         for mess in cases:
             print('>'*50)
             print("User's message: ",mess)

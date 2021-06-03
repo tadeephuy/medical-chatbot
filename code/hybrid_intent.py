@@ -21,7 +21,7 @@ def pipeline_intent_reg(message):
     ## CONSTANT 
     type_dist = 'token_set'
     threshold = 0.75
-    url_sim_model = 'https://a2eb72e10df1.ngrok.io/mm'
+    url_sim_model = 'https://5fde941fd0ee.ngrok.io/mm/'
     top_k = 1
     list_type_model = ['lstm','bert','distilbert']
     # type_model = random.choice(list_type_model)
@@ -45,9 +45,11 @@ def pipeline_intent_reg(message):
         # print('final_answers',final_answers)
         if final_answers:
         # print('final_answers_type',type(final_answers))
-            answers_trans = [pp.translate_vi2en(a, 'vi') for a in final_answers]
+            # answers_trans = [pp.translate_vi2en(a, 'vi') for a in final_answers]
+            answers_trans = final_answers
         else:
-            answers_trans = ['Xin lỗi tôi không hiểu ý bạn, mời bạn hỏi lại !']
+            # answers_trans = ['Xin lỗi tôi không hiểu ý bạn, mời bạn hỏi lại !']
+            answers_trans = ["Sorry, I don't understand your question !"]
         answers_pieces = []
         for ans in answers_trans:
             ans_split = ans.split('.')
@@ -75,7 +77,7 @@ def pipeline_intent_reg(message):
             dict_sim_reg = {}
             dict_sim_reg['message_origin'] = message
             dict_sim_reg['message'] = resp_json['message']['question']
-            answers_trans = [resp_json['response'][-1][-1]]
+            answers_trans = [resp_json['response'][-1][-2]]
             answers_pieces = []
             for ans in answers_trans:
                 ans_split = ans.split('.')
@@ -102,7 +104,7 @@ if __name__=='__main__':
     sys_testing['general'] = [
         "cho hỏi cách phòng tránh bệnh viêm phổi thế nào ạ", ## success
         "điều trị bệnh thiếu máu bằng cách nào", ## success
-        "bác sĩ có thể định nghĩa giúp tôi bệnh đau nửa đầu là gì được không ?", ## fail
+        "bác sĩ có thể định nghĩa giúp tôi bệnh đau nửa đầu là gì được không ?", ## success
         "triệu chứng của bệnh ung thư vú là gì ?", ## success
         "vì sao tôi bị suy hô hấp vậy ?" ## success
     ]
